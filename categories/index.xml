@@ -5,10 +5,11 @@
         <link>https://yukari.pages.dev/categories/</link>
         <description>Recent content in Categories on Yukari Blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="https://yukari.pages.dev/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 14 Jan 2024 07:07:07 +0100</lastBuildDate><atom:link href="https://yukari.pages.dev/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Anime</title>
         <link>https://yukari.pages.dev/categories/anime/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <pubDate>Sun, 14 Jan 2024 07:07:07 +0100</pubDate>
         
         <guid>https://yukari.pages.dev/categories/anime/</guid>
         <description>&lt;img src="https://yukari.pages.dev/categories/anime/008gYUgyly1hskgczds59j32cb3bfe82.jpg" alt="Featured image of post Anime" /&gt;</description>
