@@ -2,33 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/</loc>
+    <loc>https://yukari.pages.dev/</loc>
     <lastmod>2024-01-14T07:07:07+01:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/tags/1/</loc>
+    <loc>https://yukari.pages.dev/post/</loc>
     <lastmod>2024-01-14T07:07:07+01:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/anime/</loc>
-    <lastmod>2024-01-14T07:07:07+01:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/</loc>
-    <lastmod>2024-01-14T07:07:07+01:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/post/</loc>
-    <lastmod>2024-01-14T07:07:07+01:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/tags/</loc>
-    <lastmod>2024-01-14T07:07:07+01:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/post/test/</loc>
-    <lastmod>2024-01-14T07:07:07+01:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/page/archives/</loc>
+    <loc>https://yukari.pages.dev/page/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/page/</loc>
+    <loc>https://yukari.pages.dev/page/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/page/search/</loc>
+    <loc>https://yukari.pages.dev/categories/anime/</loc>
+  </url><url>
+    <loc>https://yukari.pages.dev/categories/</loc>
+  </url><url>
+    <loc>https://yukari.pages.dev/page/search/</loc>
+  </url><url>
+    <loc>https://yukari.pages.dev/tags/</loc>
   </url>
 </urlset>
