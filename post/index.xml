@@ -69,6 +69,9 @@
     &gt;hugo&lt;/a&gt;+&lt;a class=&#34;link&#34; href=&#34;https://github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub&lt;/a&gt;/&lt;a class=&#34;link&#34; href=&#34;https://dash.cloudflare.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Cloudflare&lt;/a&gt;的静态页面托管服务。遂有了这篇文章及这页博客。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;好处是成本很低，不需要服务器甚至域名也可以不需要，维护全部交给大厂，搭建完之后每次新文章只需提交到Github便会刷新构建。不过不管是Github还是Cloudflare国内总会抽风，会不定时分地区的可用性下降。如果只是个人用，代理常开的情况下是无感的。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;final&#34;&gt;Final
 &lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/post/test/final.png&#34;
 	width=&#34;2496&#34;
@@ -88,7 +91,7 @@
 &lt;h2 id=&#34;安装git与hugo&#34;&gt;安装Git与Hugo
 &lt;/h2&gt;&lt;h3 id=&#34;安装git&#34;&gt;安装Git
 &lt;/h3&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/downloads&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;官网&lt;/a&gt; 一路下一步即可&lt;/p&gt;
+    &gt;Git官网&lt;/a&gt; 一路下一步即可&lt;/p&gt;
 &lt;h3 id=&#34;安装hugo&#34;&gt;安装Hugo
 &lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -127,7 +130,7 @@ cmd中输入&lt;code&gt;hugo version&lt;/code&gt;,输出以下即为成功
 &lt;/ol&gt;
 &lt;h2 id=&#34;应用hugo主题&#34;&gt;应用Hugo主题
 &lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;来到&lt;code&gt;D:\tools\hugo\blog&lt;/code&gt;文件夹下，cmd命令
+&lt;li&gt;来到&lt;code&gt;D:\tools\hugo\blog&lt;/code&gt;文件夹下，cmd命令：
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -724,7 +727,7 @@ cmd中输入&lt;code&gt;hugo version&lt;/code&gt;,输出以下即为成功
 &lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;新建一个GitHub仓库，仓库名是&lt;code&gt;Github用户名.github.io&lt;/code&gt;，如：&lt;code&gt;user.github.io&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;与GitHub仓库关联，在&lt;code&gt;根目录\public&lt;/code&gt;下，依次输入以下cmd命令
+&lt;li&gt;与GitHub仓库关联，在&lt;code&gt;根目录\public&lt;/code&gt;下，依次输入以下cmd命令：
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -736,7 +739,7 @@ cmd中输入&lt;code&gt;hugo version&lt;/code&gt;,输出以下即为成功
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;其中user改成自己的GitHub用户名&lt;/li&gt;
-&lt;li&gt;来到&lt;code&gt;根目录\public&lt;/code&gt;下，依次输入以下cmd命令
+&lt;li&gt;来到&lt;code&gt;根目录\public&lt;/code&gt;下，依次输入以下cmd命令：
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -760,7 +763,7 @@ cmd中输入&lt;code&gt;hugo version&lt;/code&gt;,输出以下即为成功
     &gt;GitHub&lt;/a&gt;仓库 → settings Pages → &amp;ldquo;Deploy from a branch&amp;rdquo; → 选择main分支 → Save&lt;/li&gt;
 &lt;li&gt;之后会进行自动构建，默认网址是https://user.github.io&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;部署至cloudflares-pages&#34;&gt;部署至Cloudflares Pages
+&lt;h2 id=&#34;启用cloudflares-pages&#34;&gt;启用Cloudflares Pages
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;在&lt;a class=&#34;link&#34; href=&#34;https://dash.cloudflare.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Cloudflare&lt;/a&gt;登录后，Workers 和 Pages 创建Pages → 连接到Git → 选择之前上传的Github仓库与分支main → 框架预设无 → 保存并部署。&lt;/li&gt;
@@ -786,7 +789,17 @@ cmd中输入&lt;code&gt;hugo version&lt;/code&gt;,输出以下即为成功
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        └── image2.png
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;完成之后来到&lt;code&gt;根目录&lt;/code&gt;下cmd命令：&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;编辑时可以构建本地博客实时预览，在&lt;code&gt;根目录&lt;/code&gt;下cmd命令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server -D
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;默认网址http://localhost:1313/
+完成之后来到&lt;code&gt;根目录&lt;/code&gt;下cmd命令：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -795,7 +808,7 @@ cmd中输入&lt;code&gt;hugo version&lt;/code&gt;,输出以下即为成功
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo -D
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;最后来到&lt;code&gt;根目录\public&lt;/code&gt;下提交到Github，cmd命令：&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;最后来到&lt;code&gt;根目录\public&lt;/code&gt;下提交到Github，依次输入以下cmd命令：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1

@@ -246,7 +246,7 @@
     <li><a href="#配置美化">配置&amp;美化</a></li>
     <li><a href="#上传至github">上传至Github</a></li>
     <li><a href="#启用github-pages">启用Github Pages</a></li>
-    <li><a href="#部署至cloudflares-pages">部署至Cloudflares Pages</a></li>
+    <li><a href="#启用cloudflares-pages">启用Cloudflares Pages</a></li>
     <li><a href="#日常写作">日常写作</a></li>
   </ol>
 </nav>
@@ -324,7 +324,7 @@
 
 
                 <time class="article-time--reading">
-                    5 minute read
+                    6 minute read
                 </time>
             </div>
         
@@ -344,6 +344,9 @@
     >hugo</a>+<a class="link" href="https://github.com/"  target="_blank" rel="noopener"
     >GitHub</a>/<a class="link" href="https://dash.cloudflare.com/"  target="_blank" rel="noopener"
     >Cloudflare</a>的静态页面托管服务。遂有了这篇文章及这页博客。</p>
+<blockquote>
+<p>好处是成本很低，不需要服务器甚至域名也可以不需要，维护全部交给大厂，搭建完之后每次新文章只需提交到Github便会刷新构建。不过不管是Github还是Cloudflare国内总会抽风，会不定时分地区的可用性下降。如果只是个人用，代理常开的情况下是无感的。</p>
+</blockquote>
 <h2 id="final">Final
 </h2><p><img src="/post/test/final.png"
 	width="2496"
@@ -363,7 +366,7 @@
 <h2 id="安装git与hugo">安装Git与Hugo
 </h2><h3 id="安装git">安装Git
 </h3><p><a class="link" href="https://git-scm.com/downloads"  target="_blank" rel="noopener"
-    >官网</a> 一路下一步即可</p>
+    >Git官网</a> 一路下一步即可</p>
 <h3 id="安装hugo">安装Hugo
 </h3><ol>
 <li><a class="link" href="https://github.com/gohugoio/hugo/releases"  target="_blank" rel="noopener"
@@ -402,7 +405,7 @@ cmd中输入<code>hugo version</code>,输出以下即为成功
 </ol>
 <h2 id="应用hugo主题">应用Hugo主题
 </h2><ol>
-<li>来到<code>D:\tools\hugo\blog</code>文件夹下，cmd命令
+<li>来到<code>D:\tools\hugo\blog</code>文件夹下，cmd命令：
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -999,7 +1002,7 @@ cmd中输入<code>hugo version</code>,输出以下即为成功
 </blockquote>
 <ol>
 <li>新建一个GitHub仓库，仓库名是<code>Github用户名.github.io</code>，如：<code>user.github.io</code></li>
-<li>与GitHub仓库关联，在<code>根目录\public</code>下，依次输入以下cmd命令
+<li>与GitHub仓库关联，在<code>根目录\public</code>下，依次输入以下cmd命令：
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1011,7 +1014,7 @@ cmd中输入<code>hugo version</code>,输出以下即为成功
 </span></span></code></pre></td></tr></table>
 </div>
 </div>其中user改成自己的GitHub用户名</li>
-<li>来到<code>根目录\public</code>下，依次输入以下cmd命令
+<li>来到<code>根目录\public</code>下，依次输入以下cmd命令：
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1035,7 +1038,7 @@ cmd中输入<code>hugo version</code>,输出以下即为成功
     >GitHub</a>仓库 → settings Pages → &ldquo;Deploy from a branch&rdquo; → 选择main分支 → Save</li>
 <li>之后会进行自动构建，默认网址是https://user.github.io</li>
 </ol>
-<h2 id="部署至cloudflares-pages">部署至Cloudflares Pages
+<h2 id="启用cloudflares-pages">启用Cloudflares Pages
 </h2><ol>
 <li>在<a class="link" href="https://dash.cloudflare.com/"  target="_blank" rel="noopener"
     >Cloudflare</a>登录后，Workers 和 Pages 创建Pages → 连接到Git → 选择之前上传的Github仓库与分支main → 框架预设无 → 保存并部署。</li>
@@ -1061,7 +1064,17 @@ cmd中输入<code>hugo version</code>,输出以下即为成功
 </span></span><span class="line"><span class="cl">        └── image2.png
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>完成之后来到<code>根目录</code>下cmd命令：</p>
+</div><p>编辑时可以构建本地博客实时预览，在<code>根目录</code>下cmd命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo server -D
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>默认网址http://localhost:1313/
+完成之后来到<code>根目录</code>下cmd命令：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -1070,7 +1083,7 @@ cmd中输入<code>hugo version</code>,输出以下即为成功
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo -D
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>最后来到<code>根目录\public</code>下提交到Github，cmd命令：</p>
+</div><p>最后来到<code>根目录\public</code>下提交到Github，依次输入以下cmd命令：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
