@@ -8,23 +8,23 @@
         <language>en-us</language>
         <lastBuildDate>Fri, 16 Aug 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://yukari.pages.dev/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hugo &#43; Github Pages/Cloudflare Pages搭建个人博客</title>
-        <link>https://yukari.pages.dev/post/test/</link>
+        <link>https://yukari.pages.dev/post/hugo&#43;github/</link>
         <pubDate>Fri, 16 Aug 2024 00:00:00 +0800</pubDate>
         
-        <guid>https://yukari.pages.dev/post/test/</guid>
-        <description>&lt;img src="https://yukari.pages.dev/post/test/avatar.png" alt="Featured image of post Hugo &#43; Github Pages/Cloudflare Pages搭建个人博客" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
-&lt;/h2&gt;&lt;p&gt;经历了一次服务器硬件的淘汰之后决定给自己写一些服务工具的备忘录，在notion和一众博客方案中选择了部署方便的&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://yukari.pages.dev/post/hugo&#43;github/</guid>
+        <description>&lt;img src="https://yukari.pages.dev/post/hugo&#43;github/cover.png" alt="Featured image of post Hugo &#43; Github Pages/Cloudflare Pages搭建个人博客" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+&lt;/h2&gt;&lt;p&gt;经历了一次服务器硬件的淘汰之后决定给自己写一些服务工具的备忘录以防硬盘爆炸重装时再踩一遍坑，在notion和一众博客方案中选择了部署方便的&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;hugo&lt;/a&gt;+&lt;a class=&#34;link&#34; href=&#34;https://github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub&lt;/a&gt;/&lt;a class=&#34;link&#34; href=&#34;https://dash.cloudflare.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Cloudflare&lt;/a&gt;的静态页面托管服务。遂有了这篇文章及这页博客。&lt;/p&gt;
+    &gt;Cloudflare&lt;/a&gt;的静态页面托管服务。遂有了这第一篇文章。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;好处是成本很低，不需要服务器甚至域名也可以不需要，维护全部交给大厂，搭建完之后每次新文章只需提交到Github便会刷新构建。不过不管是Github还是Cloudflare国内总会抽风，会不定时分地区的可用性下降。如果只是个人用，代理常开的情况下是无感的。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;final&#34;&gt;Final
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/post/test/final.png&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/post/hugo&amp;#43;github/final.png&#34;
 	width=&#34;2496&#34;
 	height=&#34;1596&#34;
-	srcset=&#34;https://yukari.pages.dev/post/test/final_hu7349099084906940782.png 480w, https://yukari.pages.dev/post/test/final_hu9523801787491416665.png 1024w&#34;
+	srcset=&#34;https://yukari.pages.dev/post/hugo&amp;#43;github/final_hu7349099084906940782.png 480w, https://yukari.pages.dev/post/hugo&amp;#43;github/final_hu9523801787491416665.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -746,8 +746,8 @@ cmd中输入&lt;code&gt;hugo version&lt;/code&gt;,输出以下即为成功
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server -D
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;默认网址http://localhost:1313/
-完成之后来到&lt;code&gt;根目录&lt;/code&gt;下cmd命令：&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;默认网址http://localhost:1313/ &lt;br&gt;
+完成之后来到&lt;code&gt;根目录&lt;/code&gt;下构建一次（不带server的命令会完全应用baseurl的参数，以在正式的网站上而不是localhost正确运行），cmd命令：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -770,6 +770,23 @@ cmd中输入&lt;code&gt;hugo version&lt;/code&gt;,输出以下即为成功
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;之后Github Pages/Cloudflare Pages会自动重新构建，只需稍等就可以在网页看到了&lt;/p&gt;
+&lt;h2 id=&#34;补充&#34;&gt;补充
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;修改css样式后可能需要删除&lt;code&gt;根目录\resources\_gen&lt;/code&gt;下所有文件重新构建才生效。&lt;/li&gt;
+&lt;li&gt;内容（post）不对时可能需要删除&lt;code&gt;根目录\public&lt;/code&gt;下所有文件重新构建，注意不要把.git文件夹删了。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/post/hugo&amp;#43;github/116332949_p0.jpg&#34;
+	width=&#34;6008&#34;
+	height=&#34;4173&#34;
+	srcset=&#34;https://yukari.pages.dev/post/hugo&amp;#43;github/116332949_p0_hu11823610922530195390.jpg 480w, https://yukari.pages.dev/post/hugo&amp;#43;github/116332949_p0_hu6258403364673906939.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;143&#34;
+		data-flex-basis=&#34;345px&#34;
+	
+&gt;&lt;/p&gt;
 </description>
         </item>
         
