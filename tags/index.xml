@@ -6,12 +6,28 @@
         <description>Recent content in Tags on Yukari Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 14 Jan 2024 07:07:07 +0100</lastBuildDate><atom:link href="https://yukari.pages.dev/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 16 Aug 2024 07:07:07 +0100</lastBuildDate><atom:link href="https://yukari.pages.dev/tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>1</title>
         <link>https://yukari.pages.dev/tags/1/</link>
-        <pubDate>Sun, 14 Jan 2024 07:07:07 +0100</pubDate>
+        <pubDate>Fri, 16 Aug 2024 07:07:07 +0100</pubDate>
         
         <guid>https://yukari.pages.dev/tags/1/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Blog</title>
+        <link>https://yukari.pages.dev/tags/blog/</link>
+        <pubDate>Fri, 16 Aug 2024 00:00:00 +0800</pubDate>
+        
+        <guid>https://yukari.pages.dev/tags/blog/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Hugo</title>
+        <link>https://yukari.pages.dev/tags/hugo/</link>
+        <pubDate>Fri, 16 Aug 2024 00:00:00 +0800</pubDate>
+        
+        <guid>https://yukari.pages.dev/tags/hugo/</guid>
         <description></description>
         </item>
         

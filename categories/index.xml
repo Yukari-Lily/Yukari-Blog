@@ -6,13 +6,21 @@
         <description>Recent content in Categories on Yukari Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 14 Jan 2024 07:07:07 +0100</lastBuildDate><atom:link href="https://yukari.pages.dev/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 16 Aug 2024 07:07:07 +0100</lastBuildDate><atom:link href="https://yukari.pages.dev/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Anime</title>
         <link>https://yukari.pages.dev/categories/anime/</link>
-        <pubDate>Sun, 14 Jan 2024 07:07:07 +0100</pubDate>
+        <pubDate>Fri, 16 Aug 2024 07:07:07 +0100</pubDate>
         
         <guid>https://yukari.pages.dev/categories/anime/</guid>
         <description>&lt;img src="https://yukari.pages.dev/categories/anime/008gYUgyly1hskgczds59j32cb3bfe82.jpg" alt="Featured image of post Anime" /&gt;</description>
+        </item>
+        <item>
+        <title>备忘</title>
+        <link>https://yukari.pages.dev/categories/%E5%A4%87%E5%BF%98/</link>
+        <pubDate>Fri, 16 Aug 2024 00:00:00 +0800</pubDate>
+        
+        <guid>https://yukari.pages.dev/categories/%E5%A4%87%E5%BF%98/</guid>
+        <description></description>
         </item>
         
     </channel>
