@@ -22,15 +22,18 @@ HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔�
 &lt;p&gt;&lt;strong&gt;LLOneBot&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;旧有的&lt;a class=&#34;link&#34; href=&#34;https://github.com/Mrs4s/go-cqhttp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;go-cqhttp&lt;/a&gt;方案因为QQ协议的更新经常会出现冻结和无法登录的情况，无奈替换成了性能开销比较大的&lt;a class=&#34;link&#34; href=&#34;https://github.com/LLOneBot/LLOneBot&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;LLOneBot&lt;/a&gt;方案，目前非常稳定。&lt;/p&gt;
+    &gt;LiteloaderQQNT框架的LLOneBot&lt;/a&gt;方案，目前非常稳定。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;由于QQ官方针对协议库的围追堵截, 不断更新加密方案, 我们已无力继续维护此项目. 建议Bot开发者尽快迁移至无头NTQQ项目&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;备选方案还有基于安卓端的Shamrock和基于无头ntqq的NapCatQQ方案，没有尝试过，请自行了解了&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;hoshinobot-部署&#34;&gt;HoshinoBot 部署
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;直接照搬HoshiboBot文档了，部分修改以适配LLOneBot &lt;br&gt;
+&lt;p&gt;直接照搬HoshinoBot文档了，部分修改以适配LLOneBot &lt;br&gt;
 环境 windows10&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol&gt;
