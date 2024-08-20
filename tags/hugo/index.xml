@@ -498,6 +498,7 @@ cmd中输入&lt;code&gt;hugo version&lt;/code&gt;,输出以下即为成功
 &lt;li&gt;修改css样式后可能需要删除&lt;code&gt;根目录\resources\_gen&lt;/code&gt;下所有文件重新构建才生效。&lt;/li&gt;
 &lt;li&gt;内容（post）不对时可能需要删除&lt;code&gt;根目录\public&lt;/code&gt;下所有文件重新构建，注意不要把.git文件夹删了。&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;——————&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/post/hugo&amp;#43;github/end.webp&#34;
 	width=&#34;3004&#34;
 	height=&#34;2087&#34;

@@ -6,7 +6,23 @@
         <description>Recent content in Tags on Yukari Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sat, 17 Aug 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://yukari.pages.dev/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 20 Aug 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://yukari.pages.dev/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Owncast</title>
+        <link>https://yukari.pages.dev/tags/owncast/</link>
+        <pubDate>Tue, 20 Aug 2024 00:00:00 +0800</pubDate>
+        
+        <guid>https://yukari.pages.dev/tags/owncast/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>一起看</title>
+        <link>https://yukari.pages.dev/tags/%E4%B8%80%E8%B5%B7%E7%9C%8B/</link>
+        <pubDate>Tue, 20 Aug 2024 00:00:00 +0800</pubDate>
+        
+        <guid>https://yukari.pages.dev/tags/%E4%B8%80%E8%B5%B7%E7%9C%8B/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>HoshinoBot</title>
         <link>https://yukari.pages.dev/tags/hoshinobot/</link>
         <pubDate>Sat, 17 Aug 2024 00:00:00 +0800</pubDate>
