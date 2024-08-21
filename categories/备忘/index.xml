@@ -7,12 +7,12 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <lastBuildDate>Tue, 20 Aug 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://yukari.pages.dev/categories/%E5%A4%87%E5%BF%98/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Owncast使用心得</title>
-        <link>https://yukari.pages.dev/owncast%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</link>
+        <title>Owncast简易教程&amp;使用心得</title>
+        <link>https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</link>
         <pubDate>Tue, 20 Aug 2024 00:00:00 +0800</pubDate>
         
-        <guid>https://yukari.pages.dev/owncast%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</guid>
-        <description>&lt;img src="https://yukari.pages.dev/owncast%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/cover.webp" alt="Featured image of post Owncast使用心得" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+        <guid>https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</guid>
+        <description>&lt;img src="https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/cover.webp" alt="Featured image of post Owncast简易教程&amp;使用心得" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;特别感谢22喵，给我提供了用owncast一起看的思路!&lt;/strong&gt; &lt;img src=22.jpg style=&#34;width: 80px;height: 80px; vertical-align: middle;&#34;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -21,10 +21,10 @@
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/owncast/owncast&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;owncast&lt;/a&gt;是一款开源的直播&amp;amp;聊天服务器，并提供一个简单前端页面，搭建完成后所需要做的与在大平台一样只需要开启obs进行推流即可在网页上看到自己的直播。&lt;/p&gt;
 &lt;p&gt;整体思路是推流机利用obs推流到owncast，再由owncast处理后转发到前端页面上。
-&lt;img src=&#34;https://yukari.pages.dev/owncast%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/owncast.webp&#34;
+&lt;img src=&#34;https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/owncast.webp&#34;
 	width=&#34;1322&#34;
 	height=&#34;521&#34;
-	srcset=&#34;https://yukari.pages.dev/owncast%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/owncast_hu14500656381310030113.webp 1024w, https://yukari.pages.dev/owncast%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/owncast_hu16688883350750872348.webp 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/owncast_hu14500656381310030113.webp 1024w, https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/owncast_hu16688883350750872348.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -89,10 +89,10 @@
 &lt;h2 id=&#34;一些设置&#34;&gt;一些设置
 &lt;/h2&gt;&lt;h3 id=&#34;表情包&#34;&gt;表情包
 &lt;/h3&gt;&lt;p&gt;可以在/app/data/emoji中批量加入，以文件名为顺序&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/owncast%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/emoji.webp&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/emoji.webp&#34;
 	width=&#34;1738&#34;
 	height=&#34;1246&#34;
-	srcset=&#34;https://yukari.pages.dev/owncast%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/emoji_hu9707014991149978888.webp 1024w, https://yukari.pages.dev/owncast%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/emoji_hu17297367350693888389.webp 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/emoji_hu9707014991149978888.webp 1024w, https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/emoji_hu17297367350693888389.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -188,10 +188,10 @@
 &lt;p&gt;如果使用OBS，推荐使用多路推流插件&lt;a class=&#34;link&#34; href=&#34;https://github.com/sorayuki/obs-multi-rtmp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;obs-multi-rtmp&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;然后如图新建一个FFmpeg编码器设置来推流直通模式的owncast，这样可以保证最大的兼容性&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/owncast%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/obs.webp&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/obs.webp&#34;
 	width=&#34;1456&#34;
 	height=&#34;1071&#34;
-	srcset=&#34;https://yukari.pages.dev/owncast%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/obs_hu8304698998118882701.webp 1024w, https://yukari.pages.dev/owncast%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/obs_hu8359345455240352701.webp 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/obs_hu8304698998118882701.webp 1024w, https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/obs_hu8359345455240352701.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -201,10 +201,10 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;——————&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/owncast%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/end.webp&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/end.webp&#34;
 	width=&#34;1729&#34;
 	height=&#34;1221&#34;
-	srcset=&#34;https://yukari.pages.dev/owncast%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/end_hu9019644828092597981.webp 1024w, https://yukari.pages.dev/owncast%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/end_hu213077440447342796.webp 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/end_hu9019644828092597981.webp 1024w, https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/end_hu213077440447342796.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	

@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction 特别感谢22喵，给我提供了用owncast一起看的思路! 去年在啊b一起看番被叔叔反复制裁，搭建了owncast发现完美符合自己的需求 own">
+<title>Owncast简易教程&amp;使用心得</title>
+
+<link rel='canonical' href='https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/'>
+
+<link rel="stylesheet" href="/scss/style.min.884433a32f40f09300c8c59a1df1d274e33546992674e3e47c6a775be44448f6.css"><meta property='og:title' content="Owncast简易教程&使用心得">
+<meta property='og:description' content="Introduction 特别感谢22喵，给我提供了用owncast一起看的思路! 去年在啊b一起看番被叔叔反复制裁，搭建了owncast发现完美符合自己的需求 own">
+<meta property='og:url' content='https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/'>
+<meta property='og:site_name' content='Yukari Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Owncast' /><meta property='article:tag' content='一起看' /><meta property='article:published_time' content='2024-08-20T00:00:00&#43;08:00'/><meta property='article:modified_time' content='2024-08-20T00:00:00&#43;08:00'/><meta property='og:image' content='https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/cover.webp' />
+<meta name="twitter:title" content="Owncast简易教程&使用心得">
+<meta name="twitter:description" content="Introduction 特别感谢22喵，给我提供了用owncast一起看的思路! 去年在啊b一起看番被叔叔反复制裁，搭建了owncast发现完美符合自己的需求 own"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/cover.webp' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+  
+
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu8649795592182595522.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🐾</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Yukari Blog</a></h1>
+            <h2 class="site-description">备忘/归档</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/Yukari-Lily'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://x.com/Yukari_daze'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/p/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/p/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#owncast介绍">owncast介绍</a></li>
+    <li><a href="#开始安装">开始安装</a>
+      <ol>
+        <li><a href="#一键脚本">一键脚本</a></li>
+        <li><a href="#docker">docker</a></li>
+      </ol>
+    </li>
+    <li><a href="#一些设置">一些设置</a>
+      <ol>
+        <li><a href="#表情包">表情包</a></li>
+        <li><a href="#css">CSS</a></li>
+        <li><a href="#视频直通设置">视频直通设置</a></li>
+        <li><a href="#obs设置">OBS设置</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/">
+                <img src="/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/cover_hu15710889605497057183.webp"
+                        srcset="/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/cover_hu15710889605497057183.webp 800w, /owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/cover_hu14669275164698896346.webp 1600w"
+                        width="800" 
+                        height="450" 
+                        loading="lazy"
+                        alt="Featured image of post Owncast简易教程&amp;使用心得" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E5%A4%87%E5%BF%98/" style="background-color: #ec6d2c; color: #fff;">
+                备忘
+            </a>
+        
+            <a href="/categories/%E5%8A%A8%E7%94%BB%E7%89%87/" style="background-color: #ec6d2c; color: #fff;">
+                动画片
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/">Owncast简易教程&amp;使用心得</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Aug 20, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    3 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="introduction">Introduction
+</h2><blockquote>
+<p><strong>特别感谢22喵，给我提供了用owncast一起看的思路!</strong> <img src=22.jpg style="width: 80px;height: 80px; vertical-align: middle;"></p>
+</blockquote>
+<p>去年在啊b一起看番被叔叔反复制裁，搭建了owncast发现完美符合自己的需求</p>
+<h2 id="owncast介绍">owncast介绍
+</h2><p><a class="link" href="https://github.com/owncast/owncast"  target="_blank" rel="noopener"
+    >owncast</a>是一款开源的直播&amp;聊天服务器，并提供一个简单前端页面，搭建完成后所需要做的与在大平台一样只需要开启obs进行推流即可在网页上看到自己的直播。</p>
+<p>整体思路是推流机利用obs推流到owncast，再由owncast处理后转发到前端页面上。
+<img src="/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/owncast.webp"
+	width="1322"
+	height="521"
+	srcset="/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/owncast_hu14500656381310030113.webp 1024w, /owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/owncast_hu16688883350750872348.webp 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="253"
+		data-flex-basis="608px"
+	
+></p>
+<p>因为转码和转发都要依赖owncast所在的服务器，所以对带宽和配置都有不小的压力。</p>
+<ol>
+<li>带宽方面以转码模式下能设置的最大码率6000kbps为例，至少需要一台带宽在15M左右的服务器才能保证同时两人观看。</li>
+<li>配置方面如果是转码模式，普通的小鸡的cpu肯定是吃不消的，所以这里非常推荐使用直通模式，即不转码直接转发到页面上。     <code>Owncast 有一个可选设置，可以关闭对传入流的重新编码，从而可能节省大量硬件使用率，并以更少的资源支持更高质量的流。但是，由于您的视频不会被重新编码，因此某些来源的某些视频可能最终根本无法播放。这就是启用此功能的风险。</code> <br>
+实测下来<strong>可以非常稳定</strong>。</li>
+</ol>
+<h2 id="开始安装">开始安装
+</h2><h3 id="一键脚本">一键脚本
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">curl -s https://owncast.online/install.sh | bash
+</span></span><span class="line"><span class="cl">cd owncast
+</span></span><span class="line"><span class="cl">./owncast
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="docker">docker
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-docker" data-lang="docker"><span class="line"><span class="cl">version: <span class="s2">&#34;3.4&#34;</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>services:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>  owncast:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    image: gabekangas/owncast:latest<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    container_name: <span class="s2">&#34;owncast&#34;</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    restart: unless-stopped<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    ports:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - <span class="s2">&#34;1935:1935&#34;</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - <span class="s2">&#34;8080:8080&#34;</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    volumes:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - <span class="s2">&#34;./data:/app/data&#34;</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>拉起后就能在<code>你的服务器地址:8080/admin</code>进入管理页面，默认用户名<code>admin</code>，密码<code>abc123</code> <br>
+推流地址默认是<code>rtmp://你的服务器地址:1935/live</code></p>
+<h2 id="一些设置">一些设置
+</h2><h3 id="表情包">表情包
+</h3><p>可以在/app/data/emoji中批量加入，以文件名为顺序</p>
+<p><img src="/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/emoji.webp"
+	width="1738"
+	height="1246"
+	srcset="/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/emoji_hu9707014991149978888.webp 1024w, /owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/emoji_hu17297367350693888389.webp 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="139"
+		data-flex-basis="334px"
+	
+></p>
+<h3 id="css">CSS
+</h3><p>贴一个我的自定义CSS，供参考</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-CSS" data-lang="CSS"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">picmo__searchContainer</span><span class="p">{</span><span class="k">display</span><span class="p">:</span><span class="kc">none</span> <span class="cp">!important</span><span class="p">;}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">picmo__emojiCategory</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">:</span><span class="nd">first-of-type</span><span class="o">)</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">:</span><span class="nd">last-of-type</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span><span class="nt">class</span><span class="o">=</span><span class="s2">&#34;picmo__categoryTab&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">display</span><span class="p">:</span> <span class="kc">none</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>  
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s2">&#34;picmo__picker picmo__light&#34;</span><span class="o">],</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&#34; picmo__picker picmo__light&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--emojis-per-row</span><span class="p">:</span> <span class="mi">5</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nv">--row-count</span><span class="p">:</span> <span class="mi">4</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nt">footer</span> <span class="p">{</span><span class="k">visibility</span><span class="p">:</span><span class="kc">hidden</span><span class="p">;}</span><span class="c">/*底栏隐藏*/</span>
+</span></span><span class="line"><span class="cl"><span class="nt">div</span><span class="p">.</span><span class="nc">OfflineBanner_lastLiveDate__K35HM</span> <span class="p">{</span><span class="k">visibility</span><span class="p">:</span><span class="kc">hidden</span><span class="p">;}</span><span class="c">/*上次直播信息隐藏*/</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">emoji</span> <span class="p">{</span><span class="k">height</span><span class="p">:</span><span class="mi">100</span><span class="kt">px</span><span class="p">}</span><span class="c">/*表情包放大*/</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">picmo__picker</span><span class="p">.</span><span class="nc">picmo__picker</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">--emoji-size</span><span class="p">:</span> <span class="mi">5</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">--emoji-size-multiplier</span><span class="p">:</span> <span class="mf">1.25</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">--header-height</span><span class="p">:</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span><span class="c">/*顶栏50px*/</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">--chat-message-text-size</span><span class="p">:</span> <span class="mf">1.15</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">--player-container-height</span><span class="p">:</span> <span class="mi">90</span><span class="kt">vh</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s2">&#34;Sidebar_root&#34;</span><span class="o">],</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&#34; Sidebar_root&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">top</span><span class="p">:</span> <span class="nb">calc</span><span class="p">(</span><span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">header</span><span class="o">-</span><span class="n">height</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="kt">px</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c">/* Add padding to chat */</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s2">&#34;ChatContainer_virtuoso&#34;</span><span class="o">]</span> <span class="o">&gt;</span> <span class="nt">div</span> <span class="o">&gt;</span> <span class="nt">div</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&#34; ChatContainer_virtuoso&#34;</span><span class="o">]</span> <span class="o">&gt;</span> <span class="nt">div</span> <span class="o">&gt;</span> <span class="nt">div</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">padding-left</span><span class="p">:</span> <span class="mf">0.75</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">padding-right</span><span class="p">:</span> <span class="mf">0.75</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c">/* Show user name for each message, inline */</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s2">&#34;ChatUserMessage_repeat&#34;</span><span class="o">],</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&#34; ChatUserMessage_repeat&#34;</span><span class="o">],</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s2">&#34;ChatUserMessage_user&#34;</span><span class="o">],</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&#34; ChatUserMessage_user&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">margin-right</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s2">&#34;ChatUserMessage_user_&#34;</span><span class="o">]</span><span class="p">::</span><span class="nd">after</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&#34; ChatUserMessage_user_&#34;</span><span class="o">]</span><span class="p">::</span><span class="nd">after</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s2">&#34;ChatUserMessage_repeat&#34;</span><span class="o">]</span><span class="p">::</span><span class="nd">after</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&#34; ChatUserMessage_repeat&#34;</span><span class="o">]</span><span class="p">::</span><span class="nd">after</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">content</span><span class="p">:</span> <span class="s2">&#34;: &#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">font-weight</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s2">&#34;ChatUserMessage_message&#34;</span><span class="o">]</span> <span class="nt">p</span><span class="o">,</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&#34; ChatUserMessage_message&#34;</span><span class="o">]</span> <span class="nt">p</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">display</span><span class="p">:</span> <span class="kc">inline</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c">/* Fix spacing between leading message and followups */</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s2">&#34;ChatUserMessage_messagePadding&#34;</span><span class="o">],</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&#34; ChatUserMessage_messagePadding&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">^=</span><span class="s2">&#34;ChatUserMessage_background&#34;</span><span class="o">],</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">class</span><span class="o">*=</span><span class="s2">&#34; ChatUserMessage_background&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">background-color</span><span class="p">:</span> <span class="kc">transparent</span><span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span></code></pre></div><h3 id="视频直通设置">视频直通设置
+</h3><p>管理页面<code>Configuration → Video → Add a new variant → Video Passthrough</code>启用后保存，然后删去其他输出格式。 <br>
+此时这个页面上其他设置均是失效的。</p>
+<h3 id="obs设置">OBS设置
+</h3><blockquote>
+<p>如果熟悉FFmpeg可以直接用命令推流，不需要OBS</p>
+</blockquote>
+<p>如果使用OBS，推荐使用多路推流插件<a class="link" href="https://github.com/sorayuki/obs-multi-rtmp"  target="_blank" rel="noopener"
+    >obs-multi-rtmp</a></p>
+<p>然后如图新建一个FFmpeg编码器设置来推流直通模式的owncast，这样可以保证最大的兼容性</p>
+<p><img src="/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/obs.webp"
+	width="1456"
+	height="1071"
+	srcset="/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/obs_hu8304698998118882701.webp 1024w, /owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/obs_hu8359345455240352701.webp 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="135"
+		data-flex-basis="326px"
+	
+></p>
+<p>——————</p>
+<p><img src="/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/end.webp"
+	width="1729"
+	height="1221"
+	srcset="/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/end_hu9019644828092597981.webp 1024w, /owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/end_hu213077440447342796.webp 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="141"
+		data-flex-basis="339px"
+	
+></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/owncast/">Owncast</a>
+        
+            <a href="/tags/%E4%B8%80%E8%B5%B7%E7%9C%8B/">一起看</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/hoshinobot-llonebot%E9%83%A8%E7%BD%B2qq%E6%9C%BA%E5%99%A8%E4%BA%BA/">
+        
+        
+            <div class="article-image">
+                <img src="/hoshinobot-llonebot%E9%83%A8%E7%BD%B2qq%E6%9C%BA%E5%99%A8%E4%BA%BA/cover.8b13cd19b65d0064b8999ef56643ad38_hu13044600044034076513.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post HoshinoBot&#43;LLOneBot部署QQ机器人"
+                        
+                        data-hash="md5-ixPNGbZdAGS4mZ71ZkOtOA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">HoshinoBot&#43;LLOneBot部署QQ机器人</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/hugo--github-pages/cloudflare-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+        
+        
+            <div class="article-image">
+                <img src="/hugo--github-pages/cloudflare-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/cover.961c72bb24d0fa42d3cd1ff27aca85fd_hu14754908730848571063.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Hugo &#43; Github Pages/Cloudflare Pages搭建个人博客"
+                        
+                        data-hash="md5-lhxyuyTQ&#43;kLTzR/yesqF/Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Hugo &#43; Github Pages/Cloudflare Pages搭建个人博客</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2024 Yukari Blog
+    </section>
+    
+    <section class="powerby">
+        
+            最爱22💖 <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
