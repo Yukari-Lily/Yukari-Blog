@@ -435,282 +435,299 @@ cmd中输入<code>hugo version</code>,输出以下即为成功
 </li>
 <li>
 <p>接下来是样式的美化，供参考，<code>根目录\assets\scss</code>下新建<code>custom.scss</code>，并编辑：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"></code></pre></div></li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl">  <span class="o">//</span><span class="nt">----------------------------------------------------</span>
+</span></span><span class="line"><span class="cl">  <span class="o">//</span> <span class="nt">页面基本配色</span>
+</span></span><span class="line"><span class="cl">  <span class="p">:</span><span class="nd">root</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="err">//</span> <span class="err">全局顶部边距</span>
+</span></span><span class="line"><span class="cl">      <span class="nv">--main-top-padding</span><span class="p">:</span> <span class="mi">30</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="err">//</span> <span class="err">全局卡片圆角</span>
+</span></span><span class="line"><span class="cl">      <span class="nv">--card-border-radius</span><span class="p">:</span> <span class="mi">25</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="err">//</span> <span class="err">标签云卡片圆角</span>
+</span></span><span class="line"><span class="cl">      <span class="nv">--tag-border-radius</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="err">//</span> <span class="err">卡片间距</span>
+</span></span><span class="line"><span class="cl">      <span class="nv">--section-separation</span><span class="p">:</span> <span class="mi">40</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="err">//</span> <span class="err">全局字体大小</span>
+</span></span><span class="line"><span class="cl">      <span class="nv">--article-font-size</span><span class="p">:</span> <span class="mf">1.8</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="err">//</span> <span class="err">行内代码背景色</span>
+</span></span><span class="line"><span class="cl">      <span class="nv">--code-background-color</span><span class="p">:</span> <span class="mh">#f8f8f8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="err">//</span> <span class="err">行内代码前景色</span>
+</span></span><span class="line"><span class="cl">      <span class="nv">--code-text-color</span><span class="p">:</span> <span class="mh">#e96900</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="err">//</span> <span class="err">暗色模式下样式</span>
+</span></span><span class="line"><span class="cl">      <span class="err">&amp;[data-scheme=&#34;dark&#34;]</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">        <span class="err">//</span> <span class="err">行内代码背景色</span>
+</span></span><span class="line"><span class="cl">      <span class="nv">--code-background-color</span><span class="p">:</span> <span class="mh">#f8f8f8</span><span class="mi">14</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="err">//</span> <span class="err">行内代码前景色</span>
+</span></span><span class="line"><span class="cl">      <span class="nv">--code-text-color</span><span class="p">:</span> <span class="mh">#e96900</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="err">//</span> <span class="err">暗黑模式下背景色</span>
+</span></span><span class="line"><span class="cl">      <span class="err">//</span><span class="nv">--body-background</span><span class="p">:</span> <span class="mh">#000</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="err">//</span> <span class="err">暗黑模式下卡片背景色</span>
+</span></span><span class="line"><span class="cl">      <span class="err">//</span><span class="nv">--card-background</span><span class="p">:</span> <span class="nb">hsl</span><span class="p">(</span><span class="mi">225</span> <span class="mi">13</span><span class="kt">%</span> <span class="mi">8</span><span class="kt">%</span> <span class="o">/</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span><span class="nt">------------------------------------------------------</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="nt">修复引用块内容窄页面显示问题</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">a</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">word-break</span><span class="p">:</span> <span class="n">break-all</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">code</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">word-break</span><span class="p">:</span> <span class="n">break-all</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">//</span><span class="nt">---------------------------------------------------</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="nt">文章封面高度</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">article-list</span> <span class="nt">article</span> <span class="p">.</span><span class="nc">article-image</span> <span class="nt">img</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">height</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">object-fit</span><span class="p">:</span> <span class="kc">cover</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="err">@include</span> <span class="err">respond(md)</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">          <span class="k">height</span><span class="p">:</span> <span class="mi">250</span><span class="kt">px</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="p">@</span><span class="k">include</span> <span class="nt">respond</span><span class="o">(</span><span class="nt">xl</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nt">height</span><span class="o">:</span> <span class="nt">285px</span> <span class="o">!</span><span class="nt">important</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">//</span><span class="nt">--------------------------------------------------</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="nt">文章内容图片圆角阴影</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">article-page</span> <span class="p">.</span><span class="nc">main-article</span> <span class="p">.</span><span class="nc">article-content</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="err">img</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">max-width</span><span class="p">:</span> <span class="mi">96</span><span class="kt">%</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">height</span><span class="p">:</span> <span class="kc">auto</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">//</span><span class="nt">------------------------------------------------</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="nt">文章内容引用块样式</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">article-content</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="err">blockquote</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">border-left</span><span class="p">:</span> <span class="mi">6</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#d57b5e</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">background</span><span class="p">:</span> <span class="mh">#ffefdf</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">data-scheme</span><span class="o">=</span><span class="s2">&#34;dark&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="err">.article-content</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">        <span class="err">blockquote</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">          <span class="k">border-left</span><span class="p">:</span> <span class="mi">6</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#d57b5e</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="k">background</span><span class="p">:</span> <span class="mh">#d57c5e</span><span class="mi">54</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="nt">---------------------------------------</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="nt">代码块样式修改</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">highlight</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">max-width</span><span class="p">:</span> <span class="mi">102</span><span class="kt">%</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">pre</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="k">padding</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">card</span><span class="o">-</span><span class="n">padding</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">border-radius</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">margin-left</span><span class="p">:</span> <span class="mi">-7</span><span class="kt">px</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">margin-right</span><span class="p">:</span> <span class="mi">-12</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">box-shadow</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">shadow</span><span class="o">-</span><span class="n">l1</span><span class="p">)</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="err">&amp;:hover</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">        <span class="err">.copyCodeButton</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">          <span class="k">opacity</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="err">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">//</span> <span class="nt">keep</span> <span class="nt">Codeblocks</span> <span class="nt">LTR</span>
+</span></span><span class="line"><span class="cl">      <span class="o">[</span><span class="nt">dir</span><span class="o">=</span><span class="s2">&#34;rtl&#34;</span><span class="o">]</span> <span class="o">&amp;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">direction</span><span class="p">:</span> <span class="kc">ltr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="nt">pre</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">margin</span><span class="p">:</span> <span class="kc">initial</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">width</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="nt">light模式下的代码块样式调整</span>
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">data-scheme</span><span class="o">=</span><span class="s2">&#34;light&#34;</span><span class="o">]</span> <span class="p">.</span><span class="nc">article-content</span> <span class="p">.</span><span class="nc">highlight</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">background-color</span><span class="p">:</span> <span class="mh">#fff9f3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">[</span><span class="nt">data-scheme</span><span class="o">=</span><span class="s2">&#34;light&#34;</span><span class="o">]</span> <span class="p">.</span><span class="nc">chroma</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">color</span><span class="p">:</span> <span class="mh">#ff6f00</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">background-color</span><span class="p">:</span> <span class="mh">#fff9f3</span><span class="n">cc</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">//</span><span class="nt">-------------------------------------------</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="nt">设置选中字体的区域背景颜色</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span><span class="nt">修改选中颜色</span>
+</span></span><span class="line"><span class="cl">    <span class="p">::</span><span class="nd">selection</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">background</span><span class="p">:</span> <span class="mh">#34495e</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">a</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">accent</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="err">&amp;:hover</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">accent</span><span class="o">-</span><span class="kc">color</span><span class="o">-</span><span class="n">darker</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">&amp;</span><span class="p">.</span><span class="nc">link</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">color</span><span class="p">:</span> <span class="mh">#4288b9</span><span class="n">ad</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">font-weight</span><span class="p">:</span> <span class="mi">600</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="err">&amp;:hover</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">          <span class="k">text-decoration</span><span class="p">:</span> <span class="kc">underline</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">//</span><span class="nt">-------------------------------------------------</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span><span class="nt">文章封面高度更改</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">article-list</span> <span class="nt">article</span> <span class="p">.</span><span class="nc">article-image</span> <span class="nt">img</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">height</span><span class="p">:</span> <span class="mi">150</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">object-fit</span><span class="p">:</span> <span class="kc">cover</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="err">@include</span> <span class="err">respond(md)</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">height</span><span class="p">:</span> <span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="p">@</span><span class="k">include</span> <span class="nt">respond</span><span class="o">(</span><span class="nt">xl</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">height</span><span class="o">:</span> <span class="nt">305px</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">//</span><span class="nt">---------------------------------------------------</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="nt">全局页面布局间距调整</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">main-container</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">min-height</span><span class="p">:</span> <span class="mi">100</span><span class="kt">vh</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">align-items</span><span class="p">:</span> <span class="kc">flex-start</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">15</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">gap</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">section</span><span class="o">-</span><span class="n">separation</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="k">padding-top</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">main</span><span class="o">-</span><span class="kc">top</span><span class="o">-</span><span class="n">padding</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="err">@include</span> <span class="err">respond(md)</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">37</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">//</span><span class="nt">--------------------------------------------------</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span><span class="nt">页面三栏宽度调整</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">container</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">margin-left</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">margin-right</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="err">.left-sidebar</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">order</span><span class="p">:</span> <span class="mi">-3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">max-width</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">left</span><span class="o">-</span><span class="n">sidebar</span><span class="o">-</span><span class="n">max</span><span class="o">-</span><span class="n">width</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="p">.</span><span class="nc">right-sidebar</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">order</span><span class="p">:</span> <span class="mi">-1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">max-width</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">right</span><span class="o">-</span><span class="n">sidebar</span><span class="o">-</span><span class="n">max</span><span class="o">-</span><span class="n">width</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="err">///</span> <span class="err">Display</span> <span class="err">right</span> <span class="err">sidebar</span> <span class="err">when</span> <span class="k">min-width</span><span class="p">:</span> <span class="n">lg</span>
+</span></span><span class="line"><span class="cl">        <span class="o">@</span><span class="n">include</span> <span class="nf">respond</span><span class="p">(</span><span class="n">lg</span><span class="p">)</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">          <span class="k">display</span><span class="o">:</span> <span class="kc">flex</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="err">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">&amp;</span><span class="p">.</span><span class="nc">extended</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="err">@include</span> <span class="err">respond(md)</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">          <span class="k">max-width</span><span class="p">:</span> <span class="mi">1024</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">--left-sidebar-max-width</span><span class="p">:</span> <span class="mi">25</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">--right-sidebar-max-width</span><span class="p">:</span> <span class="mi">22</span><span class="kt">%</span> <span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="p">@</span><span class="k">include</span> <span class="nt">respond</span><span class="o">(</span><span class="nt">lg</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nt">max-width</span><span class="o">:</span> <span class="nt">1280px</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nt">--left-sidebar-max-width</span><span class="o">:</span> <span class="nt">20</span><span class="o">%;</span>
+</span></span><span class="line"><span class="cl">          <span class="nt">--right-sidebar-max-width</span><span class="o">:</span> <span class="nt">30</span><span class="o">%;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="p">@</span><span class="k">include</span> <span class="nt">respond</span><span class="o">(</span><span class="nt">xl</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nt">max-width</span><span class="o">:</span> <span class="nt">1453px</span><span class="o">;</span> <span class="o">//</span><span class="nt">1536px</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nt">--left-sidebar-max-width</span><span class="o">:</span> <span class="nt">15</span><span class="o">%;</span>
+</span></span><span class="line"><span class="cl">          <span class="nt">--right-sidebar-max-width</span><span class="o">:</span> <span class="nt">25</span><span class="o">%;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="err">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">      <span class="o">&amp;</span><span class="p">.</span><span class="nc">compact</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="err">@include</span> <span class="err">respond(md)</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nv">--left-sidebar-max-width</span><span class="p">:</span> <span class="mi">25</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="k">max-width</span><span class="p">:</span> <span class="mi">768</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="p">@</span><span class="k">include</span> <span class="nt">respond</span><span class="o">(</span><span class="nt">lg</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nt">max-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">          <span class="nt">--left-sidebar-max-width</span><span class="o">:</span> <span class="nt">20</span><span class="o">%;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="p">@</span><span class="k">include</span> <span class="nt">respond</span><span class="o">(</span><span class="nt">xl</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="nt">max-width</span><span class="o">:</span> <span class="nt">1280px</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">//</span><span class="nt">-------------------------------------------------------</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span><span class="nt">全局页面小图片样式微调</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">article-list--compact</span> <span class="nt">article</span> <span class="p">.</span><span class="nc">article-image</span> <span class="nt">img</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">width</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">image</span><span class="o">-</span><span class="n">size</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="k">height</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">image</span><span class="o">-</span><span class="n">size</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="k">object-fit</span><span class="p">:</span> <span class="kc">cover</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">border-radius</span><span class="p">:</span> <span class="mi">17</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">//</span><span class="nt">----------------------------------------------------</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span><span class="nt">固定代码块的高度</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">article-content</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="err">.highlight</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">          <span class="k">padding</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">card</span><span class="o">-</span><span class="n">padding</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">          <span class="err">pre</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">              <span class="k">width</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">              <span class="k">max-height</span><span class="p">:</span> <span class="mi">20</span><span class="kt">em</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="o">//</span><span class="nt">--------------------------------------------------</span>
+</span></span><span class="line"><span class="cl">    <span class="o">//</span> <span class="nt">修改首页搜索框样式</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">search-form</span><span class="p">.</span><span class="nc">widget</span> <span class="nt">input</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">font-size</span><span class="p">:</span> <span class="mf">1.5</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="k">padding</span><span class="p">:</span> <span class="mi">44</span><span class="kt">px</span> <span class="mi">25</span><span class="kt">px</span> <span class="mi">19</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="o">//</span><span class="nt">--------------------------------------------------</span>
+</span></span><span class="line"><span class="cl">  <span class="o">//</span><span class="nt">归档页面双栏</span>
+</span></span><span class="line"><span class="cl">  <span class="c">/* 归档页面两栏 */</span>
+</span></span><span class="line"><span class="cl">  <span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="p">.</span><span class="nc">article-list--compact</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">display</span><span class="p">:</span> <span class="k">grid</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">grid-template-columns</span><span class="p">:</span> <span class="mi">1</span><span class="n">fr</span> <span class="mi">1</span><span class="n">fr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">background</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">box-shadow</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">gap</span><span class="p">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="err">article</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">          <span class="k">background</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">card</span><span class="o">-</span><span class="n">background</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">          <span class="k">border</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="k">box-shadow</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">shadow</span><span class="o">-</span><span class="n">l2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">          <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="k">border-radius</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span></code></pre></div></li>
 </ol>
-<p>//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-
-// 页面基本配色
-:root {
-// 全局顶部边距
-&ndash;main-top-padding: 30px;
-// 全局卡片圆角
-&ndash;card-border-radius: 25px;
-// 标签云卡片圆角
-&ndash;tag-border-radius: 8px;
-// 卡片间距
-&ndash;section-separation: 40px;
-// 全局字体大小
-&ndash;article-font-size: 1.8rem;
-// 行内代码背景色
-&ndash;code-background-color: #f8f8f8;
-// 行内代码前景色
-&ndash;code-text-color: #e96900;
-// 暗色模式下样式
-&amp;[data-scheme=&ldquo;dark&rdquo;] {
-// 行内代码背景色
-&ndash;code-background-color: #f8f8f814;
-// 行内代码前景色
-&ndash;code-text-color: #e96900;
-// 暗黑模式下背景色
-//&ndash;body-background: #000;
-// 暗黑模式下卡片背景色
-//&ndash;card-background: hsl(225 13% 8% / 1);
-}
-}
-//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
-// 修复引用块内容窄页面显示问题
-a {
-word-break: break-all;
-}</p>
-<p>code {
-word-break: break-all;
-}</p>
-<p>//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
-// 文章封面高度
-.article-list article .article-image img {
-width: 100%;
-height: 200px !important;
-object-fit: cover;</p>
-<pre><code>@include respond(md) {
-    height: 250px !important;
-}
-
-@include respond(xl) {
-    height: 285px !important;
-}
-</code></pre>
-<p>}</p>
-<p>//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
-// 文章内容图片圆角阴影
-.article-page .main-article .article-content {
-img {
-max-width: 96% !important;
-height: auto !important;
-border-radius: 8px;
-}
-}</p>
-<p>//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
-// 文章内容引用块样式
-.article-content {
-blockquote {
-border-left: 6px solid #d57b5e !important;
-background: #ffefdf;
-}
-}
-[data-scheme=&ldquo;dark&rdquo;] {
-.article-content {
-blockquote {
-border-left: 6px solid #d57b5e !important;
-background: #d57c5e54;
-}
-}
-}
-// &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
-// 代码块样式修改
-.highlight {
-max-width: 102% !important;
-background-color: var(&ndash;pre-background-color);
-padding: var(&ndash;card-padding);
-position: relative;
-border-radius: 20px;
-margin-left: -7px !important;
-margin-right: -12px;
-box-shadow: var(&ndash;shadow-l1) !important;</p>
-<pre><code>&amp;:hover {
-  .copyCodeButton {
-    opacity: 1;
-  }
-}
-
-// keep Codeblocks LTR
-[dir=&quot;rtl&quot;] &amp; {
-  direction: ltr;
-}
-
-pre {
-  margin: initial;
-  padding: 0;
-  margin: 0;
-  width: auto;
-}
-</code></pre>
-<p>}</p>
-<p>// light模式下的代码块样式调整
-[data-scheme=&ldquo;light&rdquo;] .article-content .highlight {
-background-color: #fff9f3;
-}</p>
-<p>[data-scheme=&ldquo;light&rdquo;] .chroma {
-color: #ff6f00;
-background-color: #fff9f3cc;
-}</p>
-<p>//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-
-// 设置选中字体的区域背景颜色
-//修改选中颜色
-::selection {
-color: #fff;
-background: #34495e;
-}</p>
-<p>a {
-text-decoration: none;
-color: var(&ndash;accent-color);</p>
-<pre><code>&amp;:hover {
-  color: var(--accent-color-darker);
-}
-
-&amp;.link {
-  color: #4288b9ad;
-  font-weight: 600;
-  padding: 0 2px;
-  text-decoration: none;
-  cursor: pointer;
-
-  &amp;:hover {
-    text-decoration: underline;
-  }
-}
-</code></pre>
-<p>}</p>
-<p>//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-
-//文章封面高度更改
-.article-list article .article-image img {
-width: 100%;
-height: 150px;
-object-fit: cover;</p>
-<pre><code>@include respond(md) {
-  height: 200px;
-}
-
-@include respond(xl) {
-  height: 305px;
-}
-</code></pre>
-<p>}</p>
-<p>//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
-// 全局页面布局间距调整
-.main-container {
-min-height: 100vh;
-align-items: flex-start;
-padding: 0 15px;
-gap: var(&ndash;section-separation);
-padding-top: var(&ndash;main-top-padding);</p>
-<pre><code>@include respond(md) {
-  padding: 0 37px;
-}
-</code></pre>
-<p>}</p>
-<p>//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
-//页面三栏宽度调整
-.container {
-margin-left: auto;
-margin-right: auto;</p>
-<pre><code>.left-sidebar {
-  order: -3;
-  max-width: var(--left-sidebar-max-width);
-}
-
-.right-sidebar {
-  order: -1;
-  max-width: var(--right-sidebar-max-width);
-
-  /// Display right sidebar when min-width: lg
-  @include respond(lg) {
-    display: flex;
-  }
-}
-
-&amp;.extended {
-  @include respond(md) {
-    max-width: 1024px;
-    --left-sidebar-max-width: 25%;
-    --right-sidebar-max-width: 22% !important;
-  }
-
-  @include respond(lg) {
-    max-width: 1280px;
-    --left-sidebar-max-width: 20%;
-    --right-sidebar-max-width: 30%;
-  }
-
-  @include respond(xl) {
-    max-width: 1453px; //1536px;
-    --left-sidebar-max-width: 15%;
-    --right-sidebar-max-width: 25%;
-  }
-}
-
-&amp;.compact {
-  @include respond(md) {
-    --left-sidebar-max-width: 25%;
-    max-width: 768px;
-  }
-
-  @include respond(lg) {
-    max-width: 1024px;
-    --left-sidebar-max-width: 20%;
-  }
-
-  @include respond(xl) {
-    max-width: 1280px;
-  }
-}
-</code></pre>
-<p>}</p>
-<p>//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-
-//全局页面小图片样式微调
-.article-list&ndash;compact article .article-image img {
-width: var(&ndash;image-size);
-height: var(&ndash;image-size);
-object-fit: cover;
-border-radius: 17%;
-}</p>
-<p>//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-
-//固定代码块的高度
-.article-content {
-.highlight {
-padding: var(&ndash;card-padding);
-pre {
-width: auto;
-max-height: 20em;
-}
-}
-}</p>
-<p>//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
-// 修改首页搜索框样式
-.search-form.widget input {
-font-size: 1.5rem;
-padding: 44px 25px 19px;
-}</p>
-<p>//&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;
-//归档页面双栏
-/* 归档页面两栏 */
-@media (min-width: 1024px) {
-.article-list&ndash;compact {
-display: grid;
-grid-template-columns: 1fr 1fr;
-background: none;
-box-shadow: none;
-gap: 1rem;</p>
-<pre><code>  article {
-    background: var(--card-background);
-    border: none;
-    box-shadow: var(--shadow-l2);
-    margin-bottom: 8px;
-    border-radius: 16px;
-  }
-}
-</code></pre>
-<p>}</p>
-<pre><code>```
-</code></pre>
 <h2 id="上传至github">上传至Github
 </h2><blockquote>
 <p>在进行过一次<code>hugo</code>命令之后会在<code>根目录\public</code>下构建静态网站，需要上传至Github的就是这一部分</p>
