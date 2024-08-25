@@ -19,15 +19,30 @@
 *无关的软件使用心得会放到另一篇常用软件介绍中。 &lt;br&gt;
 *同时也会写一些平替软件或另一种方案，会用&lt;code&gt;(可选)&lt;/code&gt;并斜体标记，如果只想快速搭建，忽略这些即可。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;以下所有安装环境均是&lt;code&gt;Windows10&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;以下所有安装环境均是&lt;code&gt;Windows10&lt;/code&gt;，如果是其他平台非常推荐看这篇&lt;a class=&#34;link&#34; href=&#34;https://www.himiku.com/archives/auto-bangumi.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AutoBangumi：自动追番，解放双手&lt;/a&gt;。&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/%E6%88%91%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E8%BF%BD%E7%95%AA%E6%96%B9%E6%A1%88/%E6%B5%81%E7%A8%8B%E5%9B%BE.webp&#34;
+	width=&#34;2605&#34;
+	height=&#34;1790&#34;
+	srcset=&#34;https://yukari.pages.dev/%E6%88%91%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E8%BF%BD%E7%95%AA%E6%96%B9%E6%A1%88/%E6%B5%81%E7%A8%8B%E5%9B%BE_hu11192917829988485160.webp 1024w, https://yukari.pages.dev/%E6%88%91%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E8%BF%BD%E7%95%AA%E6%96%B9%E6%A1%88/%E6%B5%81%E7%A8%8B%E5%9B%BE_hu11223782706523553211.webp 2048w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;大致流程图&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;145&#34;
+		data-flex-basis=&#34;349px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;下载软件部分&#34;&gt;下载软件部分
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;首先需要一个bt下载器&lt;a class=&#34;link&#34; href=&#34;https://www.qbittorrent.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;qBittorrent&lt;/a&gt;，可选的&lt;a class=&#34;link&#34; href=&#34;https://github.com/c0re100/qBittorrent-Enhanced-Edition&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;qBittorrent-Enhanced-Edition&lt;/a&gt;主要增强了原版qB的反吸血功能，其他功能基本一致。&lt;br&gt;
-&lt;strong&gt;当前公网做种情况比较恶劣，推荐使用qBEE~&lt;/strong&gt;&lt;/p&gt;
+&lt;strong&gt;当前公网做种环境比较恶劣，推荐使用qBEE~&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;qbittorrent安装&#34;&gt;&lt;strong&gt;qBittorrent安装&lt;/strong&gt;
 &lt;/h3&gt;&lt;p&gt;官网下载地址： &lt;a class=&#34;link&#34; href=&#34;https://www.fosshub.com/qBittorrent.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -597,11 +612,12 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &lt;ol&gt;
 &lt;li&gt;动画刮削仅推荐tmdb，建议其他都不要勾选，参考下图。&lt;/li&gt;
 &lt;li&gt;使用Jellyfin提供的&lt;a class=&#34;link&#34; href=&#34;https://repo.jellyfin.org/?path=/ffmpeg/windows/latest-6.x/win64&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;FFmpeg&lt;/a&gt;&lt;/li&gt;
+    &gt;FFmpeg&lt;/a&gt;，设置参考下图。&lt;/li&gt;
 &lt;li&gt;如有核显/独显，启用对应显卡的硬件转码，参考下图。&lt;/li&gt;
 &lt;li&gt;如要手动下载整理旧番入库Jellyfin，硬盘文件夹分开、Jellyfin库也分开建立，参考下图。&lt;/li&gt;
 &lt;li&gt;转码设置中启用备用字体，我的是&lt;code&gt;微软雅黑.woff2&lt;/code&gt;。&lt;/li&gt;
-&lt;li&gt;建议客户端播放，PC推荐下面要介绍的网页调起本地播放器，安卓端建议&lt;code&gt;Yamby&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;建议客户端播放，PC推荐下面要介绍的&lt;a class=&#34;link&#34; href=&#34;https://yukari.pages.dev/%E6%88%91%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E8%BF%BD%E7%95%AA%E6%96%B9%E6%A1%88/#%E7%BD%91%E9%A1%B5%E8%B0%83%E8%B5%B7%E6%9C%AC%E5%9C%B0%E6%92%AD%E6%94%BE%E5%99%A8%E6%92%AD%E6%94%BE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;网页调起本地播放器&lt;/a&gt;，安卓端建议&lt;code&gt;Yamby&lt;/code&gt;。&lt;/li&gt;
 &lt;li&gt;如需要弹幕，&lt;a class=&#34;link&#34; href=&#34;https://github.com/Izumiko/jellyfin-danmaku&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;jellyfin-danmaku&lt;/a&gt;，*仅适用于网页播放。&lt;/li&gt;
 &lt;/ol&gt;
@@ -708,8 +724,8 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;能够实现调起本地播放器播放，并回传播放记录给Jellyfin，播放完成关闭时还会同步在bangumi上打格子。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;项目地址：&lt;a class=&#34;link&#34; href=&#34;https://github.com/Izumiko/jellyfin-danmaku&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;jellyfin-danmaku&lt;/a&gt; &lt;br&gt;
+&lt;p&gt;项目地址：&lt;a class=&#34;link&#34; href=&#34;https://github.com/kjtsune/embyToLocalPlayer&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;embyToLocalPlayer&lt;/a&gt; &lt;br&gt;
 推荐配合MPV懒人版&lt;a class=&#34;link&#34; href=&#34;https://github.com/hooke007/MPV_lazy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;MPV_lazy&lt;/a&gt;食用&lt;/p&gt;
 &lt;p&gt;文档都很很详细，不赘述了，值得一提的是安装在win上的Jellyfin&lt;a class=&#34;link&#34; href=&#34;https://github.com/Izumiko/jellyfin-danmaku&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

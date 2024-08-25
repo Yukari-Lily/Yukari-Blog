@@ -355,15 +355,30 @@
 *无关的软件使用心得会放到另一篇常用软件介绍中。 <br>
 *同时也会写一些平替软件或另一种方案，会用<code>(可选)</code>并斜体标记，如果只想快速搭建，忽略这些即可。</p>
 <blockquote>
-<p>以下所有安装环境均是<code>Windows10</code></p>
+<p>以下所有安装环境均是<code>Windows10</code>，如果是其他平台非常推荐看这篇<a class="link" href="https://www.himiku.com/archives/auto-bangumi.html"  target="_blank" rel="noopener"
+    >AutoBangumi：自动追番，解放双手</a>。</p>
 </blockquote>
+<p><img src="/%E6%88%91%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E8%BF%BD%E7%95%AA%E6%96%B9%E6%A1%88/%E6%B5%81%E7%A8%8B%E5%9B%BE.webp"
+	width="2605"
+	height="1790"
+	srcset="/%E6%88%91%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E8%BF%BD%E7%95%AA%E6%96%B9%E6%A1%88/%E6%B5%81%E7%A8%8B%E5%9B%BE_hu11192917829988485160.webp 1024w, /%E6%88%91%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E8%BF%BD%E7%95%AA%E6%96%B9%E6%A1%88/%E6%B5%81%E7%A8%8B%E5%9B%BE_hu11223782706523553211.webp 2048w"
+	loading="lazy"
+	
+		alt="大致流程图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="145"
+		data-flex-basis="349px"
+	
+></p>
 <hr>
 <h2 id="下载软件部分">下载软件部分
 </h2><blockquote>
 <p>首先需要一个bt下载器<a class="link" href="https://www.qbittorrent.org/"  target="_blank" rel="noopener"
     >qBittorrent</a>，可选的<a class="link" href="https://github.com/c0re100/qBittorrent-Enhanced-Edition"  target="_blank" rel="noopener"
     >qBittorrent-Enhanced-Edition</a>主要增强了原版qB的反吸血功能，其他功能基本一致。<br>
-<strong>当前公网做种情况比较恶劣，推荐使用qBEE~</strong></p>
+<strong>当前公网做种环境比较恶劣，推荐使用qBEE~</strong></p>
 </blockquote>
 <h3 id="qbittorrent安装"><strong>qBittorrent安装</strong>
 </h3><p>官网下载地址： <a class="link" href="https://www.fosshub.com/qBittorrent.html"  target="_blank" rel="noopener"
@@ -933,11 +948,12 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 <ol>
 <li>动画刮削仅推荐tmdb，建议其他都不要勾选，参考下图。</li>
 <li>使用Jellyfin提供的<a class="link" href="https://repo.jellyfin.org/?path=/ffmpeg/windows/latest-6.x/win64"  target="_blank" rel="noopener"
-    >FFmpeg</a></li>
+    >FFmpeg</a>，设置参考下图。</li>
 <li>如有核显/独显，启用对应显卡的硬件转码，参考下图。</li>
 <li>如要手动下载整理旧番入库Jellyfin，硬盘文件夹分开、Jellyfin库也分开建立，参考下图。</li>
 <li>转码设置中启用备用字体，我的是<code>微软雅黑.woff2</code>。</li>
-<li>建议客户端播放，PC推荐下面要介绍的网页调起本地播放器，安卓端建议<code>Yamby</code>。</li>
+<li>建议客户端播放，PC推荐下面要介绍的<a class="link" href="https://yukari.pages.dev/%E6%88%91%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E8%BF%BD%E7%95%AA%E6%96%B9%E6%A1%88/#%E7%BD%91%E9%A1%B5%E8%B0%83%E8%B5%B7%E6%9C%AC%E5%9C%B0%E6%92%AD%E6%94%BE%E5%99%A8%E6%92%AD%E6%94%BE"  target="_blank" rel="noopener"
+    >网页调起本地播放器</a>，安卓端建议<code>Yamby</code>。</li>
 <li>如需要弹幕，<a class="link" href="https://github.com/Izumiko/jellyfin-danmaku"  target="_blank" rel="noopener"
     >jellyfin-danmaku</a>，*仅适用于网页播放。</li>
 </ol>
@@ -1044,8 +1060,8 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 </h2><blockquote>
 <p>能够实现调起本地播放器播放，并回传播放记录给Jellyfin，播放完成关闭时还会同步在bangumi上打格子。</p>
 </blockquote>
-<p>项目地址：<a class="link" href="https://github.com/Izumiko/jellyfin-danmaku"  target="_blank" rel="noopener"
-    >jellyfin-danmaku</a> <br>
+<p>项目地址：<a class="link" href="https://github.com/kjtsune/embyToLocalPlayer"  target="_blank" rel="noopener"
+    >embyToLocalPlayer</a> <br>
 推荐配合MPV懒人版<a class="link" href="https://github.com/hooke007/MPV_lazy"  target="_blank" rel="noopener"
     >MPV_lazy</a>食用</p>
 <p>文档都很很详细，不赘述了，值得一提的是安装在win上的Jellyfin<a class="link" href="https://github.com/Izumiko/jellyfin-danmaku"  target="_blank" rel="noopener"
