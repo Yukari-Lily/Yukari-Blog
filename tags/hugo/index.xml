@@ -103,7 +103,7 @@ cmd中输入&lt;code&gt;hugo version&lt;/code&gt;,输出以下即为成功
 &lt;p&gt;其中&lt;code&gt;avatar&lt;/code&gt;侧栏头像&lt;code&gt;avatar.png&lt;/code&gt;需要放到&lt;code&gt;根目录\assets\img&lt;/code&gt;下，然后配置是&lt;code&gt;src: img/avatar.png&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;如果需要搜索和归档栏，需要在主题模板&lt;code&gt;根目录\themes\hugo-theme-stack\exampleSite\content\page&lt;/code&gt;中找到对应的.md文件并放到根目录同样的文件夹下如:&lt;code&gt;根目录\content\page\search\index.md&lt;/code&gt;并按需修改&lt;/p&gt;
+&lt;p&gt;如果需要搜索和归档栏，需要在主题模板&lt;code&gt;根目录\themes\hugo-theme-stack\exampleSite\content\page&lt;/code&gt;中找到对应的.md文件并放到根目录同样的文件夹下如:&lt;code&gt;根目录\content\page\search\index.md&lt;/code&gt;并按需修改。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;接下来是样式的美化，供参考，&lt;code&gt;根目录\assets\scss&lt;/code&gt;下新建&lt;code&gt;custom.scss&lt;/code&gt;，并编辑：&lt;/p&gt;
@@ -417,7 +417,7 @@ cmd中输入&lt;code&gt;hugo version&lt;/code&gt;,输出以下即为成功
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git remote add origin git@github.com:user/user.github.io.git
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;其中user改成自己的GitHub用户名&lt;/li&gt;
+&lt;/div&gt;其中user改成自己的GitHub用户名。&lt;/li&gt;
 &lt;li&gt;来到&lt;code&gt;根目录\public&lt;/code&gt;下，依次输入以下cmd命令：
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -500,13 +500,13 @@ cmd中输入&lt;code&gt;hugo version&lt;/code&gt;,输出以下即为成功
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git pull origin main
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;之后Github Pages/Cloudflare Pages会自动重新构建，只需稍等就可以在网页看到了&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;之后Github Pages/Cloudflare Pages会自动重新构建，只需稍等就可以在网页看到了。&lt;/p&gt;
 &lt;h2 id=&#34;补充&#34;&gt;补充
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;修改css样式后可能需要删除&lt;code&gt;根目录\resources\_gen&lt;/code&gt;下所有文件重新构建才生效。&lt;/li&gt;
 &lt;li&gt;内容（post）不对时可能需要删除&lt;code&gt;根目录\public&lt;/code&gt;下所有文件重新构建，注意不要把.git文件夹删了。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;——————&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/hugo--github-pages/cloudflare-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/end.webp&#34;
 	width=&#34;3004&#34;
 	height=&#34;2087&#34;

@@ -15,11 +15,11 @@
         <description>&lt;img src="https://yukari.pages.dev/hoshinobot-llonebot%E9%83%A8%E7%BD%B2qq%E6%9C%BA%E5%99%A8%E4%BA%BA/cover.webp" alt="Featured image of post HoshinoBot&#43;LLOneBot部署QQ机器人" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;HoshinoBot&lt;/strong&gt; &lt;br&gt;
+&lt;p&gt;&lt;strong&gt;HoshinoBot&lt;/strong&gt; - 机器人本体 &lt;br&gt;
 HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔改方便。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;LLOneBot&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LLOneBot&lt;/strong&gt; - 通讯框架&lt;/p&gt;
 &lt;p&gt;旧有的&lt;a class=&#34;link&#34; href=&#34;https://github.com/Mrs4s/go-cqhttp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;go-cqhttp&lt;/a&gt;方案因为QQ协议的更新经常会出现冻结和无法登录的情况，无奈替换成了性能开销比较大的&lt;a class=&#34;link&#34; href=&#34;https://github.com/LLOneBot/LLOneBot&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;LiteloaderQQNT框架的LLOneBot&lt;/a&gt;方案，目前非常稳定。&lt;/p&gt;
@@ -27,7 +27,7 @@ HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔�
 &lt;p&gt;由于QQ官方针对协议库的围追堵截, 不断更新加密方案, 我们已无力继续维护此项目. 建议Bot开发者尽快迁移至无头NTQQ项目&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;备选方案还有基于安卓端的Shamrock和基于无头ntqq的NapCatQQ方案，没有尝试过，请自行了解了&lt;/p&gt;
+&lt;p&gt;备选方案还有基于安卓端的Shamrock和基于无头ntqq的NapCatQQ方案，没有尝试过，请自行了解了。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -112,45 +112,45 @@ HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔�
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;bot_manager_web&#34;&gt;bot_manager_web
 &lt;/h3&gt;&lt;p&gt;插件项目地址： &lt;a class=&#34;link&#34; href=&#34;https://github.com/pcrbot/HosBotManagerWeb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/pcrbot/HosBotManagerWeb&lt;/a&gt;
+    &gt;https://github.com/pcrbot/HosBotManagerWeb&lt;/a&gt; &lt;br&gt;
 bot功能网页管理，可以分群开关功能，即生效，不需要重启HoshinoBot&lt;/p&gt;
 &lt;h3 id=&#34;aichat-chatgpt&#34;&gt;aichat-chatGPT
 &lt;/h3&gt;&lt;p&gt;插件项目地址： &lt;a class=&#34;link&#34; href=&#34;https://github.com/Cosmos01/aichat-chatGPT&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/Cosmos01/aichat-chatGPT&lt;/a&gt; &lt;br&gt;
-aichat插件，可以利用chatGPT实现QQ机器人对话，支持上下文记忆，可用多种API不只限于openai &lt;br&gt;
+    &gt;https://github.com/Cosmos01/aichat-chatGPT&lt;/a&gt;  &lt;br&gt;
+aichat插件，可以利用chatGPT实现QQ机器人对话，支持上下文记忆，可用多种API不只限于openai  &lt;br&gt;
 我使用的GPT 3.5免费API项目地址： &lt;a class=&#34;link&#34; href=&#34;https://github.com/chatanywhere/GPT_API_free&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/chatanywhere/GPT_API_free&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;uma_plugin&#34;&gt;uma_plugin
 &lt;/h3&gt;&lt;p&gt;插件项目地址： &lt;a class=&#34;link&#34; href=&#34;https://github.com/azmiao/uma_plugin&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/azmiao/uma_plugin&lt;/a&gt; &lt;br&gt;
-赛马娘插件，大佬维护得很好&lt;/p&gt;
+    &gt;https://github.com/azmiao/uma_plugin&lt;/a&gt;  &lt;br&gt;
+赛马娘插件，大佬维护得很好。&lt;/p&gt;
 &lt;h3 id=&#34;blue_archive_hoshinobot&#34;&gt;Blue_Archive_HoshinoBot
 &lt;/h3&gt;&lt;p&gt;插件项目地址： &lt;a class=&#34;link&#34; href=&#34;https://github.com/Cosmos01/Blue_Archive_HoshinoBot&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/Cosmos01/Blue_Archive_HoshinoBot&lt;/a&gt; &lt;br&gt;
-碧蓝档案的插件，很完美，不需要什么修改&lt;/p&gt;
+碧蓝档案的插件，很完美，不需要什么修改。&lt;/p&gt;
 &lt;h3 id=&#34;dailynews&#34;&gt;dailynews
 &lt;/h3&gt;&lt;p&gt;插件项目地址： &lt;a class=&#34;link&#34; href=&#34;https://github.com/pcrbot/dailynews&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/pcrbot/dailynews&lt;/a&gt; &lt;br&gt;
 每日早报&lt;/p&gt;
 &lt;h3 id=&#34;music&#34;&gt;music
 &lt;/h3&gt;&lt;p&gt;插件项目地址： &lt;a class=&#34;link&#34; href=&#34;https://github.com/pcrbot/music&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/pcrbot/music&lt;/a&gt; &lt;br&gt;
+    &gt;https://github.com/pcrbot/music&lt;/a&gt;  &lt;br&gt;
 点歌功能 &lt;br&gt;
 LLOneBot方案有些问题，解决方法：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;在&lt;code&gt;QQ设置 -&amp;gt; LLOneBot&lt;/code&gt;中填写音乐卡片签名地址：&lt;code&gt;http://napcat-sign.wumiao.wang:2052/music_sign&lt;/code&gt;，并且只能发送网易云卡片，建议删除QQ音乐和咪咕音乐查找。&lt;/li&gt;
-&lt;li&gt;QQ音乐查询接口年久失修，可能需要自行寻找可用的&lt;/li&gt;
+&lt;li&gt;QQ音乐查询接口年久失修，可能需要自行寻找可用的。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;picfinder_take&#34;&gt;picfinder_take
 &lt;/h3&gt;&lt;p&gt;插件项目地址： &lt;a class=&#34;link&#34; href=&#34;https://github.com/pcrbot/picfinder_take&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/pcrbot/picfinder_take&lt;/a&gt;  &lt;br&gt;
 识图搜图插件 &lt;br&gt;
-应该是我魔改最多的插件，主要问题是ntqq使用了新的图片协议，导致拿不到正确的图片地址，请自行摸索&lt;/p&gt;
+应该是我魔改最多的插件，主要问题是ntqq使用了新的图片协议，导致拿不到正确的图片地址，请自行摸索。&lt;/p&gt;
 &lt;h3 id=&#34;uma_voi&#34;&gt;uma_voi
 &lt;/h3&gt;&lt;p&gt;插件项目地址： &lt;a class=&#34;link&#34; href=&#34;https://github.com/Yukari-Lily/uma_voi&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/Yukari-Lily/uma_voi&lt;/a&gt;     &lt;br&gt;
 自写的赛马娘语音插件，主要工作量在解包与整理语音文件，到后期实际上不止赛马娘语音了233，遇到喜欢的就会加上。&lt;/p&gt;
-&lt;p&gt;——————&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/hoshinobot-llonebot%E9%83%A8%E7%BD%B2qq%E6%9C%BA%E5%99%A8%E4%BA%BA/end.webp&#34;
 	width=&#34;2048&#34;
 	height=&#34;1158&#34;

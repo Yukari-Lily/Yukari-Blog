@@ -36,8 +36,12 @@
 &lt;p&gt;因为转码和转发都要依赖owncast所在的服务器，所以对带宽和配置都有不小的压力。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;带宽方面以转码模式下能设置的最大码率6000kbps为例，至少需要一台带宽在15M左右的服务器才能保证同时两人观看。&lt;/li&gt;
-&lt;li&gt;配置方面如果是转码模式，普通的小鸡的cpu肯定是吃不消的，所以这里非常推荐使用直通模式，即不转码直接转发到页面上。     &lt;code&gt;Owncast 有一个可选设置，可以关闭对传入流的重新编码，从而可能节省大量硬件使用率，并以更少的资源支持更高质量的流。但是，由于您的视频不会被重新编码，因此某些来源的某些视频可能最终根本无法播放。这就是启用此功能的风险。&lt;/code&gt; &lt;br&gt;
-实测下来&lt;strong&gt;可以非常稳定&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;配置方面如果是转码模式，普通的小鸡的cpu肯定是吃不消的，所以这里非常推荐使用直通模式，即不转码直接转发到页面上。&lt;br&gt;
+&lt;code&gt;Owncast 有一个可选设置，可以关闭对传入流的重新编码，从而可能节省大量硬件使用率，并以更少的资源支持更高质量的流。但是，由于您的视频不会被重新编码，因此某些来源的某些视频可能最终根本无法播放。这就是启用此功能的风险。&lt;/code&gt;
+&lt;blockquote&gt;
+&lt;p&gt;实测下来&lt;strong&gt;可以非常稳定&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;开始安装&#34;&gt;开始安装
 &lt;/h2&gt;&lt;h3 id=&#34;一键脚本&#34;&gt;一键脚本
@@ -88,7 +92,7 @@
 推流地址默认是&lt;code&gt;rtmp://你的服务器地址:1935/live&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;一些设置&#34;&gt;一些设置
 &lt;/h2&gt;&lt;h3 id=&#34;表情包&#34;&gt;表情包
-&lt;/h3&gt;&lt;p&gt;可以在/app/data/emoji中批量加入，以文件名为顺序&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;可以在/app/data/emoji中批量加入，以文件名为顺序。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/emoji.webp&#34;
 	width=&#34;1738&#34;
 	height=&#34;1246&#34;
@@ -102,7 +106,31 @@
 	
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;css&#34;&gt;CSS
-&lt;/h3&gt;&lt;p&gt;贴一个我的自定义CSS，供参考&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;贴一个我的自定义CSS，供参考。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/fin.webp&#34;
+	width=&#34;1430&#34;
+	height=&#34;760&#34;
+	srcset=&#34;https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/fin_hu6975790228129835935.webp 1024w, https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/fin_hu5628548038823551999.webp 2048w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;188&#34;
+		data-flex-basis=&#34;451px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/fin2.webp&#34;
+	width=&#34;1430&#34;
+	height=&#34;760&#34;
+	srcset=&#34;https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/fin2_hu12026520955259374801.webp 1024w, https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/fin2_hu17960602974151628425.webp 2048w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;188&#34;
+		data-flex-basis=&#34;451px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-CSS&#34; data-lang=&#34;CSS&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;picmo__searchContainer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;display&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;none&lt;/span&gt; &lt;span class=&#34;cp&#34;&gt;!important&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;picmo__emojiCategory&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;not&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;first-of-type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;not&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;nd&#34;&gt;last-of-type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
@@ -183,11 +211,11 @@
 此时这个页面上其他设置均是失效的。&lt;/p&gt;
 &lt;h3 id=&#34;obs设置&#34;&gt;OBS设置
 &lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;如果熟悉FFmpeg可以直接用命令推流，不需要OBS&lt;/p&gt;
+&lt;p&gt;如果熟悉FFmpeg可以直接用命令推流，不需要OBS。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;如果使用OBS，推荐使用多路推流插件&lt;a class=&#34;link&#34; href=&#34;https://github.com/sorayuki/obs-multi-rtmp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;obs-multi-rtmp&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;然后如图新建一个FFmpeg编码器设置来推流直通模式的owncast，这样可以保证最大的兼容性&lt;/p&gt;
+    &gt;obs-multi-rtmp&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;然后如图新建一个FFmpeg编码器设置来推流直通模式的owncast，这样可以保证最大的兼容性。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/obs.webp&#34;
 	width=&#34;1456&#34;
 	height=&#34;1071&#34;
@@ -200,7 +228,7 @@
 		data-flex-basis=&#34;326px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;——————&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/end.webp&#34;
 	width=&#34;1729&#34;
 	height=&#34;1221&#34;

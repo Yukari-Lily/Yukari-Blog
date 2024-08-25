@@ -3,10 +3,40 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://yukari.pages.dev/</loc>
-    <lastmod>2024-08-20T00:00:00+08:00</lastmod>
+    <lastmod>2024-08-23T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.pages.dev/tags/autobangumi/</loc>
+    <lastmod>2024-08-23T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://yukari.pages.dev/categories/</loc>
-    <lastmod>2024-08-20T00:00:00+08:00</lastmod>
+    <lastmod>2024-08-23T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.pages.dev/tags/jellyfin/</loc>
+    <lastmod>2024-08-23T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.pages.dev/tags/mikan/</loc>
+    <lastmod>2024-08-23T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.pages.dev/tags/mpv/</loc>
+    <lastmod>2024-08-23T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.pages.dev/post/</loc>
+    <lastmod>2024-08-23T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.pages.dev/tags/qbittorrent/</loc>
+    <lastmod>2024-08-23T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.pages.dev/tags/</loc>
+    <lastmod>2024-08-23T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.pages.dev/categories/%E5%8A%A8%E7%94%BB%E7%89%87/</loc>
+    <lastmod>2024-08-23T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.pages.dev/categories/%E5%A4%87%E5%BF%98/</loc>
+    <lastmod>2024-08-23T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.pages.dev/%E6%88%91%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E8%BF%BD%E7%95%AA%E6%96%B9%E6%A1%88/</loc>
+    <lastmod>2024-08-23T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://yukari.pages.dev/tags/owncast/</loc>
     <lastmod>2024-08-20T00:00:00+08:00</lastmod>
@@ -14,19 +44,7 @@
     <loc>https://yukari.pages.dev/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</loc>
     <lastmod>2024-08-20T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://yukari.pages.dev/post/</loc>
-    <lastmod>2024-08-20T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yukari.pages.dev/tags/</loc>
-    <lastmod>2024-08-20T00:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://yukari.pages.dev/tags/%E4%B8%80%E8%B5%B7%E7%9C%8B/</loc>
-    <lastmod>2024-08-20T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yukari.pages.dev/categories/%E5%8A%A8%E7%94%BB%E7%89%87/</loc>
-    <lastmod>2024-08-20T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yukari.pages.dev/categories/%E5%A4%87%E5%BF%98/</loc>
     <lastmod>2024-08-20T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://yukari.pages.dev/tags/hoshinobot/</loc>

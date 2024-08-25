@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction HoshinoBot HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔改方便。 LLOneBot 旧有的go-cqhttp方案因为QQ协议的更新经常">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction HoshinoBot - 机器人本体 HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔改方便。 LLOneBot - 通讯框架 旧有的go-cqhttp方案">
 <title>HoshinoBot&#43;LLOneBot部署QQ机器人</title>
 
 <link rel='canonical' href='https://yukari.pages.dev/hoshinobot-llonebot%E9%83%A8%E7%BD%B2qq%E6%9C%BA%E5%99%A8%E4%BA%BA/'>
 
 <link rel="stylesheet" href="/scss/style.min.884433a32f40f09300c8c59a1df1d274e33546992674e3e47c6a775be44448f6.css"><meta property='og:title' content="HoshinoBot+LLOneBot部署QQ机器人">
-<meta property='og:description' content="Introduction HoshinoBot HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔改方便。 LLOneBot 旧有的go-cqhttp方案因为QQ协议的更新经常">
+<meta property='og:description' content="Introduction HoshinoBot - 机器人本体 HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔改方便。 LLOneBot - 通讯框架 旧有的go-cqhttp方案">
 <meta property='og:url' content='https://yukari.pages.dev/hoshinobot-llonebot%E9%83%A8%E7%BD%B2qq%E6%9C%BA%E5%99%A8%E4%BA%BA/'>
 <meta property='og:site_name' content='Yukari Blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='QQbot' /><meta property='article:tag' content='HoshinoBot' /><meta property='article:published_time' content='2024-08-17T00:00:00&#43;08:00'/><meta property='article:modified_time' content='2024-08-17T00:00:00&#43;08:00'/><meta property='og:image' content='https://yukari.pages.dev/hoshinobot-llonebot%E9%83%A8%E7%BD%B2qq%E6%9C%BA%E5%99%A8%E4%BA%BA/cover.webp' />
 <meta name="twitter:title" content="HoshinoBot+LLOneBot部署QQ机器人">
-<meta name="twitter:description" content="Introduction HoshinoBot HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔改方便。 LLOneBot 旧有的go-cqhttp方案因为QQ协议的更新经常"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Introduction HoshinoBot - 机器人本体 HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔改方便。 LLOneBot - 通讯框架 旧有的go-cqhttp方案"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://yukari.pages.dev/hoshinobot-llonebot%E9%83%A8%E7%BD%B2qq%E6%9C%BA%E5%99%A8%E4%BA%BA/cover.webp' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
@@ -342,11 +342,11 @@
     <h2 id="introduction">Introduction
 </h2><ol>
 <li>
-<p><strong>HoshinoBot</strong> <br>
+<p><strong>HoshinoBot</strong> - 机器人本体 <br>
 HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔改方便。</p>
 </li>
 <li>
-<p><strong>LLOneBot</strong></p>
+<p><strong>LLOneBot</strong> - 通讯框架</p>
 <p>旧有的<a class="link" href="https://github.com/Mrs4s/go-cqhttp"  target="_blank" rel="noopener"
     >go-cqhttp</a>方案因为QQ协议的更新经常会出现冻结和无法登录的情况，无奈替换成了性能开销比较大的<a class="link" href="https://github.com/LLOneBot/LLOneBot"  target="_blank" rel="noopener"
     >LiteloaderQQNT框架的LLOneBot</a>方案，目前非常稳定。</p>
@@ -354,7 +354,7 @@ HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔�
 <p>由于QQ官方针对协议库的围追堵截, 不断更新加密方案, 我们已无力继续维护此项目. 建议Bot开发者尽快迁移至无头NTQQ项目</p>
 </blockquote>
 <blockquote>
-<p>备选方案还有基于安卓端的Shamrock和基于无头ntqq的NapCatQQ方案，没有尝试过，请自行了解了</p>
+<p>备选方案还有基于安卓端的Shamrock和基于无头ntqq的NapCatQQ方案，没有尝试过，请自行了解了。</p>
 </blockquote>
 </li>
 </ol>
@@ -439,45 +439,45 @@ HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔�
 </blockquote>
 <h3 id="bot_manager_web">bot_manager_web
 </h3><p>插件项目地址： <a class="link" href="https://github.com/pcrbot/HosBotManagerWeb"  target="_blank" rel="noopener"
-    >https://github.com/pcrbot/HosBotManagerWeb</a>
+    >https://github.com/pcrbot/HosBotManagerWeb</a> <br>
 bot功能网页管理，可以分群开关功能，即生效，不需要重启HoshinoBot</p>
 <h3 id="aichat-chatgpt">aichat-chatGPT
 </h3><p>插件项目地址： <a class="link" href="https://github.com/Cosmos01/aichat-chatGPT"  target="_blank" rel="noopener"
-    >https://github.com/Cosmos01/aichat-chatGPT</a> <br>
-aichat插件，可以利用chatGPT实现QQ机器人对话，支持上下文记忆，可用多种API不只限于openai <br>
+    >https://github.com/Cosmos01/aichat-chatGPT</a>  <br>
+aichat插件，可以利用chatGPT实现QQ机器人对话，支持上下文记忆，可用多种API不只限于openai  <br>
 我使用的GPT 3.5免费API项目地址： <a class="link" href="https://github.com/chatanywhere/GPT_API_free"  target="_blank" rel="noopener"
     >https://github.com/chatanywhere/GPT_API_free</a></p>
 <h3 id="uma_plugin">uma_plugin
 </h3><p>插件项目地址： <a class="link" href="https://github.com/azmiao/uma_plugin"  target="_blank" rel="noopener"
-    >https://github.com/azmiao/uma_plugin</a> <br>
-赛马娘插件，大佬维护得很好</p>
+    >https://github.com/azmiao/uma_plugin</a>  <br>
+赛马娘插件，大佬维护得很好。</p>
 <h3 id="blue_archive_hoshinobot">Blue_Archive_HoshinoBot
 </h3><p>插件项目地址： <a class="link" href="https://github.com/Cosmos01/Blue_Archive_HoshinoBot"  target="_blank" rel="noopener"
     >https://github.com/Cosmos01/Blue_Archive_HoshinoBot</a> <br>
-碧蓝档案的插件，很完美，不需要什么修改</p>
+碧蓝档案的插件，很完美，不需要什么修改。</p>
 <h3 id="dailynews">dailynews
 </h3><p>插件项目地址： <a class="link" href="https://github.com/pcrbot/dailynews"  target="_blank" rel="noopener"
     >https://github.com/pcrbot/dailynews</a> <br>
 每日早报</p>
 <h3 id="music">music
 </h3><p>插件项目地址： <a class="link" href="https://github.com/pcrbot/music"  target="_blank" rel="noopener"
-    >https://github.com/pcrbot/music</a> <br>
+    >https://github.com/pcrbot/music</a>  <br>
 点歌功能 <br>
 LLOneBot方案有些问题，解决方法：</p>
 <ol>
 <li>在<code>QQ设置 -&gt; LLOneBot</code>中填写音乐卡片签名地址：<code>http://napcat-sign.wumiao.wang:2052/music_sign</code>，并且只能发送网易云卡片，建议删除QQ音乐和咪咕音乐查找。</li>
-<li>QQ音乐查询接口年久失修，可能需要自行寻找可用的</li>
+<li>QQ音乐查询接口年久失修，可能需要自行寻找可用的。</li>
 </ol>
 <h3 id="picfinder_take">picfinder_take
 </h3><p>插件项目地址： <a class="link" href="https://github.com/pcrbot/picfinder_take"  target="_blank" rel="noopener"
     >https://github.com/pcrbot/picfinder_take</a>  <br>
 识图搜图插件 <br>
-应该是我魔改最多的插件，主要问题是ntqq使用了新的图片协议，导致拿不到正确的图片地址，请自行摸索</p>
+应该是我魔改最多的插件，主要问题是ntqq使用了新的图片协议，导致拿不到正确的图片地址，请自行摸索。</p>
 <h3 id="uma_voi">uma_voi
 </h3><p>插件项目地址： <a class="link" href="https://github.com/Yukari-Lily/uma_voi"  target="_blank" rel="noopener"
     >https://github.com/Yukari-Lily/uma_voi</a>     <br>
 自写的赛马娘语音插件，主要工作量在解包与整理语音文件，到后期实际上不止赛马娘语音了233，遇到喜欢的就会加上。</p>
-<p>——————</p>
+<hr>
 <p><img src="/hoshinobot-llonebot%E9%83%A8%E7%BD%B2qq%E6%9C%BA%E5%99%A8%E4%BA%BA/end.webp"
 	width="2048"
 	height="1158"
@@ -519,6 +519,30 @@ LLOneBot方案有些问题，解决方法：</p>
     <h2 class="section-title">Related content</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/%E6%88%91%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E8%BF%BD%E7%95%AA%E6%96%B9%E6%A1%88/">
+        
+        
+            <div class="article-image">
+                <img src="/%E6%88%91%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E8%BF%BD%E7%95%AA%E6%96%B9%E6%A1%88/cover.066d80615ea3d4aa45065d051ab658dc_hu2435547024640834558.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 我的全流程自动追番方案"
+                        
+                        data-hash="md5-Bm2AYV6j1KpFBl0FGrZY3A==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">我的全流程自动追番方案</h2>
+        </div>
+    </a>
+</article>
+
             
                 
 <article class="has-image">

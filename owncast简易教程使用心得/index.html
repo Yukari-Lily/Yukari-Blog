@@ -368,8 +368,12 @@
 <p>因为转码和转发都要依赖owncast所在的服务器，所以对带宽和配置都有不小的压力。</p>
 <ol>
 <li>带宽方面以转码模式下能设置的最大码率6000kbps为例，至少需要一台带宽在15M左右的服务器才能保证同时两人观看。</li>
-<li>配置方面如果是转码模式，普通的小鸡的cpu肯定是吃不消的，所以这里非常推荐使用直通模式，即不转码直接转发到页面上。     <code>Owncast 有一个可选设置，可以关闭对传入流的重新编码，从而可能节省大量硬件使用率，并以更少的资源支持更高质量的流。但是，由于您的视频不会被重新编码，因此某些来源的某些视频可能最终根本无法播放。这就是启用此功能的风险。</code> <br>
-实测下来<strong>可以非常稳定</strong>。</li>
+<li>配置方面如果是转码模式，普通的小鸡的cpu肯定是吃不消的，所以这里非常推荐使用直通模式，即不转码直接转发到页面上。<br>
+<code>Owncast 有一个可选设置，可以关闭对传入流的重新编码，从而可能节省大量硬件使用率，并以更少的资源支持更高质量的流。但是，由于您的视频不会被重新编码，因此某些来源的某些视频可能最终根本无法播放。这就是启用此功能的风险。</code>
+<blockquote>
+<p>实测下来<strong>可以非常稳定</strong>。</p>
+</blockquote>
+</li>
 </ol>
 <h2 id="开始安装">开始安装
 </h2><h3 id="一键脚本">一键脚本
@@ -420,7 +424,7 @@
 推流地址默认是<code>rtmp://你的服务器地址:1935/live</code></p>
 <h2 id="一些设置">一些设置
 </h2><h3 id="表情包">表情包
-</h3><p>可以在/app/data/emoji中批量加入，以文件名为顺序</p>
+</h3><p>可以在/app/data/emoji中批量加入，以文件名为顺序。</p>
 <p><img src="/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/emoji.webp"
 	width="1738"
 	height="1246"
@@ -434,7 +438,31 @@
 	
 ></p>
 <h3 id="css">CSS
-</h3><p>贴一个我的自定义CSS，供参考</p>
+</h3><p>贴一个我的自定义CSS，供参考。</p>
+<p><img src="/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/fin.webp"
+	width="1430"
+	height="760"
+	srcset="/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/fin_hu6975790228129835935.webp 1024w, /owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/fin_hu5628548038823551999.webp 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="188"
+		data-flex-basis="451px"
+	
+></p>
+<p><img src="/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/fin2.webp"
+	width="1430"
+	height="760"
+	srcset="/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/fin2_hu12026520955259374801.webp 1024w, /owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/fin2_hu17960602974151628425.webp 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="188"
+		data-flex-basis="451px"
+	
+></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-CSS" data-lang="CSS"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">picmo__searchContainer</span><span class="p">{</span><span class="k">display</span><span class="p">:</span><span class="kc">none</span> <span class="cp">!important</span><span class="p">;}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">picmo__emojiCategory</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">:</span><span class="nd">first-of-type</span><span class="o">)</span><span class="p">:</span><span class="nd">not</span><span class="o">(</span><span class="p">:</span><span class="nd">last-of-type</span><span class="o">)</span> <span class="p">{</span>
@@ -515,11 +543,11 @@
 此时这个页面上其他设置均是失效的。</p>
 <h3 id="obs设置">OBS设置
 </h3><blockquote>
-<p>如果熟悉FFmpeg可以直接用命令推流，不需要OBS</p>
+<p>如果熟悉FFmpeg可以直接用命令推流，不需要OBS。</p>
 </blockquote>
 <p>如果使用OBS，推荐使用多路推流插件<a class="link" href="https://github.com/sorayuki/obs-multi-rtmp"  target="_blank" rel="noopener"
-    >obs-multi-rtmp</a></p>
-<p>然后如图新建一个FFmpeg编码器设置来推流直通模式的owncast，这样可以保证最大的兼容性</p>
+    >obs-multi-rtmp</a>。</p>
+<p>然后如图新建一个FFmpeg编码器设置来推流直通模式的owncast，这样可以保证最大的兼容性。</p>
 <p><img src="/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/obs.webp"
 	width="1456"
 	height="1071"
@@ -532,7 +560,7 @@
 		data-flex-basis="326px"
 	
 ></p>
-<p>——————</p>
+<hr>
 <p><img src="/owncast%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/end.webp"
 	width="1729"
 	height="1221"
@@ -574,6 +602,30 @@
     <h2 class="section-title">Related content</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/%E6%88%91%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E8%BF%BD%E7%95%AA%E6%96%B9%E6%A1%88/">
+        
+        
+            <div class="article-image">
+                <img src="/%E6%88%91%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E8%BF%BD%E7%95%AA%E6%96%B9%E6%A1%88/cover.066d80615ea3d4aa45065d051ab658dc_hu2435547024640834558.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 我的全流程自动追番方案"
+                        
+                        data-hash="md5-Bm2AYV6j1KpFBl0FGrZY3A==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">我的全流程自动追番方案</h2>
+        </div>
+    </a>
+</article>
+
             
                 
 <article class="has-image">
