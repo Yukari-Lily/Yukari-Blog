@@ -576,14 +576,18 @@ Github Release下载&lt;code&gt;dist.zip(zip)&lt;/code&gt;： &lt;a class=&#34;l
 我选择&lt;a class=&#34;link&#34; href=&#34;https://github.com/jellyfin/jellyfin&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;strong&gt;Jellyfin&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/image-12.png&#34;
-	
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/%E6%88%91%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E8%BF%BD%E7%95%AA%E6%96%B9%E6%A1%88/image-5.png&#34;
+	width=&#34;2614&#34;
+	height=&#34;1531&#34;
+	srcset=&#34;https://yukari.pages.dev/%E6%88%91%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E8%BF%BD%E7%95%AA%E6%96%B9%E6%A1%88/image-5_hu14260635508408826513.png 1024w, https://yukari.pages.dev/%E6%88%91%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E8%BF%BD%E7%95%AA%E6%96%B9%E6%A1%88/image-5_hu17967572376454518403.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Jellyfin&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;170&#34;
+		data-flex-basis=&#34;409px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;官网下载地址： &lt;a class=&#34;link&#34; href=&#34;https://repo.jellyfin.org/?path=/server/windows/latest-stable/amd64&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
