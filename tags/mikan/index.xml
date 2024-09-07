@@ -96,10 +96,9 @@
 &lt;h2 id=&#34;rss管理部分&#34;&gt;RSS管理部分
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;由于&lt;a class=&#34;link&#34; href=&#34;https://github.com/EstrellaXD/Auto_Bangumi&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Autobangumi&lt;/a&gt;最新版接管了RSS规则处理，导致不会在qBittorrent上生成RSS规则，意味着你只能使用ab支持的RSS如mikan，mikanRSS已经能应付99%的追番需求啦！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;如果你确需使用其他RSS可以考虑跳过最新版，看下面可选的2.6.10版本安装。&lt;/p&gt;
+    &gt;Autobangumi&lt;/a&gt;最新版接管了RSS规则处理，导致不会在qBittorrent上生成RSS规则，意味着你只能使用ab支持的RSS如mikan，mikanRSS已经能应付99%的追番需求啦！
+可选的RSS还有nyaa、dmhy等，不过没有mikan方便。
+如果你确需使用其他RSS可以考虑跳过最新版，看下面可选的2.6.10版本安装。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;autobangumi安装&#34;&gt;&lt;strong&gt;Autobangumi安装&lt;/strong&gt;
 &lt;/h3&gt;&lt;p&gt;需要python3.10以上环境，一般装最新就行。&lt;/p&gt;
@@ -224,7 +223,7 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;解析设置 → 排除，需要&lt;strong&gt;慎重填写&lt;/strong&gt;，直接决定你会下到选择的字幕组中发布的版本，不然可能会下到很多不需要的版本如：繁体中文、720p的。&lt;br&gt;
+&lt;p&gt;解析设置 → 排除，需要&lt;strong&gt;慎重填写&lt;/strong&gt;，直接决定会下载哪些你选择的字幕组中发布的版本，不然可能会下到很多不需要的版本如：繁体中文、720p的。&lt;br&gt;
 我的供参考，一个一个添加：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -834,6 +833,36 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 	
 &gt;&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;字幕组选择问题&#34;&gt;字幕组选择问题
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;我的：Lolihouse&amp;gt;B-Global&amp;gt;其他字幕组&amp;gt;ani
+由于要兼顾新番更新速度和画面/字幕质量，你可能需要&lt;strong&gt;首先&lt;/strong&gt;需要一个第一时间抓取并发布的&lt;strong&gt;搬运组&lt;/strong&gt;，&lt;strong&gt;然后&lt;/strong&gt;需要一个第二时间译出字幕的&lt;strong&gt;字幕组&lt;/strong&gt;，
+其中&lt;strong&gt;搬运组&lt;/strong&gt;有：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;[ANi] 一般是首选，主抓&lt;a class=&#34;link&#34; href=&#34;https://ani.gamer.com.tw/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Baha&lt;/a&gt;源和bilibili港澳台源，一般都有繁中。&lt;/li&gt;
+&lt;li&gt;[Kirara Fantasia] 主抓&lt;a class=&#34;link&#34; href=&#34;https://ani.gamer.com.tw/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Baha&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.crunchyroll.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;cr&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.tv/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;B-Global&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://abema.tv/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Abema&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.primevideo.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ADN&lt;/a&gt;源，其中只有Baha源有繁中，B-Global有时会有，从2024年7月开始我个人比较喜欢用部分有中文的B-Global源来代替Baha源，一是字幕是内嵌带样式比巴哈好看很多，二是字幕翻译比较符合大陆，&lt;/li&gt;
+&lt;li&gt;[Lilith-Raws] 之前和[ANi]差不多，最近停更了，主抓&lt;a class=&#34;link&#34; href=&#34;https://ani.gamer.com.tw/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Baha&lt;/a&gt;源。&lt;/li&gt;
+&lt;li&gt;[]
+其中&lt;strong&gt;字幕组&lt;/strong&gt;有：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;tips&#34;&gt;Tips
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;蜜柑的RSS由于cdn缓存的关系并不会实时更新，一般会有10-30分钟的延迟。&lt;/li&gt;
+&lt;li&gt;新番放送信息： &lt;a class=&#34;link&#34; href=&#34;https://bgm.wiki&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://bgm.wiki&lt;/a&gt; 或者 &lt;a class=&#34;link&#34; href=&#34;https://yuc.wiki/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://yuc.wiki/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;一个新番字幕来源： &lt;a class=&#34;link&#34; href=&#34;https://t.me/anime_chinese_subtitles&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://t.me/anime_chinese_subtitles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/%E6%88%91%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E8%BF%BD%E7%95%AA%E6%96%B9%E6%A1%88/end.webp&#34;
