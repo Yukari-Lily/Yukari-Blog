@@ -8,11 +8,11 @@
         <language>en-us</language>
         <lastBuildDate>Sat, 17 Aug 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://yukari.pages.dev/tags/hoshinobot/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>HoshinoBot&#43;LLOneBot部署QQ机器人</title>
-        <link>https://yukari.pages.dev/hoshinobot-llonebot%E9%83%A8%E7%BD%B2qq%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
+        <link>https://yukari.pages.dev/hoshinobot-llonebot/</link>
         <pubDate>Sat, 17 Aug 2024 00:00:00 +0800</pubDate>
         
-        <guid>https://yukari.pages.dev/hoshinobot-llonebot%E9%83%A8%E7%BD%B2qq%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid>
-        <description>&lt;img src="https://yukari.pages.dev/hoshinobot-llonebot%E9%83%A8%E7%BD%B2qq%E6%9C%BA%E5%99%A8%E4%BA%BA/cover.webp" alt="Featured image of post HoshinoBot&#43;LLOneBot部署QQ机器人" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+        <guid>https://yukari.pages.dev/hoshinobot-llonebot/</guid>
+        <description>&lt;img src="https://yukari.pages.dev/hoshinobot-llonebot/cover.webp" alt="Featured image of post HoshinoBot&#43;LLOneBot部署QQ机器人" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;HoshinoBot&lt;/strong&gt; - 机器人本体 &lt;br&gt;
@@ -151,10 +151,10 @@ LLOneBot方案有些问题，解决方法：&lt;/p&gt;
     &gt;https://github.com/Yukari-Lily/uma_voi&lt;/a&gt;     &lt;br&gt;
 自写的赛马娘语音插件，主要工作量在解包与整理语音文件，到后期实际上不止赛马娘语音了233，遇到喜欢的就会加上。&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/hoshinobot-llonebot%E9%83%A8%E7%BD%B2qq%E6%9C%BA%E5%99%A8%E4%BA%BA/end.webp&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/hoshinobot-llonebot/end.webp&#34;
 	width=&#34;2048&#34;
 	height=&#34;1158&#34;
-	srcset=&#34;https://yukari.pages.dev/hoshinobot-llonebot%E9%83%A8%E7%BD%B2qq%E6%9C%BA%E5%99%A8%E4%BA%BA/end_hu8629967388017622155.webp 1024w, https://yukari.pages.dev/hoshinobot-llonebot%E9%83%A8%E7%BD%B2qq%E6%9C%BA%E5%99%A8%E4%BA%BA/end_hu18117408379557951641.webp 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/hoshinobot-llonebot/end_hu8629967388017622155.webp 1024w, https://yukari.pages.dev/hoshinobot-llonebot/end_hu18117408379557951641.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	

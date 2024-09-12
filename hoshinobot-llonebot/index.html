@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction\rHoshinoBot - 机器人本体 HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔改方便。\nLLOneBot - 通讯框架\n旧有的go-cqhttp方案因为QQ协议的更新经常会出现冻结和无法登录的情况，无奈替换成了性能开销比较大的LiteloaderQQNT框架的LLOneBot方案，目前非常稳定。\n">
+<title>HoshinoBot&#43;LLOneBot部署QQ机器人</title>
+
+<link rel='canonical' href='https://yukari.pages.dev/hoshinobot-llonebot/'>
+
+<link rel="stylesheet" href="/scss/style.min.bdc1157f346714aee56f7210360c7c912bf0a7fefc3b3f2bae07688bade15d78.css"><meta property='og:title' content="HoshinoBot+LLOneBot部署QQ机器人">
+<meta property='og:description' content="Introduction\rHoshinoBot - 机器人本体 HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔改方便。\nLLOneBot - 通讯框架\n旧有的go-cqhttp方案因为QQ协议的更新经常会出现冻结和无法登录的情况，无奈替换成了性能开销比较大的LiteloaderQQNT框架的LLOneBot方案，目前非常稳定。\n">
+<meta property='og:url' content='https://yukari.pages.dev/hoshinobot-llonebot/'>
+<meta property='og:site_name' content='Yukari Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='QQbot' /><meta property='article:tag' content='HoshinoBot' /><meta property='article:published_time' content='2024-08-17T00:00:00&#43;08:00'/><meta property='article:modified_time' content='2024-08-17T00:00:00&#43;08:00'/><meta property='og:image' content='https://yukari.pages.dev/hoshinobot-llonebot/cover.webp' />
+<meta name="twitter:title" content="HoshinoBot+LLOneBot部署QQ机器人">
+<meta name="twitter:description" content="Introduction\rHoshinoBot - 机器人本体 HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔改方便。\nLLOneBot - 通讯框架\n旧有的go-cqhttp方案因为QQ协议的更新经常会出现冻结和无法登录的情况，无奈替换成了性能开销比较大的LiteloaderQQNT框架的LLOneBot方案，目前非常稳定。\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://yukari.pages.dev/hoshinobot-llonebot/cover.webp' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu8649795592182595522.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🐾</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Yukari Blog</a></h1>
+            <h2 class="site-description">备忘/归档</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/Yukari-Lily'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://x.com/Yukari_daze'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/p/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/p/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#hoshinobot-部署">HoshinoBot 部署</a></li>
+    <li><a href="#llonebot-部署">LLOneBot 部署</a></li>
+    <li><a href="#自用插件">自用插件</a>
+      <ol>
+        <li><a href="#bot_manager_web">bot_manager_web</a></li>
+        <li><a href="#aichat-chatgpt">aichat-chatGPT</a></li>
+        <li><a href="#uma_plugin">uma_plugin</a></li>
+        <li><a href="#blue_archive_hoshinobot">Blue_Archive_HoshinoBot</a></li>
+        <li><a href="#dailynews">dailynews</a></li>
+        <li><a href="#music">music</a></li>
+        <li><a href="#picfinder_take">picfinder_take</a></li>
+        <li><a href="#uma_voi">uma_voi</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/hoshinobot-llonebot/">
+                <img src="/hoshinobot-llonebot/cover_hu8086345137318887038.webp"
+                        srcset="/hoshinobot-llonebot/cover_hu8086345137318887038.webp 800w, /hoshinobot-llonebot/cover_hu12433226457963890555.webp 1600w"
+                        width="800" 
+                        height="499" 
+                        loading="lazy"
+                        alt="Featured image of post HoshinoBot&#43;LLOneBot部署QQ机器人" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E5%A4%87%E5%BF%98/" style="background-color: #ec6d2c; color: #fff;">
+                备忘
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/hoshinobot-llonebot/">HoshinoBot&#43;LLOneBot部署QQ机器人</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Aug 17, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    4 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="introduction">Introduction
+</h2><ol>
+<li>
+<p><strong>HoshinoBot</strong> - 机器人本体 <br>
+HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔改方便。</p>
+</li>
+<li>
+<p><strong>LLOneBot</strong> - 通讯框架</p>
+<p>旧有的<a class="link" href="https://github.com/Mrs4s/go-cqhttp"  target="_blank" rel="noopener"
+    >go-cqhttp</a>方案因为QQ协议的更新经常会出现冻结和无法登录的情况，无奈替换成了性能开销比较大的<a class="link" href="https://github.com/LLOneBot/LLOneBot"  target="_blank" rel="noopener"
+    >LiteloaderQQNT框架的LLOneBot</a>方案，目前非常稳定。</p>
+<blockquote>
+<p>由于QQ官方针对协议库的围追堵截, 不断更新加密方案, 我们已无力继续维护此项目. 建议Bot开发者尽快迁移至无头NTQQ项目</p>
+</blockquote>
+<blockquote>
+<p>备选方案还有基于安卓端的Shamrock和基于无头ntqq的NapCatQQ方案，没有尝试过，请自行了解了。</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="hoshinobot-部署">HoshinoBot 部署
+</h2><blockquote>
+<p>直接照搬HoshinoBot文档了，部分修改以适配LLOneBot <br>
+环境 windows10</p>
+</blockquote>
+<ol>
+<li>
+<p>安装下面的软件/工具</p>
+<ul>
+<li>Python 3.8：<a class="link" href="https://www.python.org/downloads/windows/"  target="_blank" rel="noopener"
+    >https://www.python.org/downloads/windows/</a> <br>
+不建议其他版本，如已安装其他版本Python，自行谷歌多Python共存</li>
+<li>Git：<a class="link" href="https://git-scm.com/download/win"  target="_blank" rel="noopener"
+    >https://git-scm.com/download/win</a></li>
+<li>VScode：<a class="link" href="https://code.visualstudio.com/Download"  target="_blank" rel="noopener"
+    >https://code.visualstudio.com/Download</a></li>
+</ul>
+</li>
+<li>
+<p>打开一个合适的文件夹，点击资源管理器左上角的 <code>文件 -&gt; 打开Windows Powershell</code></p>
+</li>
+<li>
+<p>输入以下命令克隆本仓库并安装依赖</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="err">:</span><span class="p">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">Ice9Coffee</span><span class="p">/</span><span class="n">HoshinoBot</span><span class="p">.</span><span class="py">git</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd </span><span class="n">HoshinoBot</span>
+</span></span><span class="line"><span class="cl"><span class="n">py</span> <span class="mf">-3.8</span> <span class="n">-m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">-r</span> <span class="n">requirements</span><span class="p">.</span><span class="py">txt</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>若此处有报错信息，请务必解决，将错误信息复制到谷歌搜索一般即可找到解决办法。</p>
+<p>若安装python依赖库时下载速度缓慢，可以尝试使用<code>py -3.8 -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt</code></p>
+</blockquote>
+</li>
+<li>
+<p>回到资源管理器，进入<code>hoshino</code>文件夹，将<code>config_example</code>文件夹复制一份，重命名为<code>config</code>，然后右键使用VScode打开其中的<code>__bot__.py</code>，按照其中的注释说明进行编辑。</p>
+<blockquote>
+<p>如果您不清楚某项设置的作用，请保持默认。</p>
+</blockquote>
+</li>
+<li>
+<p>回到powershell，输入以下命令，启动 HoshinoBot</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">py</span> <span class="mf">-3.8</span> <span class="n">run</span><span class="p">.</span><span class="py">py</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>若能看到日志<code>INFO: Running on 127.0.0.1:8080</code>，说明HoshinoBot启动成功。您可以忽略启动时的WARNING信息。如果出现ERROR，说明部分功能可能加载失败。</p>
+</blockquote>
+<p>至此，HoshinoBot的“大脑”已部署成功。接下来我们需要部署LLOneBot与NTQQ，作为HoshinoBot的“口”和“耳”，收发消息。</p>
+</li>
+</ol>
+<h2 id="llonebot-部署">LLOneBot 部署
+</h2><ol>
+<li>安装最新版ntqq <a class="link" href="https://im.qq.com/pcqq/index.shtml"  target="_blank" rel="noopener"
+    >https://im.qq.com/pcqq/index.shtml</a></li>
+<li>安装LLOneBot <a class="link" href="https://github.com/super1207/install_llob/releases"  target="_blank" rel="noopener"
+    >https://github.com/super1207/install_llob/releases</a>  <br>
+下载 exe，双击运行即可，之后打开 QQ 的设置，看到了 LLOneBot 就代表安装成功了。</li>
+<li>对接HoshinoBot
+在<code>QQ设置 -&gt; LLOneBot</code>中启用反向WebSocket服务并添加地址<code>ws://127.0.0.1:8080/ws</code>，然后保存。</li>
+<li>正式运行
+启动HoshinoBot与NTQQ后，私聊机器人发送<code>在？</code>，若机器人有回复，说明已经成功搭建起HoshinoBot啦！</li>
+</ol>
+<h2 id="自用插件">自用插件
+</h2><blockquote>
+<p>大部分已经被我改的面目全非，功能用法可能不同，仅做自我备份用，如有需要可以去<a class="link" href="https://github.com/pcrbot/HoshinoBot-plugins-index"  target="_blank" rel="noopener"
+    >插件库</a>选用心仪的插件。</p>
+</blockquote>
+<h3 id="bot_manager_web">bot_manager_web
+</h3><p>插件项目地址： <a class="link" href="https://github.com/pcrbot/HosBotManagerWeb"  target="_blank" rel="noopener"
+    >https://github.com/pcrbot/HosBotManagerWeb</a> <br>
+bot功能网页管理，可以分群开关功能，即生效，不需要重启HoshinoBot</p>
+<h3 id="aichat-chatgpt">aichat-chatGPT
+</h3><p>插件项目地址： <a class="link" href="https://github.com/Cosmos01/aichat-chatGPT"  target="_blank" rel="noopener"
+    >https://github.com/Cosmos01/aichat-chatGPT</a>  <br>
+aichat插件，可以利用chatGPT实现QQ机器人对话，支持上下文记忆，可用多种API不只限于openai  <br>
+我使用的GPT 3.5免费API项目地址： <a class="link" href="https://github.com/chatanywhere/GPT_API_free"  target="_blank" rel="noopener"
+    >https://github.com/chatanywhere/GPT_API_free</a></p>
+<h3 id="uma_plugin">uma_plugin
+</h3><p>插件项目地址： <a class="link" href="https://github.com/azmiao/uma_plugin"  target="_blank" rel="noopener"
+    >https://github.com/azmiao/uma_plugin</a>  <br>
+赛马娘插件，大佬维护得很好。</p>
+<h3 id="blue_archive_hoshinobot">Blue_Archive_HoshinoBot
+</h3><p>插件项目地址： <a class="link" href="https://github.com/Cosmos01/Blue_Archive_HoshinoBot"  target="_blank" rel="noopener"
+    >https://github.com/Cosmos01/Blue_Archive_HoshinoBot</a> <br>
+碧蓝档案的插件，很完美，不需要什么修改。</p>
+<h3 id="dailynews">dailynews
+</h3><p>插件项目地址： <a class="link" href="https://github.com/pcrbot/dailynews"  target="_blank" rel="noopener"
+    >https://github.com/pcrbot/dailynews</a> <br>
+每日早报</p>
+<h3 id="music">music
+</h3><p>插件项目地址： <a class="link" href="https://github.com/pcrbot/music"  target="_blank" rel="noopener"
+    >https://github.com/pcrbot/music</a>  <br>
+点歌功能 <br>
+LLOneBot方案有些问题，解决方法：</p>
+<ol>
+<li>在<code>QQ设置 -&gt; LLOneBot</code>中填写音乐卡片签名地址：<code>http://napcat-sign.wumiao.wang:2052/music_sign</code>，并且只能发送网易云卡片，建议删除QQ音乐和咪咕音乐查找。</li>
+<li>QQ音乐查询接口年久失修，可能需要自行寻找可用的。</li>
+</ol>
+<h3 id="picfinder_take">picfinder_take
+</h3><p>插件项目地址： <a class="link" href="https://github.com/pcrbot/picfinder_take"  target="_blank" rel="noopener"
+    >https://github.com/pcrbot/picfinder_take</a>  <br>
+识图搜图插件 <br>
+应该是我魔改最多的插件，主要问题是ntqq使用了新的图片协议，导致拿不到正确的图片地址，请自行摸索。</p>
+<h3 id="uma_voi">uma_voi
+</h3><p>插件项目地址： <a class="link" href="https://github.com/Yukari-Lily/uma_voi"  target="_blank" rel="noopener"
+    >https://github.com/Yukari-Lily/uma_voi</a>     <br>
+自写的赛马娘语音插件，主要工作量在解包与整理语音文件，到后期实际上不止赛马娘语音了233，遇到喜欢的就会加上。</p>
+<hr>
+<p><img src="/hoshinobot-llonebot/end.webp"
+	width="2048"
+	height="1158"
+	srcset="/hoshinobot-llonebot/end_hu8629967388017622155.webp 1024w, /hoshinobot-llonebot/end_hu18117408379557951641.webp 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="176"
+		data-flex-basis="424px"
+	
+></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/qqbot/">QQbot</a>
+        
+            <a href="/tags/hoshinobot/">HoshinoBot</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/autobangumi-qbittorrent-jellyfin/">
+        
+        
+            <div class="article-image">
+                <img src="/autobangumi-qbittorrent-jellyfin/cover.066d80615ea3d4aa45065d051ab658dc_hu2435547024640834558.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 我的全流程自动追番方案"
+                        data-key="AutoBangumi-qBittorrent-Jellyfin" 
+                        data-hash="md5-Bm2AYV6j1KpFBl0FGrZY3A==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">我的全流程自动追番方案</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/owncast/">
+        
+        
+            <div class="article-image">
+                <img src="/owncast/cover.4d2b72fbb421dc5153a8ad5cb52821d6_hu11037670390203895353.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Owncast简易教程&amp;使用心得"
+                        data-key="Owncast" 
+                        data-hash="md5-TSty&#43;7Qh3FFTqK1ctSgh1g==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Owncast简易教程&amp;使用心得</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/blog/">
+        
+        
+            <div class="article-image">
+                <img src="/blog/cover.961c72bb24d0fa42d3cd1ff27aca85fd_hu14754908730848571063.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Hugo &#43; Github Pages/Cloudflare Pages搭建个人博客"
+                        data-key="Blog" 
+                        data-hash="md5-lhxyuyTQ&#43;kLTzR/yesqF/Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Hugo &#43; Github Pages/Cloudflare Pages搭建个人博客</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2024 Yukari Blog
+    </section>
+    
+    <section class="powerby">
+        
+            最爱22💖 <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.27.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

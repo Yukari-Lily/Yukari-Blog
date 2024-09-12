@@ -8,11 +8,11 @@
         <language>en-us</language>
         <lastBuildDate>Fri, 16 Aug 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://yukari.pages.dev/tags/blog/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hugo &#43; Github Pages/Cloudflare Pages搭建个人博客</title>
-        <link>https://yukari.pages.dev/hugo--github-pages/cloudflare-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+        <link>https://yukari.pages.dev/blog/</link>
         <pubDate>Fri, 16 Aug 2024 00:00:00 +0800</pubDate>
         
-        <guid>https://yukari.pages.dev/hugo--github-pages/cloudflare-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
-        <description>&lt;img src="https://yukari.pages.dev/hugo--github-pages/cloudflare-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/cover.webp" alt="Featured image of post Hugo &#43; Github Pages/Cloudflare Pages搭建个人博客" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+        <guid>https://yukari.pages.dev/blog/</guid>
+        <description>&lt;img src="https://yukari.pages.dev/blog/cover.webp" alt="Featured image of post Hugo &#43; Github Pages/Cloudflare Pages搭建个人博客" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;经历了一次服务器硬件的淘汰之后决定给自己写一些服务工具的备忘录以防硬盘爆炸重装时再踩一遍坑，在notion和一众博客方案中选择了部署方便的&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;hugo&lt;/a&gt;+&lt;a class=&#34;link&#34; href=&#34;https://github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub&lt;/a&gt;/&lt;a class=&#34;link&#34; href=&#34;https://dash.cloudflare.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -21,10 +21,10 @@
 &lt;p&gt;好处是成本很低，不需要服务器甚至域名也可以不需要，维护全部交给大厂，搭建完之后每次新文章只需提交到Github便会刷新构建。不过不管是Github还是Cloudflare国内总会抽风，会不定时分地区的可用性下降。如果只是个人用，代理常开的情况下是无感的。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;final&#34;&gt;Final
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/hugo--github-pages/cloudflare-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/final.webp&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/blog/final.webp&#34;
 	width=&#34;2496&#34;
 	height=&#34;1596&#34;
-	srcset=&#34;https://yukari.pages.dev/hugo--github-pages/cloudflare-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/final_hu7002056249543732478.webp 1024w, https://yukari.pages.dev/hugo--github-pages/cloudflare-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/final_hu14365023071148062767.webp 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/blog/final_hu7002056249543732478.webp 1024w, https://yukari.pages.dev/blog/final_hu14365023071148062767.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -507,10 +507,10 @@ cmd中输入&lt;code&gt;hugo version&lt;/code&gt;,输出以下即为成功
 &lt;li&gt;内容（post）不对时可能需要删除&lt;code&gt;根目录\public&lt;/code&gt;下所有文件重新构建，注意不要把.git文件夹删了。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/hugo--github-pages/cloudflare-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/end.webp&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/blog/end.webp&#34;
 	width=&#34;3004&#34;
 	height=&#34;2087&#34;
-	srcset=&#34;https://yukari.pages.dev/hugo--github-pages/cloudflare-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/end_hu18343251820008632103.webp 1024w, https://yukari.pages.dev/hugo--github-pages/cloudflare-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/end_hu7639147808640421034.webp 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/blog/end_hu18343251820008632103.webp 1024w, https://yukari.pages.dev/blog/end_hu7639147808640421034.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	

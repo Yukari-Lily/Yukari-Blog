@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction\r说是全流程自动，其实每季还是需要一定程度手动改一些配置的（ 本想每个项目分开写一篇，不过既然叫全流程果然还是集合为一篇比较好。 *坏处是比较杂，每个软件可能都会写一些方案相关心得和碎碎念。 *无关的软件使用心得会放到另一篇常用软件介绍中。 *同时也会写一些平替软件或另一种方案，会用(可选)并斜体标记，如果只想快速搭建，忽略这些即可。\n">
+<title>我的全流程自动追番方案</title>
+
+<link rel='canonical' href='https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/'>
+
+<link rel="stylesheet" href="/scss/style.min.bdc1157f346714aee56f7210360c7c912bf0a7fefc3b3f2bae07688bade15d78.css"><meta property='og:title' content="我的全流程自动追番方案">
+<meta property='og:description' content="Introduction\r说是全流程自动，其实每季还是需要一定程度手动改一些配置的（ 本想每个项目分开写一篇，不过既然叫全流程果然还是集合为一篇比较好。 *坏处是比较杂，每个软件可能都会写一些方案相关心得和碎碎念。 *无关的软件使用心得会放到另一篇常用软件介绍中。 *同时也会写一些平替软件或另一种方案，会用(可选)并斜体标记，如果只想快速搭建，忽略这些即可。\n">
+<meta property='og:url' content='https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/'>
+<meta property='og:site_name' content='Yukari Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='AutoBangumi' /><meta property='article:tag' content='qBittorrent' /><meta property='article:tag' content='Jellyfin' /><meta property='article:tag' content='Mikan' /><meta property='article:tag' content='MPV' /><meta property='article:published_time' content='2024-08-23T00:00:00&#43;08:00'/><meta property='article:modified_time' content='2024-08-23T00:00:00&#43;08:00'/><meta property='og:image' content='https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/cover.webp' />
+<meta name="twitter:title" content="我的全流程自动追番方案">
+<meta name="twitter:description" content="Introduction\r说是全流程自动，其实每季还是需要一定程度手动改一些配置的（ 本想每个项目分开写一篇，不过既然叫全流程果然还是集合为一篇比较好。 *坏处是比较杂，每个软件可能都会写一些方案相关心得和碎碎念。 *无关的软件使用心得会放到另一篇常用软件介绍中。 *同时也会写一些平替软件或另一种方案，会用(可选)并斜体标记，如果只想快速搭建，忽略这些即可。\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/cover.webp' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu8649795592182595522.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🐾</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Yukari Blog</a></h1>
+            <h2 class="site-description">备忘/归档</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/Yukari-Lily'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://x.com/Yukari_daze'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/p/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/p/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#下载软件部分">下载软件部分</a>
+      <ol>
+        <li><a href="#qbittorrent安装"><strong>qBittorrent安装</strong></a></li>
+        <li><a href="#qbittorrent设置"><strong>qBittorrent设置</strong></a></li>
+        <li><a href="#可选qbittorrent-enhanced-edition"><em>(可选)qBittorrent-Enhanced-Edition</em></a></li>
+      </ol>
+    </li>
+    <li><a href="#rss管理部分">RSS管理部分</a>
+      <ol>
+        <li><a href="#autobangumi安装"><strong>Autobangumi安装</strong></a></li>
+        <li><a href="#autobangumi设置"><strong>Autobangumi设置</strong></a></li>
+        <li><a href="#可选安装2610版本ab"><em>(可选)安装2.6.10版本ab</em></a></li>
+        <li><a href="#可选docker-desktop安装2610版本ab"><em>(可选)Docker Desktop安装2.6.10版本ab</em></a></li>
+        <li><a href="#可选moviepilot"><em>(可选)MoviePilot</em></a></li>
+      </ol>
+    </li>
+    <li><a href="#媒体库部分">媒体库部分</a></li>
+    <li><a href="#网页调起本地播放器播放">网页调起本地播放器播放</a></li>
+    <li><a href="#更新通知发送至qqbot">更新通知发送至QQbot</a></li>
+    <li><a href="#字幕组选择问题">字幕组选择问题</a></li>
+    <li><a href="#tips">Tips</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/autobangumi-qbittorrent-jellyfin/">
+                <img src="/autobangumi-qbittorrent-jellyfin/cover_hu5149599347160891847.webp"
+                        srcset="/autobangumi-qbittorrent-jellyfin/cover_hu5149599347160891847.webp 800w, /autobangumi-qbittorrent-jellyfin/cover_hu8283968684025266982.webp 1600w"
+                        width="800" 
+                        height="386" 
+                        loading="lazy"
+                        alt="Featured image of post 我的全流程自动追番方案" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E5%A4%87%E5%BF%98/" style="background-color: #ec6d2c; color: #fff;">
+                备忘
+            </a>
+        
+            <a href="/categories/%E5%8A%A8%E7%94%BB%E7%89%87/" style="background-color: #ec6d2c; color: #fff;">
+                动画片
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/autobangumi-qbittorrent-jellyfin/">我的全流程自动追番方案</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Aug 23, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    9 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="introduction">Introduction
+</h2><p><del>说是全流程自动，其实每季还是需要一定程度手动改一些配置的（</del> <br>
+本想每个项目分开写一篇，不过既然叫全流程果然还是集合为一篇比较好。 <br>
+*坏处是比较杂，每个软件可能都会写一些方案相关心得和碎碎念。 <br>
+*无关的软件使用心得会放到另一篇常用软件介绍中。 <br>
+*同时也会写一些平替软件或另一种方案，会用<code>(可选)</code>并斜体标记，如果只想快速搭建，忽略这些即可。</p>
+<blockquote>
+<p>以下所有安装环境均是<code>Windows10</code>，如果是其他平台非常推荐看这篇<a class="link" href="https://www.himiku.com/archives/auto-bangumi.html"  target="_blank" rel="noopener"
+    >AutoBangumi：自动追番，解放双手</a>。</p>
+</blockquote>
+<p><img src="/autobangumi-qbittorrent-jellyfin/%E6%B5%81%E7%A8%8B%E5%9B%BE.webp"
+	width="2605"
+	height="1790"
+	srcset="/autobangumi-qbittorrent-jellyfin/%E6%B5%81%E7%A8%8B%E5%9B%BE_hu11192917829988485160.webp 1024w, /autobangumi-qbittorrent-jellyfin/%E6%B5%81%E7%A8%8B%E5%9B%BE_hu11223782706523553211.webp 2048w"
+	loading="lazy"
+	
+		alt="大致流程图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="145"
+		data-flex-basis="349px"
+	
+></p>
+<hr>
+<h2 id="下载软件部分">下载软件部分
+</h2><blockquote>
+<p>首先需要一个bt下载器<a class="link" href="https://www.qbittorrent.org/"  target="_blank" rel="noopener"
+    >qBittorrent</a>，可选的<a class="link" href="https://github.com/c0re100/qBittorrent-Enhanced-Edition"  target="_blank" rel="noopener"
+    >qBittorrent-Enhanced-Edition</a>主要增强了原版qB的反吸血功能，其他功能基本一致。<br>
+<strong>当前公网做种环境比较恶劣，推荐使用qBEE~</strong></p>
+</blockquote>
+<h3 id="qbittorrent安装"><strong>qBittorrent安装</strong>
+</h3><p>官网下载地址： <a class="link" href="https://www.fosshub.com/qBittorrent.html"  target="_blank" rel="noopener"
+    >https://www.fosshub.com/qBittorrent.html</a> <br>
+一般选择<code>qBittorrent Windows x64</code></p>
+<h3 id="qbittorrent设置"><strong>qBittorrent设置</strong>
+</h3><ol>
+<li>
+<p>启用webui</p>
+<p>如图勾选即可</p>
+<p><img src="/autobangumi-qbittorrent-jellyfin/image-13.png"
+	width="1233"
+	height="875"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-13_hu6164240292002080929.png 1024w, /autobangumi-qbittorrent-jellyfin/image-13_hu16439042320054450225.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="140"
+		data-flex-basis="338px"
+	
+></p>
+</li>
+<li>
+<p>启用RSS</p>
+<blockquote>
+<p>最新版的Autobangumi其实并不需要启用RSS了，不过2.6.10版本需要。 <br>
+如图勾选即可，对于mikan更新间隔可以改为3-5分钟，文章数目最好大点比如5000。</p>
+</blockquote>
+<p><img src="/autobangumi-qbittorrent-jellyfin/image-14.png"
+	width="1233"
+	height="875"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-14_hu3950059600157671929.png 1024w, /autobangumi-qbittorrent-jellyfin/image-14_hu16132624562117563291.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="140"
+		data-flex-basis="338px"
+	
+></p>
+</li>
+</ol>
+<hr>
+<h3 id="可选qbittorrent-enhanced-edition"><em>(可选)qBittorrent-Enhanced-Edition</em>
+</h3><p>Github Release： <a class="link" href="https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases"  target="_blank" rel="noopener"
+    >https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases</a> <br>
+一般选择<code>qbittorrent_enhanced_版本_x64_setup.exe</code> <br>
+设置过程是一样的</p>
+<hr>
+<h2 id="rss管理部分">RSS管理部分
+</h2><blockquote>
+<p>由于<a class="link" href="https://github.com/EstrellaXD/Auto_Bangumi"  target="_blank" rel="noopener"
+    >Autobangumi</a>最新版接管了RSS规则处理，导致不会在qBittorrent上生成RSS规则，意味着你只能使用ab支持的RSS如mikan，mikanRSS已经能应付99%的追番需求啦！
+可选的RSS还有nyaa、dmhy等，不过没有mikan方便。
+如果你确需使用其他RSS可以考虑跳过最新版，看下面可选的2.6.10版本安装。</p>
+</blockquote>
+<h3 id="autobangumi安装"><strong>Autobangumi安装</strong>
+</h3><p>需要python3.10以上环境，一般装最新就行。</p>
+<ol>
+<li>
+<p>安装python</p>
+<p>官网下载： <a class="link" href="https://www.python.org/downloads/"  target="_blank" rel="noopener"
+    >https://www.python.org/downloads/</a></p>
+</li>
+<li>
+<p>Github Release下载<code>app-v3.1.14.zip</code>： <a class="link" href="https://github.com/EstrellaXD/Auto_Bangumi/releases"  target="_blank" rel="noopener"
+    >https://github.com/EstrellaXD/Auto_Bangumi/releases</a>
+解压至任意目录，之后称该目录为<code>根目录</code>。</p>
+</li>
+<li>
+<p>创建虚拟环境，在<code>根目录</code>下Powershell命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">python -m venv env
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安装依赖，在<code>根目录</code>下Powershell命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pip install -r requirements.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>在<code>根目录</code>下新建两个文件夹<code>config</code> <code>data</code></p>
+</li>
+<li>
+<p>启动，在<code>根目录</code>下Powershell命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">python main.py
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出以下内容并可以打开输出中的<a class="link" href="http://0.0.0.0:7892"  target="_blank" rel="noopener"
+    >webui</a>就说明安装成功啦！</p>
+<p><img src="/autobangumi-qbittorrent-jellyfin/image-11.png"
+	width="1803"
+	height="893"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-11_hu6235573066274776807.png 1024w, /autobangumi-qbittorrent-jellyfin/image-11_hu9659689572406727528.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="201"
+		data-flex-basis="484px"
+	
+></p>
+</li>
+<li>
+<p>在<code>根目录</code>下新建一个<code>新建文本文档.txt</code>复制下列文本后重命名为<code>start.bat</code>，之后可以直接以此文件启动，不用重复输命令。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">@echo off
+</span></span><span class="line"><span class="cl">title AutoBangumi
+</span></span><span class="line"><span class="cl">python main.py
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<h3 id="autobangumi设置"><strong>Autobangumi设置</strong>
+</h3><ol>
+<li>
+<p>下载设置</p>
+<ol>
+<li>
+<p><strong>下载器地址</strong>改为本地打开qbwebui的地址，如未修改默认是： <code>localhost:8080</code></p>
+<p><img src="/autobangumi-qbittorrent-jellyfin/image.png"
+	width="1176"
+	height="598"
+	srcset="/autobangumi-qbittorrent-jellyfin/image_hu6504846004471411547.png 1024w, /autobangumi-qbittorrent-jellyfin/image_hu8509937081397640519.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="196"
+		data-flex-basis="471px"
+	
+></p>
+</li>
+<li>
+<p><strong>下载地址</strong>改为你希望存放下载存放新番的绝对地址，如果按我的设置文件目录如下，</p>
+<p><img src="/autobangumi-qbittorrent-jellyfin/image-1.png"
+	width="844"
+	height="553"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-1_hu9427489577339643776.png 1024w, /autobangumi-qbittorrent-jellyfin/image-1_hu6084952646026707333.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="152"
+		data-flex-basis="366px"
+	
+></p>
+</li>
+</ol>
+</li>
+<li>
+<p>番剧管理设置</p>
+<ol>
+<li>重命名方式改为<code>advance</code>（好看且规范）</li>
+</ol>
+</li>
+<li>
+<p>解析设置 → 排除，需要<strong>慎重填写</strong>，直接决定会下载哪些你选择的字幕组中发布的版本，不然可能会下到很多不需要的版本如：繁体中文、720p的。<br>
+我的供参考，一个一个添加：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">720
+</span></span><span class="line"><span class="cl">繁日
+</span></span><span class="line"><span class="cl">预告
+</span></span><span class="line"><span class="cl">内嵌
+</span></span><span class="line"><span class="cl">CHT
+</span></span><span class="line"><span class="cl">AVC
+</span></span><span class="line"><span class="cl">JPTC
+</span></span><span class="line"><span class="cl">合集
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>添加RSS <br>
+只推荐使用mikan的RSS，如果你的系统未配置代理或打不开<a class="link" href="https://mikanani.me/"  target="_blank" rel="noopener"
+    >官网</a>，请使用<a class="link" href="https://mikanime.tv/"  target="_blank" rel="noopener"
+    >备用官网</a>，除了国内可访问性不同外没有任何区别。</p>
+<ol>
+<li>
+<p>右上角注册</p>
+</li>
+<li>
+<p>登录后，右上角账号设置，开启高级订阅</p>
+</li>
+<li>
+<p>来到主页订阅番剧，注意需要点开封面选择需要订阅的字幕组然后点击右边的<code>订</code>，或选择订阅语言后保存修改<del>有时简/繁过滤是无效的</del>。
+<img src="/autobangumi-qbittorrent-jellyfin/image-3.png"
+	width="1879"
+	height="1469"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-3_hu7908922765321832779.png 1024w, /autobangumi-qbittorrent-jellyfin/image-3_hu8872915506818402260.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="127"
+		data-flex-basis="306px"
+	
+></p>
+</li>
+<li>
+<p>然后来到页面上方找到RSS订阅点开，这就是接下要填的RSS地址，形如 <a class="link" href="https://mikanani.me/RSS/MyBangumi?token=xxx"  target="_blank" rel="noopener"
+    >https://mikanani.me/RSS/MyBangumi?token=xxx</a>
+<img src="/autobangumi-qbittorrent-jellyfin/image-4.png"
+	width="2688"
+	height="1389"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-4_hu9501271117379460634.png 1024w, /autobangumi-qbittorrent-jellyfin/image-4_hu14079176520487836947.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="193"
+		data-flex-basis="464px"
+	
+></p>
+</li>
+<li>
+<p>来到ab，点开右上角的加号，如图填入上一步的RSS地址，名称任意，勾选聚合RSS，解析器选择tmdb，添加。
+<img src="/autobangumi-qbittorrent-jellyfin/image-6.png"
+	width="1806"
+	height="955"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-6_hu7549536248812177950.png 1024w, /autobangumi-qbittorrent-jellyfin/image-6_hu10553122342643812450.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="189"
+		data-flex-basis="453px"
+	
+></p>
+</li>
+<li>
+<p>右上角重启或重启程序。 <br>
+<img src="/autobangumi-qbittorrent-jellyfin/image-7.png"
+	width="358"
+	height="593"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-7_hu15747338399361306986.png 1024w, /autobangumi-qbittorrent-jellyfin/image-7_hu17496622920444013663.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="60"
+		data-flex-basis="144px"
+	
+></p>
+</li>
+<li>
+<p>可以看到ab会如图开始收集RSS。
+<img src="/autobangumi-qbittorrent-jellyfin/image-8.png"
+	width="1952"
+	height="1043"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-8_hu5088575586837796119.png 1024w, /autobangumi-qbittorrent-jellyfin/image-8_hu11050025329206438803.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="187"
+		data-flex-basis="449px"
+	
+></p>
+</li>
+<li>
+<p>收集完成后可以看到ab主页中出现了已收集的番剧封面，qb中也会有相应的下载信息。
+<img src="/autobangumi-qbittorrent-jellyfin/image-9.png"
+	width="2088"
+	height="1202"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-9_hu7697614616134100094.png 1024w, /autobangumi-qbittorrent-jellyfin/image-9_hu8257552245843386683.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="173"
+		data-flex-basis="416px"
+	
+>
+<img src="/autobangumi-qbittorrent-jellyfin/image-10.png"
+	width="1808"
+	height="1142"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-10_hu16484559751396214002.png 1024w, /autobangumi-qbittorrent-jellyfin/image-10_hu9974285387453952185.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="158"
+		data-flex-basis="379px"
+	
+></p>
+</li>
+<li>
+<p>最后确认3点：</p>
+<ol>
+<li>下载的是自己需要的字幕组的视频</li>
+<li>下载路径正确</li>
+<li>下载完成能够正确重命名</li>
+</ol>
+<p>\都无误就开始享受最基本的解放双手吧/</p>
+</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h3 id="可选安装2610版本ab"><em>(可选)安装2.6.10版本ab</em>
+</h3><blockquote>
+<p>这个版本的ab会在qb中建立RSS规则，在mikanRSS已订阅某动画给ab后，ab会在RSS规则中自动建立该动画的RSS规则，然后你可以按下图顺序来添加新版ab不支持的RSS，然后来到RSS下载器中，修改正则以命中你额外添加的RSS里的该动画然后保存即可。参考↓ <br>
+<img src="/autobangumi-qbittorrent-jellyfin/image-33.png"
+	width="1761"
+	height="1372"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-33_hu657289692655621030.png 1024w, /autobangumi-qbittorrent-jellyfin/image-33_hu18115296765519374232.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="128"
+		data-flex-basis="308px"
+	
+></p>
+</blockquote>
+<ol>
+<li>
+<p>安装python，同样需要python3.10以上环境，一般装最新就行： <a class="link" href="https://www.python.org/downloads/"  target="_blank" rel="noopener"
+    >https://www.python.org/downloads/</a></p>
+</li>
+<li>
+<p>Github Release下载Source code(zip)： <a class="link" href="https://github.com/EstrellaXD/Auto_Bangumi/releases/tag/2.6.10"  target="_blank" rel="noopener"
+    >https://github.com/EstrellaXD/Auto_Bangumi/releases/tag/2.6.10</a></p>
+</li>
+<li>
+<p>解压压缩文件中<code>src</code>文件夹下的所有文件至任意文件夹，之后称该文件夹下为<code>根目录</code>。</p>
+</li>
+<li>
+<p>在 <code>根目录\module</code> 目录下创建 <code>__version__.py</code> 文件并写入 <code>VERSION='local'</code>, 请注意文件编码格式为 <code>UTF-8</code>。
+<img src="/autobangumi-qbittorrent-jellyfin/image-15.png"
+	width="1222"
+	height="487"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-15_hu11803137521829144993.png 1024w, /autobangumi-qbittorrent-jellyfin/image-15_hu6834979888717765723.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="250"
+		data-flex-basis="602px"
+	
+></p>
+</li>
+<li>
+<p>然后在该目录下创建虚拟环境：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">venv</span> <span class="n">env</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>下载webui并安装：
+Github Release下载<code>dist.zip(zip)</code>： <a class="link" href="https://github.com/Rewrite0/Auto_Bangumi_WebUI/releases/tag/v1.2.0"  target="_blank" rel="noopener"
+    >https://github.com/Rewrite0/Auto_Bangumi_WebUI/releases/tag/v1.2.0</a></p>
+</li>
+<li>
+<p><code>dist</code>内的所有文件解压至<code>根目录\templates</code>中</p>
+</li>
+<li>
+<p>在<code>根目录</code>下新建两个文件夹<code>config</code> <code>data</code></p>
+</li>
+<li>
+<p>Powershell命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">python main.py
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出以下内容并可以打开输出中的<a class="link" href="http://0.0.0.0:7892"  target="_blank" rel="noopener"
+    >webui</a>就说明安装成功啦！</p>
+<p><img src="/autobangumi-qbittorrent-jellyfin/image-16.png"
+	width="1770"
+	height="800"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-16_hu14381442150176223905.png 1024w, /autobangumi-qbittorrent-jellyfin/image-16_hu5359274586714522552.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="221"
+		data-flex-basis="531px"
+	
+></p>
+</li>
+<li>
+<p>配置方面和上面最新版大同小异，下面是我的供参考。</p>
+<p><img src="/autobangumi-qbittorrent-jellyfin/image-17.png"
+	width="2004"
+	height="1874"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-17_hu16864984395615605402.png 1024w, /autobangumi-qbittorrent-jellyfin/image-17_hu3947765979974895994.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="106"
+		data-flex-basis="256px"
+	
+></p>
+</li>
+<li>
+<p>新建一个<code>新建文本文档.txt</code>复制下列文本后重命名为<code>start.bat</code>，之后可以直接以此文件启动，不用重复输命令。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">@echo off
+</span></span><span class="line"><span class="cl">title AutoBangumi
+</span></span><span class="line"><span class="cl">python main.py
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<h3 id="可选docker-desktop安装2610版本ab"><em>(可选)Docker Desktop安装2.6.10版本ab</em>
+</h3><ol>
+<li>
+<p>安装Docker Desktop， <a class="link" href="https://www.docker.com/products/docker-desktop/"  target="_blank" rel="noopener"
+    >https://www.docker.com/products/docker-desktop/</a></p>
+<blockquote>
+<p>这是我实际环境运行了一年多的方案，也算稳定所以也提一下，适合正好运行着Docker Desktop其他容器的朋友，<strong>没必要单纯为了运行ab装Docker Desktop</strong></p>
+</blockquote>
+</li>
+<li>
+<p>选择一个任意文件夹下新建<code>docker-compose.yml</code>文件,之后称这个任意文件夹下为<code>根目录</code>。</p>
+</li>
+<li>
+<p>复制以下内容至<code>docker-compose.yml</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-docker" data-lang="docker"><span class="line"><span class="cl">version: <span class="s2">&#34;3.8&#34;</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>services:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>  AutoBangumi:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    image: estrellaxd/auto_bangumi:2.6.10<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    container_name: AutoBangumi<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    volumes:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - ./config:/app/config<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - ./data:/app/data<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    ports:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - <span class="s2">&#34;7892:7892&#34;</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    restart: unless-stopped<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    dns:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - 223.5.5.5<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>volumes:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>  AutoBangumi_config:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    name: AutoBangumi_config<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>  AutoBangumi_data:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    name: AutoBangumi_data<span class="err">
+</span></span></span></code></pre></div></li>
+<li>
+<p>启动，在<code>根目录</code>下，Powershell命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker compose up -d
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>docker内出现AutoBangumi容器并输出以下内容并可以打开<a class="link" href="http://0.0.0.0:7892"  target="_blank" rel="noopener"
+    >webui</a>就说明安装成功啦！</p>
+<p><img src="/autobangumi-qbittorrent-jellyfin/image-18.png"
+	width="1641"
+	height="775"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-18_hu17040583987543853820.png 1024w, /autobangumi-qbittorrent-jellyfin/image-18_hu4730291958896360958.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="211"
+		data-flex-basis="508px"
+	
+></p>
+</li>
+<li>
+<p>配置方面和上面最新版大同小异，下面是我的供参考。</p>
+<p><img src="/autobangumi-qbittorrent-jellyfin/image-17.png"
+	width="2004"
+	height="1874"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-17_hu16864984395615605402.png 1024w, /autobangumi-qbittorrent-jellyfin/image-17_hu3947765979974895994.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="106"
+		data-flex-basis="256px"
+	
+></p>
+<p>要注意的是docker容器由于有自己的内网，下载器填写<code>localhost:8080</code>可能无效，请使用qb所在机器的内网地址，如<code>192.168.1.3:8080</code>。</p>
+</li>
+</ol>
+<h3 id="可选moviepilot"><em>(可选)MoviePilot</em>
+</h3><p>仅指个路，可以自行了解，需要pt站认证才能使用全部功能。</p>
+<p>项目地址： <a class="link" href="https://github.com/jxxghp/MoviePilot"  target="_blank" rel="noopener"
+    >https://github.com/jxxghp/MoviePilot</a> <br>
+文档： <a class="link" href="https://wiki.movie-pilot.org/"  target="_blank" rel="noopener"
+    >https://wiki.movie-pilot.org/</a></p>
+<hr>
+<h2 id="媒体库部分">媒体库部分
+</h2><blockquote>
+<p>你可能还需要一个<code>可播放的</code>、<code>美观的</code>新番海报墙，也就是媒体库。<br>
+一般可选项有三个Plex、Emby、Jellyfin<br>
+我选择<a class="link" href="https://github.com/jellyfin/jellyfin"  target="_blank" rel="noopener"
+    ><strong>Jellyfin</strong></a></p>
+</blockquote>
+<p><img src="/autobangumi-qbittorrent-jellyfin/image-5.png"
+	width="2614"
+	height="1531"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-5_hu14260635508408826513.png 1024w, /autobangumi-qbittorrent-jellyfin/image-5_hu17967572376454518403.png 2048w"
+	loading="lazy"
+	
+		alt="Jellyfin"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="170"
+		data-flex-basis="409px"
+	
+></p>
+<p>官网下载地址： <a class="link" href="https://repo.jellyfin.org/?path=/server/windows/latest-stable/amd64"  target="_blank" rel="noopener"
+    >https://repo.jellyfin.org/?path=/server/windows/latest-stable/amd64</a>
+Jellyfin的安装教程搜一下遍地都是就不赘述了。
+主要讲几点可能的坑：</p>
+<ol>
+<li>动画刮削仅推荐tmdb，建议其他都不要勾选，参考下图。</li>
+<li>使用Jellyfin提供的<a class="link" href="https://repo.jellyfin.org/?path=/ffmpeg/windows/latest-6.x/win64"  target="_blank" rel="noopener"
+    >FFmpeg</a>，设置参考下图。</li>
+<li>如有核显/独显，启用对应显卡的硬件转码，参考下图。</li>
+<li>如要手动下载整理旧番入库Jellyfin，硬盘文件夹分开、Jellyfin库也分开建立，参考下图。</li>
+<li>转码设置中启用备用字体，我的是<code>微软雅黑.woff2</code>。</li>
+<li>建议客户端播放，PC推荐下面要介绍的<a class="link" href="https://yukari.pages.dev/%E6%88%91%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E8%BF%BD%E7%95%AA%E6%96%B9%E6%A1%88/#%E7%BD%91%E9%A1%B5%E8%B0%83%E8%B5%B7%E6%9C%AC%E5%9C%B0%E6%92%AD%E6%94%BE%E5%99%A8%E6%92%AD%E6%94%BE"  target="_blank" rel="noopener"
+    >网页调起本地播放器</a>，安卓端建议<code>Yamby</code>。</li>
+<li>如需要弹幕，<a class="link" href="https://github.com/Izumiko/jellyfin-danmaku"  target="_blank" rel="noopener"
+    >jellyfin-danmaku</a>，*仅适用于网页播放。</li>
+</ol>
+<p>付一个我自己的设置，仅作为我自己备份，<strong>谨慎参考</strong>。</p>
+<p><img src="/autobangumi-qbittorrent-jellyfin/image-19.png"
+	width="1728"
+	height="2802"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-19_hu9291202649176438372.png 1024w, /autobangumi-qbittorrent-jellyfin/image-19_hu14697781666858973434.png 2048w"
+	loading="lazy"
+	
+		alt="常规设置"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="61"
+		data-flex-basis="148px"
+	
+>
+<img src="/autobangumi-qbittorrent-jellyfin/image-20.png"
+	width="1728"
+	height="6917"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-20_hu7812394679639212712.png 1024w, /autobangumi-qbittorrent-jellyfin/image-20_hu2818049958193919514.png 2048w"
+	loading="lazy"
+	
+		alt="转码设置"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="24"
+		data-flex-basis="59px"
+	
+>
+<img src="/autobangumi-qbittorrent-jellyfin/image-21.png"
+	width="1728"
+	height="5030"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-21_hu11136489049380745434.png 1024w, /autobangumi-qbittorrent-jellyfin/image-21_hu10890329932633060347.png 2048w"
+	loading="lazy"
+	
+		alt="网络设置"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="34"
+		data-flex-basis="82px"
+	
+>
+<img src="/autobangumi-qbittorrent-jellyfin/image-22.png"
+	width="1500"
+	height="6486"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-22_hu5195503148829333970.png 1024w, /autobangumi-qbittorrent-jellyfin/image-22_hu1136236624256021757.png 2048w"
+	loading="lazy"
+	
+		alt="新番刮削设置"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="23"
+		data-flex-basis="55px"
+	
+>
+<img src="/autobangumi-qbittorrent-jellyfin/image-23.png"
+	width="1501"
+	height="2015"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-23_hu7236370465215601665.png 1024w, /autobangumi-qbittorrent-jellyfin/image-23_hu6894147234289118489.png 2048w"
+	loading="lazy"
+	
+		alt="所有库"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="74"
+		data-flex-basis="178px"
+	
+>
+<img src="/autobangumi-qbittorrent-jellyfin/image-27.png"
+	width="1227"
+	height="3864"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-27_hu11571512384586960485.png 1024w, /autobangumi-qbittorrent-jellyfin/image-27_hu3041557970037047951.png 2048w"
+	loading="lazy"
+	
+		alt="网页显示"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="31"
+		data-flex-basis="76px"
+	
+>
+<img src="/autobangumi-qbittorrent-jellyfin/image-25.png"
+	width="1500"
+	height="7379"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-25_hu13995207184910871580.png 1024w, /autobangumi-qbittorrent-jellyfin/image-25_hu189630077041676978.png 2048w"
+	loading="lazy"
+	
+		alt="网页首页"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="20"
+		data-flex-basis="48px"
+	
+></p>
+<h2 id="网页调起本地播放器播放">网页调起本地播放器播放
+</h2><blockquote>
+<p>能够实现调起本地播放器播放，并回传播放记录给Jellyfin，播放完成关闭时还会同步在bangumi上打格子。</p>
+</blockquote>
+<p>项目地址：<a class="link" href="https://github.com/kjtsune/embyToLocalPlayer"  target="_blank" rel="noopener"
+    >embyToLocalPlayer</a> <br>
+推荐配合MPV懒人版<a class="link" href="https://github.com/hooke007/MPV_lazy"  target="_blank" rel="noopener"
+    >MPV_lazy</a>食用</p>
+<p>文档都很很详细，不赘述了，值得一提的是安装在win上的Jellyfin<a class="link" href="https://github.com/Izumiko/jellyfin-danmaku"  target="_blank" rel="noopener"
+    >jellyfin-danmaku</a>推荐使用<a class="link" href="https://github.com/Izumiko/jellyfin-danmaku?tab=readme-ov-file#4-%E4%BF%AE%E6%94%B9%E6%9C%8D%E5%8A%A1%E7%AB%AF"  target="_blank" rel="noopener"
+    >修改服务端</a>的方式，不过Jellyfin更新后需要再次修改。</p>
+<h2 id="更新通知发送至qqbot">更新通知发送至QQbot
+</h2><blockquote>
+<p>由于jellyfin自带的webhook没办法以库/文件路径过滤新入库推送。 <br>
+用python写了一个简陋的中间件来过滤，白名单形式。</p>
+</blockquote>
+<p>项目地址：<a class="link" href="https://github.com/Yukari-Lily/Post-Filter-Forward"  target="_blank" rel="noopener"
+    >Post-Filter-Forward</a></p>
+<p>bot使用的是<a class="link" href="https://yukari.pages.dev/hoshinobot-llonebot%E9%83%A8%E7%BD%B2qq%E6%9C%BA%E5%99%A8%E4%BA%BA/"  target="_blank" rel="noopener"
+    >HoshinoBot+LLOneBot部署QQ机器人</a>。</p>
+<ol>
+<li>
+<p>Jellyfin主页 → 控制台 → 插件 → 目录，找到Webhook安装后重启Jellyfin。
+<img src="/autobangumi-qbittorrent-jellyfin/image-29.png"
+	width="1706"
+	height="1524"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-29_hu7948567586258461761.png 1024w, /autobangumi-qbittorrent-jellyfin/image-29_hu17563170556831233190.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="111"
+		data-flex-basis="268px"
+	
+></p>
+</li>
+<li>
+<p>Jellyfin主页 → 控制台 → 插件 → 我的插件</p>
+<ol>
+<li>Server Url填写Jellyfin地址，如<code>http://localhost:8096</code></li>
+<li>点击Add Generic Destination</li>
+<li>Webhook Name任意填</li>
+<li>Webhook Url任意填，和Post-Filter-Forward的config.yaml中receive_url一致即可，如<code>http://localhost:11451</code></li>
+<li>Notification Type只勾选Item Added</li>
+<li>User Filter不用动</li>
+<li>Item Type只勾选Episodes</li>
+<li>Template复制以下代码填入，<code>group_id</code>的114514改成你的群号
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">    {{#if_equals NotificationType &#39;ItemAdded&#39;}} 
+</span></span><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">  &#34;group_id&#34;: 114514,
+</span></span><span class="line"><span class="cl">  &#34;message&#34;: &#34;{{{SeriesName}}} 更新啦！\n{{#if_equals ItemType &#39;Episode&#39;}}S{{SeasonNumber00}}E{{EpisodeNumber00}}\n{{{Name}}}\n{{else}}名称：{{{Name}}} ({{Year}})\n{{/if_equals}}时长：{{RunTime}}\n[CQ:image,file={{ServerUrl}}/Items/{{SeriesId}}/Images/Primary]&#34;
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">{{/if_equals}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+</li>
+<li>
+<p>修改Post-Filter-Forward的config.yaml文件</p>
+<ol>
+<li>receive_url和上面的Webhook Url一致。</li>
+<li>启用bot的HTTP服务，并填任意端口，如11721，那么forward_url的地址便是<code>http://localhost:11721/send_group_msg</code>
+<img src="/autobangumi-qbittorrent-jellyfin/image-31.png"
+	width="1252"
+	height="992"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-31_hu1555575704100519824.png 1024w, /autobangumi-qbittorrent-jellyfin/image-31_hu8682241043634978897.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="126"
+		data-flex-basis="302px"
+	
+></li>
+</ol>
+</li>
+<li>
+<p>最终效果</p>
+<p><img src="/autobangumi-qbittorrent-jellyfin/image-30.png"
+	width="1769"
+	height="764"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-30_hu3341953065073137008.png 1024w, /autobangumi-qbittorrent-jellyfin/image-30_hu17342514670057629739.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="231"
+		data-flex-basis="555px"
+	
+></p>
+<p><img src="/autobangumi-qbittorrent-jellyfin/image-28.png"
+	width="618"
+	height="852"
+	srcset="/autobangumi-qbittorrent-jellyfin/image-28_hu13476222559349835850.png 1024w, /autobangumi-qbittorrent-jellyfin/image-28_hu15019823688389110162.png 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="72"
+		data-flex-basis="174px"
+	
+></p>
+</li>
+</ol>
+<h2 id="字幕组选择问题">字幕组选择问题
+</h2><blockquote>
+<p>我的：Lolihouse&gt;B-Global&gt;其他字幕组&gt;ani
+由于要兼顾新番更新速度和画面/字幕质量，你可能需要<strong>首先</strong>需要一个第一时间抓取并发布的<strong>搬运组</strong>，<strong>然后</strong>需要一个第二时间译出字幕的<strong>字幕组</strong>，
+其中<strong>搬运组</strong>有：</p>
+</blockquote>
+<ol>
+<li>[ANi] 一般是首选，主抓<a class="link" href="https://ani.gamer.com.tw/"  target="_blank" rel="noopener"
+    >Baha</a>源和bilibili港澳台源，一般都有繁中。</li>
+<li>[Kirara Fantasia] 主抓<a class="link" href="https://ani.gamer.com.tw/"  target="_blank" rel="noopener"
+    >Baha</a>、<a class="link" href="https://www.crunchyroll.com/"  target="_blank" rel="noopener"
+    >cr</a>、<a class="link" href="https://www.bilibili.tv/"  target="_blank" rel="noopener"
+    >B-Global</a>、<a class="link" href="https://abema.tv/"  target="_blank" rel="noopener"
+    >Abema</a>、<a class="link" href="https://www.primevideo.com/"  target="_blank" rel="noopener"
+    >ADN</a>源，其中只有Baha源有繁中，B-Global有时会有，从2024年7月开始我个人比较喜欢用部分有中文的B-Global源来代替Baha源，一是字幕是内嵌带样式比巴哈好看很多，二是字幕翻译比较符合大陆，</li>
+<li>[Lilith-Raws] 之前和[ANi]差不多，最近停更了，主抓<a class="link" href="https://ani.gamer.com.tw/"  target="_blank" rel="noopener"
+    >Baha</a>源。</li>
+<li>[]
+其中<strong>字幕组</strong>有：</li>
+<li></li>
+</ol>
+<h2 id="tips">Tips
+</h2><ol>
+<li>蜜柑的RSS由于cdn缓存的关系并不会实时更新，一般会有10-30分钟的延迟。</li>
+<li>新番放送信息： <a class="link" href="https://bgm.wiki"  target="_blank" rel="noopener"
+    >https://bgm.wiki</a> 或者 <a class="link" href="https://yuc.wiki/"  target="_blank" rel="noopener"
+    >https://yuc.wiki/</a></li>
+<li>一个新番字幕来源： <a class="link" href="https://t.me/anime_chinese_subtitles"  target="_blank" rel="noopener"
+    >https://t.me/anime_chinese_subtitles</a></li>
+<li></li>
+</ol>
+<hr>
+<p><img src="/autobangumi-qbittorrent-jellyfin/end.webp"
+	width="1700"
+	height="1089"
+	srcset="/autobangumi-qbittorrent-jellyfin/end_hu9747934829176354920.webp 1024w, /autobangumi-qbittorrent-jellyfin/end_hu14456746818283537247.webp 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="156"
+		data-flex-basis="374px"
+	
+></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/autobangumi/">AutoBangumi</a>
+        
+            <a href="/tags/qbittorrent/">QBittorrent</a>
+        
+            <a href="/tags/jellyfin/">Jellyfin</a>
+        
+            <a href="/tags/mikan/">Mikan</a>
+        
+            <a href="/tags/mpv/">MPV</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/owncast/">
+        
+        
+            <div class="article-image">
+                <img src="/owncast/cover.4d2b72fbb421dc5153a8ad5cb52821d6_hu11037670390203895353.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Owncast简易教程&amp;使用心得"
+                        data-key="Owncast" 
+                        data-hash="md5-TSty&#43;7Qh3FFTqK1ctSgh1g==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Owncast简易教程&amp;使用心得</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/hoshinobot-llonebot/">
+        
+        
+            <div class="article-image">
+                <img src="/hoshinobot-llonebot/cover.8b13cd19b65d0064b8999ef56643ad38_hu13044600044034076513.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post HoshinoBot&#43;LLOneBot部署QQ机器人"
+                        data-key="HoshinoBot-LLOneBot" 
+                        data-hash="md5-ixPNGbZdAGS4mZ71ZkOtOA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">HoshinoBot&#43;LLOneBot部署QQ机器人</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/blog/">
+        
+        
+            <div class="article-image">
+                <img src="/blog/cover.961c72bb24d0fa42d3cd1ff27aca85fd_hu14754908730848571063.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Hugo &#43; Github Pages/Cloudflare Pages搭建个人博客"
+                        data-key="Blog" 
+                        data-hash="md5-lhxyuyTQ&#43;kLTzR/yesqF/Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Hugo &#43; Github Pages/Cloudflare Pages搭建个人博客</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2024 Yukari Blog
+    </section>
+    
+    <section class="powerby">
+        
+            最爱22💖 <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.27.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
