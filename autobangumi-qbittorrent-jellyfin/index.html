@@ -249,6 +249,7 @@
     </li>
     <li><a href="#媒体库部分">媒体库部分</a></li>
     <li><a href="#网页调起本地播放器播放">网页调起本地播放器播放</a></li>
+    <li><a href="#网页播放弹幕插件">网页播放弹幕插件</a></li>
     <li><a href="#更新通知发送至qqbot">更新通知发送至QQbot</a></li>
     <li><a href="#字幕组选择问题">字幕组选择问题</a></li>
     <li><a href="#tips">Tips</a></li>
@@ -1056,15 +1057,17 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 ></p>
 <h2 id="网页调起本地播放器播放">网页调起本地播放器播放
 </h2><blockquote>
-<p>能够实现调起本地播放器播放，并回传播放记录给Jellyfin，播放完成关闭时还会同步在bangumi上打格子。</p>
+<p>网页播放器有很多不便，解码羸弱，字幕支持不好。而客户端也有些小问题，所以十分推荐使用此插件实现调起本地播放器播放，并回传播放记录给Jellyfin，播放完成关闭时还会同步在bangumi上打格子。</p>
 </blockquote>
 <p>项目地址：<a class="link" href="https://github.com/kjtsune/embyToLocalPlayer"  target="_blank" rel="noopener"
     >embyToLocalPlayer</a> <br>
 推荐配合MPV懒人版<a class="link" href="https://github.com/hooke007/MPV_lazy"  target="_blank" rel="noopener"
     >MPV_lazy</a>食用</p>
-<p>文档都很很详细，不赘述了，值得一提的是安装在win上的Jellyfin<a class="link" href="https://github.com/Izumiko/jellyfin-danmaku"  target="_blank" rel="noopener"
-    >jellyfin-danmaku</a>推荐使用<a class="link" href="https://github.com/Izumiko/jellyfin-danmaku?tab=readme-ov-file#4-%E4%BF%AE%E6%94%B9%E6%9C%8D%E5%8A%A1%E7%AB%AF"  target="_blank" rel="noopener"
-    >修改服务端</a>的方式，不过Jellyfin更新后需要再次修改。</p>
+<h2 id="网页播放弹幕插件">网页播放弹幕插件
+</h2><p><a class="link" href="https://github.com/Izumiko/jellyfin-danmaku"  target="_blank" rel="noopener"
+    >jellyfin-danmaku</a></p>
+<p>文档都很很详细，不赘述了，值得一提的是安装在win上的Jellyfin推荐使用<a class="link" href="https://github.com/Izumiko/jellyfin-danmaku?tab=readme-ov-file#4-%E4%BF%AE%E6%94%B9%E6%9C%8D%E5%8A%A1%E7%AB%AF"  target="_blank" rel="noopener"
+    >修改服务端</a>的方式，不过更新Jellyfin后需要再次修改。</p>
 <h2 id="更新通知发送至qqbot">更新通知发送至QQbot
 </h2><blockquote>
 <p>由于jellyfin自带的webhook没办法以库/文件路径过滤新入库推送。 <br>
@@ -1171,34 +1174,39 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 </ol>
 <h2 id="字幕组选择问题">字幕组选择问题
 </h2><blockquote>
-<p>我的：Lolihouse&gt;B-Global&gt;其他字幕组&gt;ani
-由于要兼顾新番更新速度和画面/字幕质量，你可能需要<strong>首先</strong>需要一个第一时间抓取并发布的<strong>搬运组</strong>，<strong>然后</strong>需要一个第二时间译出字幕的<strong>字幕组</strong>，
-其中<strong>搬运组</strong>有：</p>
+<p>由于要兼顾新番更新速度和画面/字幕质量，你可能<strong>首先</strong>需要订阅一个第一时间抓取并发布的<strong>搬运组</strong>，<strong>然后</strong>订阅一个需要时间译出字幕的<strong>字幕组</strong>。</p>
 </blockquote>
+<p>其中<strong>搬运组</strong>有：</p>
 <ol>
-<li>[ANi] 一般是首选，主抓<a class="link" href="https://ani.gamer.com.tw/"  target="_blank" rel="noopener"
-    >Baha</a>源和bilibili港澳台源，一般都有繁中。</li>
-<li>[Kirara Fantasia] 主抓<a class="link" href="https://ani.gamer.com.tw/"  target="_blank" rel="noopener"
+<li>[<strong>ANi</strong>] 一般是首选，主抓<a class="link" href="https://ani.gamer.com.tw/"  target="_blank" rel="noopener"
+    >Baha</a>源和bilibili港澳台源，繁中为主。</li>
+<li>[<strong>Kirara Fantasia</strong>] 主抓<a class="link" href="https://ani.gamer.com.tw/"  target="_blank" rel="noopener"
     >Baha</a>、<a class="link" href="https://www.crunchyroll.com/"  target="_blank" rel="noopener"
     >cr</a>、<a class="link" href="https://www.bilibili.tv/"  target="_blank" rel="noopener"
     >B-Global</a>、<a class="link" href="https://abema.tv/"  target="_blank" rel="noopener"
     >Abema</a>、<a class="link" href="https://www.primevideo.com/"  target="_blank" rel="noopener"
-    >ADN</a>源，其中只有Baha源有繁中，B-Global有时会有，从2024年7月开始我个人比较喜欢用部分有中文的B-Global源来代替Baha源，一是字幕是内嵌带样式比巴哈好看很多，二是字幕翻译比较符合大陆，</li>
-<li>[Lilith-Raws] 之前和[ANi]差不多，最近停更了，主抓<a class="link" href="https://ani.gamer.com.tw/"  target="_blank" rel="noopener"
+    >ADN</a>源，其中只有Baha源有繁中，B-Global有时会有简中，从2024年7月开始我个人比较喜欢用部分有中文的B-Global源来代替Baha源，一是字幕是内嵌带样式比巴哈好看很多，二是字幕翻译比较符合用语习惯，但是翻译还是有点保(he)守(xie)（</li>
+<li>[<strong>Lilith-Raws</strong>] 之前和[ANi]差不多，最近停更了，主抓<a class="link" href="https://ani.gamer.com.tw/"  target="_blank" rel="noopener"
     >Baha</a>源。</li>
-<li>[]
-其中<strong>字幕组</strong>有：</li>
-<li></li>
 </ol>
+<p>其中<strong>字幕组</strong>有：
+1.</p>
 <h2 id="tips">Tips
 </h2><ol>
-<li>蜜柑的RSS由于cdn缓存的关系并不会实时更新，一般会有10-30分钟的延迟。</li>
+<li>蜜柑的RSS由于cdn缓存的关系并不会实时更新，与网页显示相比一般会有10-30分钟的延迟。</li>
 <li>新番放送信息： <a class="link" href="https://bgm.wiki"  target="_blank" rel="noopener"
-    >https://bgm.wiki</a> 或者 <a class="link" href="https://yuc.wiki/"  target="_blank" rel="noopener"
-    >https://yuc.wiki/</a></li>
+    >https://bgm.wiki</a>、https://yuc.wiki/</li>
 <li>一个新番字幕来源： <a class="link" href="https://t.me/anime_chinese_subtitles"  target="_blank" rel="noopener"
     >https://t.me/anime_chinese_subtitles</a></li>
-<li></li>
+<li>有时蜜柑没有如期更新可以去别站看看是否更了 <br>
+<a class="link" href="https://bangumi.moe"  target="_blank" rel="noopener"
+    >https://bangumi.moe</a> <br>
+<a class="link" href="https://nyaa.si"  target="_blank" rel="noopener"
+    >https://nyaa.si</a> <br>
+<a class="link" href="https://share.dmhy.org"  target="_blank" rel="noopener"
+    >https://share.dmhy.org</a> <br>
+<a class="link" href="https://share.acgnx.se"  target="_blank" rel="noopener"
+    >https://share.acgnx.se</a></li>
 </ol>
 <hr>
 <p><img src="/autobangumi-qbittorrent-jellyfin/end.webp"

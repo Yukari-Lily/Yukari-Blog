@@ -721,15 +721,17 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;网页调起本地播放器播放&#34;&gt;网页调起本地播放器播放
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;能够实现调起本地播放器播放，并回传播放记录给Jellyfin，播放完成关闭时还会同步在bangumi上打格子。&lt;/p&gt;
+&lt;p&gt;网页播放器有很多不便，解码羸弱，字幕支持不好。而客户端也有些小问题，所以十分推荐使用此插件实现调起本地播放器播放，并回传播放记录给Jellyfin，播放完成关闭时还会同步在bangumi上打格子。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;项目地址：&lt;a class=&#34;link&#34; href=&#34;https://github.com/kjtsune/embyToLocalPlayer&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;embyToLocalPlayer&lt;/a&gt; &lt;br&gt;
 推荐配合MPV懒人版&lt;a class=&#34;link&#34; href=&#34;https://github.com/hooke007/MPV_lazy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;MPV_lazy&lt;/a&gt;食用&lt;/p&gt;
-&lt;p&gt;文档都很很详细，不赘述了，值得一提的是安装在win上的Jellyfin&lt;a class=&#34;link&#34; href=&#34;https://github.com/Izumiko/jellyfin-danmaku&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;jellyfin-danmaku&lt;/a&gt;推荐使用&lt;a class=&#34;link&#34; href=&#34;https://github.com/Izumiko/jellyfin-danmaku?tab=readme-ov-file#4-%E4%BF%AE%E6%94%B9%E6%9C%8D%E5%8A%A1%E7%AB%AF&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;修改服务端&lt;/a&gt;的方式，不过Jellyfin更新后需要再次修改。&lt;/p&gt;
+&lt;h2 id=&#34;网页播放弹幕插件&#34;&gt;网页播放弹幕插件
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Izumiko/jellyfin-danmaku&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;jellyfin-danmaku&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;文档都很很详细，不赘述了，值得一提的是安装在win上的Jellyfin推荐使用&lt;a class=&#34;link&#34; href=&#34;https://github.com/Izumiko/jellyfin-danmaku?tab=readme-ov-file#4-%E4%BF%AE%E6%94%B9%E6%9C%8D%E5%8A%A1%E7%AB%AF&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;修改服务端&lt;/a&gt;的方式，不过更新Jellyfin后需要再次修改。&lt;/p&gt;
 &lt;h2 id=&#34;更新通知发送至qqbot&#34;&gt;更新通知发送至QQbot
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;由于jellyfin自带的webhook没办法以库/文件路径过滤新入库推送。 &lt;br&gt;
@@ -836,34 +838,39 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &lt;/ol&gt;
 &lt;h2 id=&#34;字幕组选择问题&#34;&gt;字幕组选择问题
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;我的：Lolihouse&amp;gt;B-Global&amp;gt;其他字幕组&amp;gt;ani
-由于要兼顾新番更新速度和画面/字幕质量，你可能需要&lt;strong&gt;首先&lt;/strong&gt;需要一个第一时间抓取并发布的&lt;strong&gt;搬运组&lt;/strong&gt;，&lt;strong&gt;然后&lt;/strong&gt;需要一个第二时间译出字幕的&lt;strong&gt;字幕组&lt;/strong&gt;，
-其中&lt;strong&gt;搬运组&lt;/strong&gt;有：&lt;/p&gt;
+&lt;p&gt;由于要兼顾新番更新速度和画面/字幕质量，你可能&lt;strong&gt;首先&lt;/strong&gt;需要订阅一个第一时间抓取并发布的&lt;strong&gt;搬运组&lt;/strong&gt;，&lt;strong&gt;然后&lt;/strong&gt;订阅一个需要时间译出字幕的&lt;strong&gt;字幕组&lt;/strong&gt;。&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;其中&lt;strong&gt;搬运组&lt;/strong&gt;有：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;[ANi] 一般是首选，主抓&lt;a class=&#34;link&#34; href=&#34;https://ani.gamer.com.tw/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Baha&lt;/a&gt;源和bilibili港澳台源，一般都有繁中。&lt;/li&gt;
-&lt;li&gt;[Kirara Fantasia] 主抓&lt;a class=&#34;link&#34; href=&#34;https://ani.gamer.com.tw/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;li&gt;[&lt;strong&gt;ANi&lt;/strong&gt;] 一般是首选，主抓&lt;a class=&#34;link&#34; href=&#34;https://ani.gamer.com.tw/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Baha&lt;/a&gt;源和bilibili港澳台源，繁中为主。&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Kirara Fantasia&lt;/strong&gt;] 主抓&lt;a class=&#34;link&#34; href=&#34;https://ani.gamer.com.tw/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Baha&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.crunchyroll.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;cr&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.tv/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;B-Global&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://abema.tv/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Abema&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.primevideo.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;ADN&lt;/a&gt;源，其中只有Baha源有繁中，B-Global有时会有，从2024年7月开始我个人比较喜欢用部分有中文的B-Global源来代替Baha源，一是字幕是内嵌带样式比巴哈好看很多，二是字幕翻译比较符合大陆，&lt;/li&gt;
-&lt;li&gt;[Lilith-Raws] 之前和[ANi]差不多，最近停更了，主抓&lt;a class=&#34;link&#34; href=&#34;https://ani.gamer.com.tw/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ADN&lt;/a&gt;源，其中只有Baha源有繁中，B-Global有时会有简中，从2024年7月开始我个人比较喜欢用部分有中文的B-Global源来代替Baha源，一是字幕是内嵌带样式比巴哈好看很多，二是字幕翻译比较符合用语习惯，但是翻译还是有点保(he)守(xie)（&lt;/li&gt;
+&lt;li&gt;[&lt;strong&gt;Lilith-Raws&lt;/strong&gt;] 之前和[ANi]差不多，最近停更了，主抓&lt;a class=&#34;link&#34; href=&#34;https://ani.gamer.com.tw/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Baha&lt;/a&gt;源。&lt;/li&gt;
-&lt;li&gt;[]
-其中&lt;strong&gt;字幕组&lt;/strong&gt;有：&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;其中&lt;strong&gt;字幕组&lt;/strong&gt;有：
+1.&lt;/p&gt;
 &lt;h2 id=&#34;tips&#34;&gt;Tips
 &lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;蜜柑的RSS由于cdn缓存的关系并不会实时更新，一般会有10-30分钟的延迟。&lt;/li&gt;
+&lt;li&gt;蜜柑的RSS由于cdn缓存的关系并不会实时更新，与网页显示相比一般会有10-30分钟的延迟。&lt;/li&gt;
 &lt;li&gt;新番放送信息： &lt;a class=&#34;link&#34; href=&#34;https://bgm.wiki&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://bgm.wiki&lt;/a&gt; 或者 &lt;a class=&#34;link&#34; href=&#34;https://yuc.wiki/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://yuc.wiki/&lt;/a&gt;&lt;/li&gt;
+    &gt;https://bgm.wiki&lt;/a&gt;、https://yuc.wiki/&lt;/li&gt;
 &lt;li&gt;一个新番字幕来源： &lt;a class=&#34;link&#34; href=&#34;https://t.me/anime_chinese_subtitles&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://t.me/anime_chinese_subtitles&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;有时蜜柑没有如期更新可以去别站看看是否更了 &lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://bangumi.moe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://bangumi.moe&lt;/a&gt; &lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://nyaa.si&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://nyaa.si&lt;/a&gt; &lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://share.dmhy.org&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://share.dmhy.org&lt;/a&gt; &lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://share.acgnx.se&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://share.acgnx.se&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/end.webp&#34;

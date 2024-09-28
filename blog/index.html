@@ -245,6 +245,12 @@
     <li><a href="#启用github-pages">启用Github Pages</a></li>
     <li><a href="#启用cloudflares-pages">启用Cloudflares Pages</a></li>
     <li><a href="#日常写作">日常写作</a></li>
+    <li><a href="#更新">更新</a>
+      <ol>
+        <li><a href="#hugo">hugo</a></li>
+        <li><a href="#主题">主题</a></li>
+      </ol>
+    </li>
     <li><a href="#补充">补充</a></li>
   </ol>
 </nav>
@@ -405,7 +411,7 @@ cmd中输入<code>hugo version</code>,输出以下即为成功
 </ol>
 <h2 id="应用hugo主题">应用Hugo主题
 </h2><ol>
-<li>来到<code>D:\tools\hugo\blog</code>文件夹下，cmd命令：
+<li>来到<code>根目录</code>下，cmd命令：
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -826,9 +832,23 @@ cmd中输入<code>hugo version</code>,输出以下即为成功
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>之后Github Pages/Cloudflare Pages会自动重新构建，只需稍等就可以在网页看到了。</p>
-<h2 id="补充">补充
+<h2 id="更新">更新
+</h2><h3 id="hugo">hugo
+</h3><p>与安装时一样，<a class="link" href="https://github.com/gohugoio/hugo/releases"  target="_blank" rel="noopener"
+    >Github Releases</a>下载后覆盖原来的文件即可。</p>
+<h3 id="主题">主题
+</h3><p>以我为例，来到<code>根目录\themes\hugo-theme-stack\</code>下，cmd命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git pull
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="补充">补充
 </h2><ol>
-<li>修改css样式后可能需要删除<code>根目录\resources\_gen</code>下所有文件重新构建才生效。</li>
+<li>修改css样式/更新主题后可能需要删除<code>根目录\resources\_gen</code>下所有文件重新构建才生效。</li>
 <li>内容（post）不对时可能需要删除<code>根目录\public</code>下所有文件重新构建，注意不要把.git文件夹删了。</li>
 </ol>
 <hr>
