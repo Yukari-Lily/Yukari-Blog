@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction\r特别感谢22喵，给我提供了用owncast一起看的思路! 去年在啊b一起看番被叔叔反复制裁，搭建了owncast发现完美符合自己的需求\n">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction\r特别感谢22喵，给我提供了用owncast一起看的思路! 去年在啊b直播一起看番被叔叔反复制裁，搭建了owncast发现完美符合自己的需求\n">
 <title>Owncast简易教程&amp;使用心得</title>
 
-<link rel='canonical' href='https://yukari.pages.dev/owncast/'>
+<link rel='canonical' href='http://localhost:1313/owncast/'>
 
 <link rel="stylesheet" href="/scss/style.min.bdc1157f346714aee56f7210360c7c912bf0a7fefc3b3f2bae07688bade15d78.css"><meta property='og:title' content="Owncast简易教程&使用心得">
-<meta property='og:description' content="Introduction\r特别感谢22喵，给我提供了用owncast一起看的思路! 去年在啊b一起看番被叔叔反复制裁，搭建了owncast发现完美符合自己的需求\n">
-<meta property='og:url' content='https://yukari.pages.dev/owncast/'>
+<meta property='og:description' content="Introduction\r特别感谢22喵，给我提供了用owncast一起看的思路! 去年在啊b直播一起看番被叔叔反复制裁，搭建了owncast发现完美符合自己的需求\n">
+<meta property='og:url' content='http://localhost:1313/owncast/'>
 <meta property='og:site_name' content='Yukari Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Owncast' /><meta property='article:tag' content='一起看' /><meta property='article:published_time' content='2024-08-20T00:00:00&#43;08:00'/><meta property='article:modified_time' content='2024-08-20T00:00:00&#43;08:00'/><meta property='og:image' content='https://yukari.pages.dev/owncast/cover.webp' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Owncast' /><meta property='article:tag' content='一起看' /><meta property='article:published_time' content='2024-08-20T00:00:00&#43;08:00'/><meta property='article:modified_time' content='2024-08-20T00:00:00&#43;08:00'/><meta property='og:image' content='http://localhost:1313/owncast/cover.webp' />
 <meta name="twitter:title" content="Owncast简易教程&使用心得">
-<meta name="twitter:description" content="Introduction\r特别感谢22喵，给我提供了用owncast一起看的思路! 去年在啊b一起看番被叔叔反复制裁，搭建了owncast发现完美符合自己的需求\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://yukari.pages.dev/owncast/cover.webp' />
+<meta name="twitter:description" content="Introduction\r特别感谢22喵，给我提供了用owncast一起看的思路! 去年在啊b直播一起看番被叔叔反复制裁，搭建了owncast发现完美符合自己的需求\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/owncast/cover.webp' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -345,7 +345,7 @@
 </h2><blockquote>
 <p><strong>特别感谢22喵，给我提供了用owncast一起看的思路!</strong> <img src=22.jpg style="width: 80px;height: 80px; vertical-align: middle;"></p>
 </blockquote>
-<p>去年在啊b一起看番被叔叔反复制裁，搭建了owncast发现完美符合自己的需求</p>
+<p>去年在啊b直播一起看番被叔叔反复制裁，搭建了owncast发现完美符合自己的需求</p>
 <h2 id="owncast介绍">owncast介绍
 </h2><p><a class="link" href="https://github.com/owncast/owncast"  target="_blank" rel="noopener"
     >owncast</a>是一款开源的直播&amp;聊天服务器，并提供一个简单前端页面，搭建完成后所需要做的与在大平台一样只需要开启obs进行推流即可在网页上看到自己的直播。</p>
@@ -389,32 +389,24 @@
 </div><h3 id="docker">docker
 </h3><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-docker" data-lang="docker"><span class="line"><span class="cl">version: <span class="s2">&#34;3.4&#34;</span><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>services:<span class="err">
+<pre tabindex="0" class="chroma"><code class="language-docker" data-lang="docker"><span class="line"><span class="cl">services:<span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span>  owncast:<span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span>    image: gabekangas/owncast:latest<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>    container_name: <span class="s2">&#34;owncast&#34;</span><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>    restart: unless-stopped<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>    ports:<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - <span class="s2">&#34;1935:1935&#34;</span><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - <span class="s2">&#34;8080:8080&#34;</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    network_mode: host <span class="c1">#不使用host可以删去</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    container_name: owncast<span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span>    volumes:<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - <span class="s2">&#34;./data:/app/data&#34;</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - ./data:/app/data<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    restart: unless-stopped<span class="err">
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>拉起后就能在<code>你的服务器地址:8080/admin</code>进入管理页面，默认用户名<code>admin</code>，密码<code>abc123</code> <br>
@@ -540,21 +532,22 @@
 此时这个页面上其他设置均是失效的。</p>
 <h3 id="obs设置">OBS设置
 </h3><blockquote>
-<p>如果熟悉FFmpeg可以直接用命令推流，不需要OBS。</p>
+<p>如果熟悉FFmpeg可以直接用命令推流，不需要OBS。 <br>
+obs 31.0.0似乎移除了ffmpeg推流实现，不建议升。</p>
 </blockquote>
 <p>如果使用OBS，推荐使用多路推流插件<a class="link" href="https://github.com/sorayuki/obs-multi-rtmp"  target="_blank" rel="noopener"
-    >obs-multi-rtmp</a>。</p>
+    >obs-multi-rtmp</a></p>
 <p>然后如图新建一个FFmpeg编码器设置来推流直通模式的owncast，这样可以保证最大的兼容性。</p>
 <p><img src="/owncast/obs.webp"
-	width="1456"
-	height="1071"
-	srcset="/owncast/obs_hu8304698998118882701.webp 1024w, /owncast/obs_hu8359345455240352701.webp 2048w"
+	width="1280"
+	height="1919"
+	srcset="/owncast/obs_hu18216612238875179685.webp 1024w, /owncast/obs_hu971439936967516518.webp 2048w"
 	loading="lazy"
 	
 	
 		class="gallery-image" 
-		data-flex-grow="135"
-		data-flex-basis="326px"
+		data-flex-grow="66"
+		data-flex-basis="160px"
 	
 ></p>
 <hr>
@@ -781,7 +774,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.82b0b2f8986459d4b654e360fe8bb7d5728d45ad979ae4c614eac787efb301c5.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

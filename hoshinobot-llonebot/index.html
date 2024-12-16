@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-    <head><meta charset='utf-8'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction\rHoshinoBot - 机器人本体 HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔改方便。\nLLOneBot - 通讯框架\n旧有的go-cqhttp方案因为QQ协议的更新经常会出现冻结和无法登录的情况，无奈替换成了性能开销比较大的LiteloaderQQNT框架的LLOneBot方案，目前非常稳定。\n">
 <title>HoshinoBot&#43;LLOneBot部署QQ机器人</title>
 
-<link rel='canonical' href='https://yukari.pages.dev/hoshinobot-llonebot/'>
+<link rel='canonical' href='http://localhost:1313/hoshinobot-llonebot/'>
 
 <link rel="stylesheet" href="/scss/style.min.bdc1157f346714aee56f7210360c7c912bf0a7fefc3b3f2bae07688bade15d78.css"><meta property='og:title' content="HoshinoBot+LLOneBot部署QQ机器人">
 <meta property='og:description' content="Introduction\rHoshinoBot - 机器人本体 HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔改方便。\nLLOneBot - 通讯框架\n旧有的go-cqhttp方案因为QQ协议的更新经常会出现冻结和无法登录的情况，无奈替换成了性能开销比较大的LiteloaderQQNT框架的LLOneBot方案，目前非常稳定。\n">
-<meta property='og:url' content='https://yukari.pages.dev/hoshinobot-llonebot/'>
+<meta property='og:url' content='http://localhost:1313/hoshinobot-llonebot/'>
 <meta property='og:site_name' content='Yukari Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='QQbot' /><meta property='article:tag' content='HoshinoBot' /><meta property='article:published_time' content='2024-08-17T00:00:00&#43;08:00'/><meta property='article:modified_time' content='2024-08-17T00:00:00&#43;08:00'/><meta property='og:image' content='https://yukari.pages.dev/hoshinobot-llonebot/cover.webp' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='QQbot' /><meta property='article:tag' content='HoshinoBot' /><meta property='article:published_time' content='2024-08-17T00:00:00&#43;08:00'/><meta property='article:modified_time' content='2024-08-17T00:00:00&#43;08:00'/><meta property='og:image' content='http://localhost:1313/hoshinobot-llonebot/cover.webp' />
 <meta name="twitter:title" content="HoshinoBot+LLOneBot部署QQ机器人">
 <meta name="twitter:description" content="Introduction\rHoshinoBot - 机器人本体 HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔改方便。\nLLOneBot - 通讯框架\n旧有的go-cqhttp方案因为QQ协议的更新经常会出现冻结和无法登录的情况，无奈替换成了性能开销比较大的LiteloaderQQNT框架的LLOneBot方案，目前非常稳定。\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://yukari.pages.dev/hoshinobot-llonebot/cover.webp' />
+    <meta name="twitter:image" content='http://localhost:1313/hoshinobot-llonebot/cover.webp' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -351,7 +351,8 @@ HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔�
 <p>由于QQ官方针对协议库的围追堵截, 不断更新加密方案, 我们已无力继续维护此项目. 建议Bot开发者尽快迁移至无头NTQQ项目</p>
 </blockquote>
 <blockquote>
-<p>备选方案还有基于安卓端的Shamrock和基于无头ntqq的NapCatQQ方案，没有尝试过，请自行了解了。</p>
+<p>备选方案还有基于安卓端的Shamrock和基于无头ntqq的NapCatQQ方案，推荐尝试<a class="link" href="https://napneko.icu/"  target="_blank" rel="noopener"
+    >NapCat</a>，全平台且更加轻量。</p>
 </blockquote>
 </li>
 </ol>
@@ -462,7 +463,7 @@ aichat插件，可以利用chatGPT实现QQ机器人对话，支持上下文记�
 点歌功能 <br>
 LLOneBot方案有些问题，解决方法：</p>
 <ol>
-<li>在<code>QQ设置 -&gt; LLOneBot</code>中填写音乐卡片签名地址：<code>http://napcat-sign.wumiao.wang:2052/music_sign</code>，并且只能发送网易云卡片，建议删除QQ音乐和咪咕音乐查找。</li>
+<li>在<code>QQ设置 -&gt; LLOneBot</code>中填写音乐卡片签名地址：<code>http://napcat-sign.wumiao.wang:2052/music_sign</code>。</li>
 <li>QQ音乐查询接口年久失修，可能需要自行寻找可用的。</li>
 </ol>
 <h3 id="picfinder_take">picfinder_take
@@ -698,7 +699,7 @@ LLOneBot方案有些问题，解决方法：</p>
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.82b0b2f8986459d4b654e360fe8bb7d5728d45ad979ae4c614eac787efb301c5.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

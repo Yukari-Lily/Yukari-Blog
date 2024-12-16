@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-    <head><meta charset='utf-8'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction\r说是全流程自动，其实每季还是需要一定程度手动改一些配置的（ 本想每个项目分开写一篇，不过既然叫全流程果然还是集合为一篇比较好。 *坏处是比较杂，每个软件可能都会写一些方案相关心得和碎碎念。 *无关的软件使用心得会放到另一篇常用软件介绍中。 *同时也会写一些平替软件或另一种方案，会用(可选)并斜体标记，如果只想快速搭建，忽略这些即可。\n">
 <title>我的全流程自动追番方案</title>
 
-<link rel='canonical' href='https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/'>
+<link rel='canonical' href='http://localhost:1313/autobangumi-qbittorrent-jellyfin/'>
 
 <link rel="stylesheet" href="/scss/style.min.bdc1157f346714aee56f7210360c7c912bf0a7fefc3b3f2bae07688bade15d78.css"><meta property='og:title' content="我的全流程自动追番方案">
 <meta property='og:description' content="Introduction\r说是全流程自动，其实每季还是需要一定程度手动改一些配置的（ 本想每个项目分开写一篇，不过既然叫全流程果然还是集合为一篇比较好。 *坏处是比较杂，每个软件可能都会写一些方案相关心得和碎碎念。 *无关的软件使用心得会放到另一篇常用软件介绍中。 *同时也会写一些平替软件或另一种方案，会用(可选)并斜体标记，如果只想快速搭建，忽略这些即可。\n">
-<meta property='og:url' content='https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/'>
+<meta property='og:url' content='http://localhost:1313/autobangumi-qbittorrent-jellyfin/'>
 <meta property='og:site_name' content='Yukari Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='AutoBangumi' /><meta property='article:tag' content='qBittorrent' /><meta property='article:tag' content='Jellyfin' /><meta property='article:tag' content='Mikan' /><meta property='article:tag' content='MPV' /><meta property='article:published_time' content='2024-08-23T00:00:00&#43;08:00'/><meta property='article:modified_time' content='2024-08-23T00:00:00&#43;08:00'/><meta property='og:image' content='https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/cover.webp' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='AutoBangumi' /><meta property='article:tag' content='qBittorrent' /><meta property='article:tag' content='Jellyfin' /><meta property='article:tag' content='Mikan' /><meta property='article:tag' content='MPV' /><meta property='article:published_time' content='2024-08-23T00:00:00&#43;08:00'/><meta property='article:modified_time' content='2024-08-23T00:00:00&#43;08:00'/><meta property='og:image' content='http://localhost:1313/autobangumi-qbittorrent-jellyfin/cover.webp' />
 <meta name="twitter:title" content="我的全流程自动追番方案">
 <meta name="twitter:description" content="Introduction\r说是全流程自动，其实每季还是需要一定程度手动改一些配置的（ 本想每个项目分开写一篇，不过既然叫全流程果然还是集合为一篇比较好。 *坏处是比较杂，每个软件可能都会写一些方案相关心得和碎碎念。 *无关的软件使用心得会放到另一篇常用软件介绍中。 *同时也会写一些平替软件或另一种方案，会用(可选)并斜体标记，如果只想快速搭建，忽略这些即可。\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/cover.webp' />
+    <meta name="twitter:image" content='http://localhost:1313/autobangumi-qbittorrent-jellyfin/cover.webp' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -333,7 +333,7 @@
 
 
                 <time class="article-time--reading">
-                    9 minute read
+                    10 minute read
                 </time>
             </div>
         
@@ -378,7 +378,8 @@
 <p>首先需要一个bt下载器<a class="link" href="https://www.qbittorrent.org/"  target="_blank" rel="noopener"
     >qBittorrent</a>，可选的<a class="link" href="https://github.com/c0re100/qBittorrent-Enhanced-Edition"  target="_blank" rel="noopener"
     >qBittorrent-Enhanced-Edition</a>主要增强了原版qB的反吸血功能，其他功能基本一致。<br>
-<strong>当前公网做种环境比较恶劣，推荐使用qBEE~</strong></p>
+<strong>当前公网做种环境比较恶劣，推荐使用qBEE或qB+<a class="link" href="https://github.com/PBH-BTN/PeerBanHelper"  target="_blank" rel="noopener"
+    >PBH</a>食用</strong></p>
 </blockquote>
 <h3 id="qbittorrent安装"><strong>qBittorrent安装</strong>
 </h3><p>官网下载地址： <a class="link" href="https://www.fosshub.com/qBittorrent.html"  target="_blank" rel="noopener"
@@ -434,7 +435,7 @@
 <p>由于<a class="link" href="https://github.com/EstrellaXD/Auto_Bangumi"  target="_blank" rel="noopener"
     >Autobangumi</a>最新版接管了RSS规则处理，导致不会在qBittorrent上生成RSS规则，意味着你只能使用ab支持的RSS如mikan，mikanRSS已经能应付99%的追番需求啦！
 可选的RSS还有nyaa、dmhy等，不过没有mikan方便。
-如果你确需使用其他RSS可以考虑跳过最新版，看下面可选的2.6.10版本安装。</p>
+如果你确需使用其他站的RSS可以考虑跳过最新版，看下面可选的2.6.10版本安装。</p>
 </blockquote>
 <h3 id="autobangumi安装"><strong>Autobangumi安装</strong>
 </h3><p>需要python3.10以上环境，一般装最新就行。</p>
@@ -847,26 +848,20 @@ Github Release下载<code>dist.zip(zip)</code>： <a class="link" href="https://
 </li>
 <li>
 <p>复制以下内容至<code>docker-compose.yml</code></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-docker" data-lang="docker"><span class="line"><span class="cl">version: <span class="s2">&#34;3.8&#34;</span><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>services:<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>  AutoBangumi:<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>    image: estrellaxd/auto_bangumi:2.6.10<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>    container_name: AutoBangumi<span class="err">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-docker" data-lang="docker"><span class="line"><span class="cl">    services:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    AutoBangumi:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>        image: estrellaxd/auto_bangumi:2.6.10<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>        network_mode: host <span class="c1">#不使用host就删去这行</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>        container_name: AutoBangumi<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>        volumes:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>        - ./config:/app/config<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>        - ./data:/app/data<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>        restart: unless-stopped<span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span>    volumes:<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - ./config:/app/config<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - ./data:/app/data<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>    ports:<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - <span class="s2">&#34;7892:7892&#34;</span><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>    restart: unless-stopped<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>    dns:<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>      - 223.5.5.5<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>volumes:<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>  AutoBangumi_config:<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>    name: AutoBangumi_config<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>  AutoBangumi_data:<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>    name: AutoBangumi_data<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    AutoBangumi_config:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>        name: AutoBangumi_config<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>    AutoBangumi_data:<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>        name: AutoBangumi_data<span class="err">
 </span></span></span></code></pre></div></li>
 <li>
 <p>启动，在<code>根目录</code>下，Powershell命令：</p>
@@ -909,7 +904,7 @@ Github Release下载<code>dist.zip(zip)</code>： <a class="link" href="https://
 		data-flex-basis="256px"
 	
 ></p>
-<p>要注意的是docker容器由于有自己的内网，下载器填写<code>localhost:8080</code>可能无效，请使用qb所在机器的内网地址，如<code>192.168.1.3:8080</code>。</p>
+<p>要注意的是bridge下docker容器由于有自己的内网，下载器填写<code>localhost:8080</code>可能无效，请使用qb所在机器的内网地址，如<code>192.168.1.3:8080</code>。如果是host模式则可以填本机地址。</p>
 </li>
 </ol>
 <h3 id="可选moviepilot"><em>(可选)MoviePilot</em>
@@ -946,13 +941,12 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 主要讲几点可能的坑：</p>
 <ol>
 <li>动画刮削仅推荐tmdb，建议其他都不要勾选，参考下图。</li>
-<li>使用Jellyfin提供的<a class="link" href="https://repo.jellyfin.org/?path=/ffmpeg/windows/latest-6.x/win64"  target="_blank" rel="noopener"
+<li>使用Jellyfin提供的<a class="link" href="https://repo.jellyfin.org/?path=/ffmpeg/windows"  target="_blank" rel="noopener"
     >FFmpeg</a>，设置参考下图。</li>
 <li>如有核显/独显，启用对应显卡的硬件转码，参考下图。</li>
 <li>如要手动下载整理旧番入库Jellyfin，硬盘文件夹分开、Jellyfin库也分开建立，参考下图。</li>
 <li>转码设置中启用备用字体，我的是<code>微软雅黑.woff2</code>。</li>
-<li>建议客户端播放，PC推荐下面要介绍的<a class="link" href="https://yukari.pages.dev/%E6%88%91%E7%9A%84%E5%85%A8%E6%B5%81%E7%A8%8B%E8%87%AA%E5%8A%A8%E8%BF%BD%E7%95%AA%E6%96%B9%E6%A1%88/#%E7%BD%91%E9%A1%B5%E8%B0%83%E8%B5%B7%E6%9C%AC%E5%9C%B0%E6%92%AD%E6%94%BE%E5%99%A8%E6%92%AD%E6%94%BE"  target="_blank" rel="noopener"
-    >网页调起本地播放器</a>，安卓端建议<code>Yamby</code>。</li>
+<li>建议客户端播放，PC推荐下面要介绍的<code>网页调起本地播放器</code>，安卓端建议<code>Yamby</code>。</li>
 <li>如需要弹幕，<a class="link" href="https://github.com/Izumiko/jellyfin-danmaku"  target="_blank" rel="noopener"
     >jellyfin-danmaku</a>，*仅适用于网页播放。</li>
 </ol>
@@ -1174,29 +1168,35 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 </ol>
 <h2 id="字幕组选择问题">字幕组选择问题
 </h2><blockquote>
-<p>由于要兼顾新番更新速度和画面/字幕质量，你可能<strong>首先</strong>需要订阅一个第一时间抓取并发布的<strong>搬运组</strong>，<strong>然后</strong>订阅一个需要时间译出字幕的<strong>字幕组</strong>。</p>
+<p>由于要兼顾新番更新速度和画面/字幕质量，你可能<strong>首先</strong>需要订阅一个第一时间抓取并发布的<strong>搬运组</strong>，然后订阅一个需要时间译出字幕的<strong>字幕组</strong>。</p>
 </blockquote>
-<p>其中<strong>搬运组</strong>有：</p>
+<p>其中mikan有发布的<strong>搬运组</strong>有：</p>
 <ol>
 <li>[<strong>ANi</strong>] 一般是首选，主抓<a class="link" href="https://ani.gamer.com.tw/"  target="_blank" rel="noopener"
     >Baha</a>源和bilibili港澳台源，繁中为主。</li>
+<li>[<strong>LoliHouse</strong>] 一般是次首选，不与字幕组合作的一般是抓CR源并内封版权字幕，但是因为不是全自动的并且有压制步骤，会稍晚一会到一天左右，不过lolihouse的画面处理我很喜欢，画质一般是web里最好的了。</li>
 <li>[<strong>Kirara Fantasia</strong>] 主抓<a class="link" href="https://ani.gamer.com.tw/"  target="_blank" rel="noopener"
     >Baha</a>、<a class="link" href="https://www.crunchyroll.com/"  target="_blank" rel="noopener"
     >cr</a>、<a class="link" href="https://www.bilibili.tv/"  target="_blank" rel="noopener"
     >B-Global</a>、<a class="link" href="https://abema.tv/"  target="_blank" rel="noopener"
     >Abema</a>、<a class="link" href="https://www.primevideo.com/"  target="_blank" rel="noopener"
-    >ADN</a>源，其中只有Baha源有繁中，B-Global有时会有简中，从2024年7月开始我个人比较喜欢用部分有中文的B-Global源来代替Baha源，一是字幕是内嵌带样式比巴哈好看很多，二是字幕翻译比较符合用语习惯，但是翻译还是有点保(he)守(xie)（</li>
+    >ADN</a>源。</li>
 <li>[<strong>Lilith-Raws</strong>] 之前和[ANi]差不多，最近停更了，主抓<a class="link" href="https://ani.gamer.com.tw/"  target="_blank" rel="noopener"
     >Baha</a>源。</li>
+<li>有些番剧会上Netflix等提供中字的流媒体平台，你可能需要添加nyaa rss来获取国外搬运组的某些番.</li>
+<li>如果有更进一步的速度/字幕需求，可以了解下一些PT站，会有专门的web组第一时间抓取画质最好的CR源并内封简繁字幕，字幕来自一些可以自动抓取字幕流媒体平台如KKTV、Netflix，简体一般是繁体简化而来。</li>
 </ol>
-<p>其中<strong>字幕组</strong>有：
-1.</p>
+<p><strong>字幕组</strong>比较多挑喜欢就好，建议与lolihouse合作的（部分字幕组压得码率太低了又是硬字幕，说几个不建议的：</p>
+<ol>
+<li>[沸羊羊制作]压制技术不太好还喜欢超分，个人比较抵制动画超分，AI算出来的根本称不上是细节，凭空增加了体积，而且很多番有自己的噪点和画面风格，不针对处理反而会大大降低观感。</li>
+<li>[贩卖机汉化组]</li>
+</ol>
 <h2 id="tips">Tips
 </h2><ol>
 <li>蜜柑的RSS由于cdn缓存的关系并不会实时更新，与网页显示相比一般会有10-30分钟的延迟。</li>
-<li>新番放送信息： <a class="link" href="https://bgm.wiki"  target="_blank" rel="noopener"
+<li>各平台播放时间可能有几小时的差别，可以查阅新番放送信息： <a class="link" href="https://bgm.wiki"  target="_blank" rel="noopener"
     >https://bgm.wiki</a>、https://yuc.wiki/</li>
-<li>一个新番字幕来源： <a class="link" href="https://t.me/anime_chinese_subtitles"  target="_blank" rel="noopener"
+<li>一个新番版权字幕自动抓取频道可以配合CR源手动食用： <a class="link" href="https://t.me/anime_chinese_subtitles"  target="_blank" rel="noopener"
     >https://t.me/anime_chinese_subtitles</a></li>
 <li>有时蜜柑没有如期更新可以去别站看看是否更了 <br>
 <a class="link" href="https://bangumi.moe"  target="_blank" rel="noopener"
@@ -1438,7 +1438,7 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.82b0b2f8986459d4b654e360fe8bb7d5728d45ad979ae4c614eac787efb301c5.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
