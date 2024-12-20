@@ -2,17 +2,200 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Yukari Blog</title>
-        <link>http://localhost:1313/post/</link>
+        <link>https://yukari.pages.dev/post/</link>
         <description>Recent content in Posts on Yukari Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 23 Aug 2024 00:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 20 Dec 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://yukari.pages.dev/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>个人自用小工具</title>
+        <link>https://yukari.pages.dev/tools/</link>
+        <pubDate>Fri, 20 Dec 2024 00:00:00 +0800</pubDate>
+        
+        <guid>https://yukari.pages.dev/tools/</guid>
+        <description>&lt;img src="https://yukari.pages.dev/tools/cover.webp" alt="Featured image of post 个人自用小工具" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;想到什么写什么ing&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;powertoys&#34;&gt;PowerToys
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/microsoft/PowerToys&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;项目地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;微软官方的实用小工具集合,其中我最常用是的PowerRename，在标准化整理动画片入媒体库方面非常实用。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/tools/PowerToys.webp&#34;
+	width=&#34;2639&#34;
+	height=&#34;1287&#34;
+	srcset=&#34;https://yukari.pages.dev/tools/PowerToys_hu851913394562866436.webp 1024w, https://yukari.pages.dev/tools/PowerToys_hu9637463275100372048.webp 2048w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;添加S0XE&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;205&#34;
+		data-flex-basis=&#34;492px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/tools/PowerToys-2.webp&#34;
+	width=&#34;2527&#34;
+	height=&#34;992&#34;
+	srcset=&#34;https://yukari.pages.dev/tools/PowerToys-2_hu4135658829289478751.webp 1024w, https://yukari.pages.dev/tools/PowerToys-2_hu15549710238994369109.webp 2048w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;重新排序集号&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;254&#34;
+		data-flex-basis=&#34;611px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;网页多平台轻量qq&#34;&gt;网页&amp;amp;多平台轻量QQ
+&lt;/h2&gt;&lt;p&gt;基于QQbot重构的，建议配合LLonebot或者Napcat食用。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Stapxs/Stapxs-QQ-Lite-2.0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;项目地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/tools/qq.webp&#34;
+	width=&#34;2393&#34;
+	height=&#34;1501&#34;
+	srcset=&#34;https://yukari.pages.dev/tools/qq_hu14640381571652677059.webp 1024w, https://yukari.pages.dev/tools/qq_hu3346533657471892998.webp 2048w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;159&#34;
+		data-flex-basis=&#34;382px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;substore&#34;&gt;Substore
+&lt;/h2&gt;&lt;p&gt;多订阅管理&lt;/p&gt;
+&lt;h2 id=&#34;peerbanhelper&#34;&gt;PeerbanHelper
+&lt;/h2&gt;&lt;h2 id=&#34;mkvtoolnix&#34;&gt;mkvtoolnix
+&lt;/h2&gt;&lt;h2 id=&#34;mpv-lazy&#34;&gt;mpv-lazy
+&lt;/h2&gt;&lt;h2 id=&#34;spacesniffer&#34;&gt;spacesniffer
+&lt;/h2&gt;&lt;h2 id=&#34;yt-dlp&#34;&gt;yt-dlp
+&lt;/h2&gt;</description>
+        </item>
+        <item>
+        <title>前置Cloudflare哪吒探针V1安装</title>
+        <link>https://yukari.pages.dev/nezha/</link>
+        <pubDate>Fri, 20 Dec 2024 00:00:00 +0800</pubDate>
+        
+        <guid>https://yukari.pages.dev/nezha/</guid>
+        <description>&lt;img src="https://yukari.pages.dev/nezha/cover.webp" alt="Featured image of post 前置Cloudflare哪吒探针V1安装" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;跟风整了个监控玩，虽然根本没有几只小鸡（ &lt;br&gt;
+同时&lt;a class=&#34;link&#34; href=&#34;https://github.com/akile-network/akile_monitor&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Akile家的探针&lt;/a&gt;也开源了，对比了下感觉还是新版哪吒好看&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/nezhahq/nezha&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;项目地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://nezha.wiki/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官方wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/nezha/nezha%20127-1.webp&#34;
+	width=&#34;2784&#34;
+	height=&#34;1663&#34;
+	srcset=&#34;https://yukari.pages.dev/nezha/nezha%20127-1_hu9031524829409035683.webp 1024w, https://yukari.pages.dev/nezha/nezha%20127-1_hu4141430523072576425.webp 2048w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;nezha 1.2.7&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;401px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;前置条件&#34;&gt;前置条件
+&lt;/h2&gt;&lt;p&gt;选择一台机作为面板机，然后域名指向这台机，开启小黄云，记得cloudflare中把&lt;code&gt;网络-gRPC&lt;/code&gt;打开，这样就不需要如&lt;a class=&#34;link&#34; href=&#34;https://nezha.wiki/guide/dashboard.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Wiki
+&lt;/a&gt;所说需要两个域名分别作为通讯和访问域名了。&lt;/p&gt;
+&lt;p&gt;面板机我用nginx开了ssl，感觉不配置nginx、cf ssl开灵活模式应该也能通讯到agent（&lt;/p&gt;
+&lt;h2 id=&#34;dashboard安装&#34;&gt;Dashboard安装
+&lt;/h2&gt;&lt;p&gt;官方一键脚本&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -L https://raw.githubusercontent.com/nezhahq/scripts/refs/heads/main/install.sh -o nezha.sh &amp;amp;&amp;amp; chmod +x nezha.sh &amp;amp;&amp;amp; sudo ./nezha.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;如果本机不配nginx，最好把端口设为80，方便cf代理成443。&lt;/p&gt;
+&lt;p&gt;然后登录&lt;code&gt;https://域名/dashboard&lt;/code&gt;默认账密都是admin&lt;/p&gt;
+&lt;p&gt;右上角系统设置 &lt;code&gt;Agent对接地址【域名/IP:端口】&lt;/code&gt;填入你的域名:443并开启使用TLS连接。&lt;/p&gt;
+&lt;h2 id=&#34;agent安装&#34;&gt;Agent安装
+&lt;/h2&gt;&lt;p&gt;&lt;code&gt;https://域名/dashboard&lt;/code&gt; 可以快捷复制agent安装命令&lt;/p&gt;
+&lt;p&gt;安装完成后可以在&lt;code&gt;/opt/nezha/agent/config.yml&lt;/code&gt;修改一些设置&lt;/p&gt;
+&lt;p&gt;禁用自动更新 &lt;br&gt;
+禁用webssh &lt;br&gt;
+禁用强制更新&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sed -i &amp;#39;s/disable_auto_update: false/disable_auto_update: true/&amp;#39; /opt/nezha/agent/config.yml &amp;amp;&amp;amp; \
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sed -i &amp;#39;s/disable_command_execute: false/disable_command_execute: true/&amp;#39; /opt/nezha/agent/config.yml &amp;amp;&amp;amp; \
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sed -i &amp;#39;s/disable_force_update: false/disable_force_update: true/&amp;#39; /opt/nezha/agent/config.yml &amp;amp;&amp;amp; \
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl restart nezha-agent
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;美化&#34;&gt;美化
+&lt;/h2&gt;&lt;p&gt;后台自定义代码（样式和脚本）中填入&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;CustomBackgroundImage&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;背景图&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;CustomLogo&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;网页logo&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;CustomDesc&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;简介&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;ShowNetTransfer&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;true&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;window&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;DisableAnimatedMan&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;true&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;agent额外信息&#34;&gt;Agent额外信息
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://nezhainfojson.pages.dev/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;快捷json生成&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;生成如下信息填入后台服务器中的公开备注。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;billingDataMod&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;startDate&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;2024-12-20T04:59:00.599Z&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;endDate&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;2024-12-20T04:59:00.599Z&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;autoRenewal&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;cycle&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;月&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;amount&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;￥1&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;planDataMod&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;bandwidth&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;30Mbps&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;trafficVol&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;1TB/月&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;trafficType&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;IPv4&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;IPv6&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;networkRoute&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;4837&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;extra&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+        </item>
+        <item>
         <title>我的全流程自动追番方案</title>
-        <link>http://localhost:1313/autobangumi-qbittorrent-jellyfin/</link>
+        <link>https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/</link>
         <pubDate>Fri, 23 Aug 2024 00:00:00 +0800</pubDate>
         
-        <guid>http://localhost:1313/autobangumi-qbittorrent-jellyfin/</guid>
-        <description>&lt;img src="http://localhost:1313/autobangumi-qbittorrent-jellyfin/cover.webp" alt="Featured image of post 我的全流程自动追番方案" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+        <guid>https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/</guid>
+        <description>&lt;img src="https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/cover.webp" alt="Featured image of post 我的全流程自动追番方案" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;&lt;del&gt;说是全流程自动，其实每季还是需要一定程度手动改一些配置的（&lt;/del&gt; &lt;br&gt;
 本想每个项目分开写一篇，不过既然叫全流程果然还是集合为一篇比较好。 &lt;br&gt;
 *坏处是比较杂，每个软件可能都会写一些方案相关心得和碎碎念。 &lt;br&gt;
@@ -22,10 +205,10 @@
 &lt;p&gt;以下所有安装环境均是&lt;code&gt;Windows10&lt;/code&gt;，如果是其他平台非常推荐看这篇&lt;a class=&#34;link&#34; href=&#34;https://www.himiku.com/archives/auto-bangumi.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;AutoBangumi：自动追番，解放双手&lt;/a&gt;。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/%E6%B5%81%E7%A8%8B%E5%9B%BE.webp&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/%E6%B5%81%E7%A8%8B%E5%9B%BE.webp&#34;
 	width=&#34;2605&#34;
 	height=&#34;1790&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/%E6%B5%81%E7%A8%8B%E5%9B%BE_hu11192917829988485160.webp 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/%E6%B5%81%E7%A8%8B%E5%9B%BE_hu11223782706523553211.webp 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/%E6%B5%81%E7%A8%8B%E5%9B%BE_hu11192917829988485160.webp 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/%E6%B5%81%E7%A8%8B%E5%9B%BE_hu11223782706523553211.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;大致流程图&#34;
@@ -54,10 +237,10 @@
 &lt;li&gt;
 &lt;p&gt;启用webui&lt;/p&gt;
 &lt;p&gt;如图勾选即可&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-13.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-13.png&#34;
 	width=&#34;1233&#34;
 	height=&#34;875&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-13_hu6164240292002080929.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-13_hu16439042320054450225.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-13_hu6164240292002080929.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-13_hu16439042320054450225.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -73,10 +256,10 @@
 &lt;p&gt;最新版的Autobangumi其实并不需要启用RSS了，不过2.6.10版本需要。 &lt;br&gt;
 如图勾选即可，对于mikan更新间隔可以改为3-5分钟，文章数目最好大点比如5000。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-14.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-14.png&#34;
 	width=&#34;1233&#34;
 	height=&#34;875&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-14_hu3950059600157671929.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-14_hu16132624562117563291.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-14_hu3950059600157671929.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-14_hu16132624562117563291.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -151,10 +334,10 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;输出以下内容并可以打开输出中的&lt;a class=&#34;link&#34; href=&#34;http://0.0.0.0:7892&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;webui&lt;/a&gt;就说明安装成功啦！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-11.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-11.png&#34;
 	width=&#34;1803&#34;
 	height=&#34;893&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-11_hu6235573066274776807.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-11_hu9659689572406727528.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-11_hu6235573066274776807.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-11_hu9659689572406727528.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -187,10 +370,10 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;下载器地址&lt;/strong&gt;改为本地打开qbwebui的地址，如未修改默认是： &lt;code&gt;localhost:8080&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image.png&#34;
 	width=&#34;1176&#34;
 	height=&#34;598&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image_hu6504846004471411547.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image_hu8509937081397640519.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image_hu6504846004471411547.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image_hu8509937081397640519.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -202,10 +385,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;下载地址&lt;/strong&gt;改为你希望存放下载存放新番的绝对地址，如果按我的设置文件目录如下，&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-1.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-1.png&#34;
 	width=&#34;844&#34;
 	height=&#34;553&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-1_hu9427489577339643776.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-1_hu6084952646026707333.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-1_hu9427489577339643776.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-1_hu6084952646026707333.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -263,10 +446,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;来到主页订阅番剧，注意需要点开封面选择需要订阅的字幕组然后点击右边的&lt;code&gt;订&lt;/code&gt;，或选择订阅语言后保存修改&lt;del&gt;有时简/繁过滤是无效的&lt;/del&gt;。
-&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-3.png&#34;
+&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-3.png&#34;
 	width=&#34;1879&#34;
 	height=&#34;1469&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-3_hu7908922765321832779.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-3_hu8872915506818402260.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-3_hu7908922765321832779.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-3_hu8872915506818402260.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -279,10 +462,10 @@
 &lt;li&gt;
 &lt;p&gt;然后来到页面上方找到RSS订阅点开，这就是接下要填的RSS地址，形如 &lt;a class=&#34;link&#34; href=&#34;https://mikanani.me/RSS/MyBangumi?token=xxx&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://mikanani.me/RSS/MyBangumi?token=xxx&lt;/a&gt;
-&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-4.png&#34;
+&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-4.png&#34;
 	width=&#34;2688&#34;
 	height=&#34;1389&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-4_hu9501271117379460634.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-4_hu14079176520487836947.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-4_hu9501271117379460634.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-4_hu14079176520487836947.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -294,10 +477,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;来到ab，点开右上角的加号，如图填入上一步的RSS地址，名称任意，勾选聚合RSS，解析器选择tmdb，添加。
-&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-6.png&#34;
+&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-6.png&#34;
 	width=&#34;1806&#34;
 	height=&#34;955&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-6_hu7549536248812177950.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-6_hu10553122342643812450.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-6_hu7549536248812177950.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-6_hu10553122342643812450.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -309,10 +492,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;右上角重启或重启程序。 &lt;br&gt;
-&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-7.png&#34;
+&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-7.png&#34;
 	width=&#34;358&#34;
 	height=&#34;593&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-7_hu15747338399361306986.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-7_hu17496622920444013663.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-7_hu15747338399361306986.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-7_hu17496622920444013663.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -324,10 +507,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;可以看到ab会如图开始收集RSS。
-&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-8.png&#34;
+&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-8.png&#34;
 	width=&#34;1952&#34;
 	height=&#34;1043&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-8_hu5088575586837796119.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-8_hu11050025329206438803.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-8_hu5088575586837796119.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-8_hu11050025329206438803.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -339,10 +522,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;收集完成后可以看到ab主页中出现了已收集的番剧封面，qb中也会有相应的下载信息。
-&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-9.png&#34;
+&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-9.png&#34;
 	width=&#34;2088&#34;
 	height=&#34;1202&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-9_hu7697614616134100094.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-9_hu8257552245843386683.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-9_hu7697614616134100094.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-9_hu8257552245843386683.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -351,10 +534,10 @@
 		data-flex-basis=&#34;416px&#34;
 	
 &gt;
-&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-10.png&#34;
+&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-10.png&#34;
 	width=&#34;1808&#34;
 	height=&#34;1142&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-10_hu16484559751396214002.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-10_hu9974285387453952185.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-10_hu16484559751396214002.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-10_hu9974285387453952185.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -380,10 +563,10 @@
 &lt;h3 id=&#34;可选安装2610版本ab&#34;&gt;&lt;em&gt;(可选)安装2.6.10版本ab&lt;/em&gt;
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;这个版本的ab会在qb中建立RSS规则，在mikanRSS已订阅某动画给ab后，ab会在RSS规则中自动建立该动画的RSS规则，然后你可以按下图顺序来添加新版ab不支持的RSS，然后来到RSS下载器中，修改正则以命中你额外添加的RSS里的该动画然后保存即可。参考↓ &lt;br&gt;
-&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-33.png&#34;
+&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-33.png&#34;
 	width=&#34;1761&#34;
 	height=&#34;1372&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-33_hu657289692655621030.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-33_hu18115296765519374232.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-33_hu657289692655621030.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-33_hu18115296765519374232.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -407,10 +590,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;在 &lt;code&gt;根目录\module&lt;/code&gt; 目录下创建 &lt;code&gt;__version__.py&lt;/code&gt; 文件并写入 &lt;code&gt;VERSION=&#39;local&#39;&lt;/code&gt;, 请注意文件编码格式为 &lt;code&gt;UTF-8&lt;/code&gt;。
-&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-15.png&#34;
+&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-15.png&#34;
 	width=&#34;1222&#34;
 	height=&#34;487&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-15_hu11803137521829144993.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-15_hu6834979888717765723.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-15_hu11803137521829144993.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-15_hu6834979888717765723.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -454,10 +637,10 @@ Github Release下载&lt;code&gt;dist.zip(zip)&lt;/code&gt;： &lt;a class=&#34;l
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;输出以下内容并可以打开输出中的&lt;a class=&#34;link&#34; href=&#34;http://0.0.0.0:7892&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;webui&lt;/a&gt;就说明安装成功啦！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-16.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-16.png&#34;
 	width=&#34;1770&#34;
 	height=&#34;800&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-16_hu14381442150176223905.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-16_hu5359274586714522552.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-16_hu14381442150176223905.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-16_hu5359274586714522552.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -469,10 +652,10 @@ Github Release下载&lt;code&gt;dist.zip(zip)&lt;/code&gt;： &lt;a class=&#34;l
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;配置方面和上面最新版大同小异，下面是我的供参考。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-17.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-17.png&#34;
 	width=&#34;2004&#34;
 	height=&#34;1874&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-17_hu16864984395615605402.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-17_hu3947765979974895994.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-17_hu16864984395615605402.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-17_hu3947765979974895994.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -541,10 +724,10 @@ Github Release下载&lt;code&gt;dist.zip(zip)&lt;/code&gt;： &lt;a class=&#34;l
 &lt;li&gt;
 &lt;p&gt;docker内出现AutoBangumi容器并输出以下内容并可以打开&lt;a class=&#34;link&#34; href=&#34;http://0.0.0.0:7892&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;webui&lt;/a&gt;就说明安装成功啦！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-18.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-18.png&#34;
 	width=&#34;1641&#34;
 	height=&#34;775&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-18_hu17040583987543853820.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-18_hu4730291958896360958.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-18_hu17040583987543853820.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-18_hu4730291958896360958.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -556,10 +739,10 @@ Github Release下载&lt;code&gt;dist.zip(zip)&lt;/code&gt;： &lt;a class=&#34;l
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;配置方面和上面最新版大同小异，下面是我的供参考。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-17.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-17.png&#34;
 	width=&#34;2004&#34;
 	height=&#34;1874&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-17_hu16864984395615605402.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-17_hu3947765979974895994.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-17_hu16864984395615605402.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-17_hu3947765979974895994.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -585,10 +768,10 @@ Github Release下载&lt;code&gt;dist.zip(zip)&lt;/code&gt;： &lt;a class=&#34;l
 我选择&lt;a class=&#34;link&#34; href=&#34;https://github.com/jellyfin/jellyfin&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;strong&gt;Jellyfin&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-5.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-5.png&#34;
 	width=&#34;2614&#34;
 	height=&#34;1531&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-5_hu14260635508408826513.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-5_hu17967572376454518403.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-5_hu14260635508408826513.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-5_hu17967572376454518403.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Jellyfin&#34;
@@ -615,10 +798,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
     &gt;jellyfin-danmaku&lt;/a&gt;，*仅适用于网页播放。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;付一个我自己的设置，仅作为我自己备份，&lt;strong&gt;谨慎参考&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-19.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-19.png&#34;
 	width=&#34;1728&#34;
 	height=&#34;2802&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-19_hu9291202649176438372.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-19_hu14697781666858973434.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-19_hu9291202649176438372.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-19_hu14697781666858973434.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;常规设置&#34;
@@ -629,10 +812,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 		data-flex-basis=&#34;148px&#34;
 	
 &gt;
-&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-20.png&#34;
+&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-20.png&#34;
 	width=&#34;1728&#34;
 	height=&#34;6917&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-20_hu7812394679639212712.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-20_hu2818049958193919514.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-20_hu7812394679639212712.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-20_hu2818049958193919514.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;转码设置&#34;
@@ -643,10 +826,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 		data-flex-basis=&#34;59px&#34;
 	
 &gt;
-&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-21.png&#34;
+&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-21.png&#34;
 	width=&#34;1728&#34;
 	height=&#34;5030&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-21_hu11136489049380745434.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-21_hu10890329932633060347.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-21_hu11136489049380745434.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-21_hu10890329932633060347.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;网络设置&#34;
@@ -657,10 +840,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 		data-flex-basis=&#34;82px&#34;
 	
 &gt;
-&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-22.png&#34;
+&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-22.png&#34;
 	width=&#34;1500&#34;
 	height=&#34;6486&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-22_hu5195503148829333970.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-22_hu1136236624256021757.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-22_hu5195503148829333970.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-22_hu1136236624256021757.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;新番刮削设置&#34;
@@ -671,10 +854,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 		data-flex-basis=&#34;55px&#34;
 	
 &gt;
-&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-23.png&#34;
+&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-23.png&#34;
 	width=&#34;1501&#34;
 	height=&#34;2015&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-23_hu7236370465215601665.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-23_hu6894147234289118489.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-23_hu7236370465215601665.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-23_hu6894147234289118489.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;所有库&#34;
@@ -685,10 +868,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 		data-flex-basis=&#34;178px&#34;
 	
 &gt;
-&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-27.png&#34;
+&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-27.png&#34;
 	width=&#34;1227&#34;
 	height=&#34;3864&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-27_hu11571512384586960485.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-27_hu3041557970037047951.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-27_hu11571512384586960485.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-27_hu3041557970037047951.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;网页显示&#34;
@@ -699,10 +882,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 		data-flex-basis=&#34;76px&#34;
 	
 &gt;
-&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-25.png&#34;
+&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-25.png&#34;
 	width=&#34;1500&#34;
 	height=&#34;7379&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-25_hu13995207184910871580.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-25_hu189630077041676978.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-25_hu13995207184910871580.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-25_hu189630077041676978.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;网页首页&#34;
@@ -738,10 +921,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Jellyfin主页 → 控制台 → 插件 → 目录，找到Webhook安装后重启Jellyfin。
-&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-29.png&#34;
+&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-29.png&#34;
 	width=&#34;1706&#34;
 	height=&#34;1524&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-29_hu7948567586258461761.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-29_hu17563170556831233190.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-29_hu7948567586258461761.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-29_hu17563170556831233190.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -788,10 +971,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &lt;ol&gt;
 &lt;li&gt;receive_url和上面的Webhook Url一致。&lt;/li&gt;
 &lt;li&gt;启用bot的HTTP服务，并填任意端口，如11721，那么forward_url的地址便是&lt;code&gt;http://localhost:11721/send_group_msg&lt;/code&gt;
-&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-31.png&#34;
+&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-31.png&#34;
 	width=&#34;1252&#34;
 	height=&#34;992&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-31_hu1555575704100519824.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-31_hu8682241043634978897.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-31_hu1555575704100519824.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-31_hu8682241043634978897.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -804,10 +987,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;最终效果&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-30.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-30.png&#34;
 	width=&#34;1769&#34;
 	height=&#34;764&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-30_hu3341953065073137008.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-30_hu17342514670057629739.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-30_hu3341953065073137008.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-30_hu17342514670057629739.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -816,10 +999,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 		data-flex-basis=&#34;555px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-28.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-28.png&#34;
 	width=&#34;618&#34;
 	height=&#34;852&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-28_hu13476222559349835850.png 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/image-28_hu15019823688389110162.png 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-28_hu13476222559349835850.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-28_hu15019823688389110162.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -873,10 +1056,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
     &gt;https://share.acgnx.se&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/end.webp&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/end.webp&#34;
 	width=&#34;1700&#34;
 	height=&#34;1089&#34;
-	srcset=&#34;http://localhost:1313/autobangumi-qbittorrent-jellyfin/end_hu9747934829176354920.webp 1024w, http://localhost:1313/autobangumi-qbittorrent-jellyfin/end_hu14456746818283537247.webp 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/end_hu9747934829176354920.webp 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/end_hu14456746818283537247.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -889,11 +1072,11 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
         </item>
         <item>
         <title>Owncast简易教程&amp;使用心得</title>
-        <link>http://localhost:1313/owncast/</link>
+        <link>https://yukari.pages.dev/owncast/</link>
         <pubDate>Tue, 20 Aug 2024 00:00:00 +0800</pubDate>
         
-        <guid>http://localhost:1313/owncast/</guid>
-        <description>&lt;img src="http://localhost:1313/owncast/cover.webp" alt="Featured image of post Owncast简易教程&amp;使用心得" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+        <guid>https://yukari.pages.dev/owncast/</guid>
+        <description>&lt;img src="https://yukari.pages.dev/owncast/cover.webp" alt="Featured image of post Owncast简易教程&amp;使用心得" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;特别感谢22喵，给我提供了用owncast一起看的思路!&lt;/strong&gt; &lt;img src=22.jpg style=&#34;width: 80px;height: 80px; vertical-align: middle;&#34;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -902,10 +1085,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/owncast/owncast&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;owncast&lt;/a&gt;是一款开源的直播&amp;amp;聊天服务器，并提供一个简单前端页面，搭建完成后所需要做的与在大平台一样只需要开启obs进行推流即可在网页上看到自己的直播。&lt;/p&gt;
 &lt;p&gt;整体思路是推流机利用obs推流到owncast，再由owncast处理后转发到前端页面上。
-&lt;img src=&#34;http://localhost:1313/owncast/owncast.webp&#34;
+&lt;img src=&#34;https://yukari.pages.dev/owncast/owncast.webp&#34;
 	width=&#34;1322&#34;
 	height=&#34;521&#34;
-	srcset=&#34;http://localhost:1313/owncast/owncast_hu14500656381310030113.webp 1024w, http://localhost:1313/owncast/owncast_hu16688883350750872348.webp 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/owncast/owncast_hu14500656381310030113.webp 1024w, https://yukari.pages.dev/owncast/owncast_hu16688883350750872348.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -966,10 +1149,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &lt;h2 id=&#34;一些设置&#34;&gt;一些设置
 &lt;/h2&gt;&lt;h3 id=&#34;表情包&#34;&gt;表情包
 &lt;/h3&gt;&lt;p&gt;可以在/app/data/emoji中批量加入，以文件名为顺序。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/owncast/emoji.webp&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/owncast/emoji.webp&#34;
 	width=&#34;1738&#34;
 	height=&#34;1246&#34;
-	srcset=&#34;http://localhost:1313/owncast/emoji_hu9707014991149978888.webp 1024w, http://localhost:1313/owncast/emoji_hu17297367350693888389.webp 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/owncast/emoji_hu9707014991149978888.webp 1024w, https://yukari.pages.dev/owncast/emoji_hu17297367350693888389.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -980,10 +1163,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;css&#34;&gt;CSS
 &lt;/h3&gt;&lt;p&gt;贴一个我的自定义CSS，供参考。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/owncast/fin.webp&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/owncast/fin.webp&#34;
 	width=&#34;1430&#34;
 	height=&#34;760&#34;
-	srcset=&#34;http://localhost:1313/owncast/fin_hu6975790228129835935.webp 1024w, http://localhost:1313/owncast/fin_hu5628548038823551999.webp 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/owncast/fin_hu6975790228129835935.webp 1024w, https://yukari.pages.dev/owncast/fin_hu5628548038823551999.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -992,10 +1175,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 		data-flex-basis=&#34;451px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/owncast/fin2.webp&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/owncast/fin2.webp&#34;
 	width=&#34;1430&#34;
 	height=&#34;760&#34;
-	srcset=&#34;http://localhost:1313/owncast/fin2_hu12026520955259374801.webp 1024w, http://localhost:1313/owncast/fin2_hu17960602974151628425.webp 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/owncast/fin2_hu12026520955259374801.webp 1024w, https://yukari.pages.dev/owncast/fin2_hu17960602974151628425.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1090,10 +1273,10 @@ obs 31.0.0似乎移除了ffmpeg推流实现，不建议升。&lt;/p&gt;
 &lt;p&gt;如果使用OBS，推荐使用多路推流插件&lt;a class=&#34;link&#34; href=&#34;https://github.com/sorayuki/obs-multi-rtmp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;obs-multi-rtmp&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;然后如图新建一个FFmpeg编码器设置来推流直通模式的owncast，这样可以保证最大的兼容性。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/owncast/obs.webp&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/owncast/obs.webp&#34;
 	width=&#34;1280&#34;
 	height=&#34;1919&#34;
-	srcset=&#34;http://localhost:1313/owncast/obs_hu18216612238875179685.webp 1024w, http://localhost:1313/owncast/obs_hu971439936967516518.webp 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/owncast/obs_hu18216612238875179685.webp 1024w, https://yukari.pages.dev/owncast/obs_hu971439936967516518.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1103,10 +1286,10 @@ obs 31.0.0似乎移除了ffmpeg推流实现，不建议升。&lt;/p&gt;
 	
 &gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/owncast/end.webp&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/owncast/end.webp&#34;
 	width=&#34;1729&#34;
 	height=&#34;1221&#34;
-	srcset=&#34;http://localhost:1313/owncast/end_hu9019644828092597981.webp 1024w, http://localhost:1313/owncast/end_hu213077440447342796.webp 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/owncast/end_hu9019644828092597981.webp 1024w, https://yukari.pages.dev/owncast/end_hu213077440447342796.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1119,11 +1302,11 @@ obs 31.0.0似乎移除了ffmpeg推流实现，不建议升。&lt;/p&gt;
         </item>
         <item>
         <title>HoshinoBot&#43;LLOneBot部署QQ机器人</title>
-        <link>http://localhost:1313/hoshinobot-llonebot/</link>
+        <link>https://yukari.pages.dev/hoshinobot-llonebot/</link>
         <pubDate>Sat, 17 Aug 2024 00:00:00 +0800</pubDate>
         
-        <guid>http://localhost:1313/hoshinobot-llonebot/</guid>
-        <description>&lt;img src="http://localhost:1313/hoshinobot-llonebot/cover.webp" alt="Featured image of post HoshinoBot&#43;LLOneBot部署QQ机器人" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+        <guid>https://yukari.pages.dev/hoshinobot-llonebot/</guid>
+        <description>&lt;img src="https://yukari.pages.dev/hoshinobot-llonebot/cover.webp" alt="Featured image of post HoshinoBot&#43;LLOneBot部署QQ机器人" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;HoshinoBot&lt;/strong&gt; - 机器人本体 &lt;br&gt;
@@ -1263,10 +1446,10 @@ LLOneBot方案有些问题，解决方法：&lt;/p&gt;
     &gt;https://github.com/Yukari-Lily/uma_voi&lt;/a&gt;     &lt;br&gt;
 自写的赛马娘语音插件，主要工作量在解包与整理语音文件，到后期实际上不止赛马娘语音了233，遇到喜欢的就会加上。&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/hoshinobot-llonebot/end.webp&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/hoshinobot-llonebot/end.webp&#34;
 	width=&#34;2048&#34;
 	height=&#34;1158&#34;
-	srcset=&#34;http://localhost:1313/hoshinobot-llonebot/end_hu8629967388017622155.webp 1024w, http://localhost:1313/hoshinobot-llonebot/end_hu18117408379557951641.webp 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/hoshinobot-llonebot/end_hu8629967388017622155.webp 1024w, https://yukari.pages.dev/hoshinobot-llonebot/end_hu18117408379557951641.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1279,11 +1462,11 @@ LLOneBot方案有些问题，解决方法：&lt;/p&gt;
         </item>
         <item>
         <title>Hugo &#43; Github Pages/Cloudflare Pages搭建个人博客</title>
-        <link>http://localhost:1313/blog/</link>
+        <link>https://yukari.pages.dev/blog/</link>
         <pubDate>Fri, 16 Aug 2024 00:00:00 +0800</pubDate>
         
-        <guid>http://localhost:1313/blog/</guid>
-        <description>&lt;img src="http://localhost:1313/blog/cover.webp" alt="Featured image of post Hugo &#43; Github Pages/Cloudflare Pages搭建个人博客" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+        <guid>https://yukari.pages.dev/blog/</guid>
+        <description>&lt;img src="https://yukari.pages.dev/blog/cover.webp" alt="Featured image of post Hugo &#43; Github Pages/Cloudflare Pages搭建个人博客" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;经历了一次服务器硬件的淘汰之后决定给自己写一些服务工具的备忘录以防硬盘爆炸重装时再踩一遍坑，在notion和一众博客方案中选择了部署方便的&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;hugo&lt;/a&gt;+&lt;a class=&#34;link&#34; href=&#34;https://github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub&lt;/a&gt;/&lt;a class=&#34;link&#34; href=&#34;https://dash.cloudflare.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1292,10 +1475,10 @@ LLOneBot方案有些问题，解决方法：&lt;/p&gt;
 &lt;p&gt;好处是成本很低，不需要服务器甚至域名也可以不需要，维护全部交给大厂，搭建完之后每次新文章只需提交到Github便会刷新构建。不过不管是Github还是Cloudflare国内总会抽风，会不定时分地区的可用性下降。如果只是个人用，代理常开的情况下是无感的。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;final&#34;&gt;Final
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/blog/final.webp&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/blog/final.webp&#34;
 	width=&#34;2496&#34;
 	height=&#34;1596&#34;
-	srcset=&#34;http://localhost:1313/blog/final_hu7002056249543732478.webp 1024w, http://localhost:1313/blog/final_hu14365023071148062767.webp 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/blog/final_hu7002056249543732478.webp 1024w, https://yukari.pages.dev/blog/final_hu14365023071148062767.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1792,10 +1975,10 @@ cmd中输入&lt;code&gt;hugo version&lt;/code&gt;,输出以下即为成功
 &lt;li&gt;内容（post）不对时可能需要删除&lt;code&gt;根目录\public&lt;/code&gt;下所有文件重新构建，注意不要把.git文件夹删了。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/blog/end.webp&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/blog/end.webp&#34;
 	width=&#34;3004&#34;
 	height=&#34;2087&#34;
-	srcset=&#34;http://localhost:1313/blog/end_hu18343251820008632103.webp 1024w, http://localhost:1313/blog/end_hu7639147808640421034.webp 2048w&#34;
+	srcset=&#34;https://yukari.pages.dev/blog/end_hu18343251820008632103.webp 1024w, https://yukari.pages.dev/blog/end_hu7639147808640421034.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	

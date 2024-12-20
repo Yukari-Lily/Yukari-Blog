@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on Yukari Blog</title>
-        <link>http://localhost:1313/page/</link>
+        <link>https://yukari.pages.dev/page/</link>
         <description>Recent content in Pages on Yukari Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://yukari.pages.dev/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Archives</title>
-        <link>http://localhost:1313/p/archives/</link>
+        <link>https://yukari.pages.dev/p/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/archives/</guid>
+        <guid>https://yukari.pages.dev/p/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>Search</title>
-        <link>http://localhost:1313/p/search/</link>
+        <link>https://yukari.pages.dev/p/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/search/</guid>
+        <guid>https://yukari.pages.dev/p/search/</guid>
         <description></description>
         </item>
         

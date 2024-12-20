@@ -2,75 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://yukari.pages.dev/</loc>
+    <lastmod>2024-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.pages.dev/categories/</loc>
+    <lastmod>2024-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.pages.dev/post/</loc>
+    <lastmod>2024-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.pages.dev/tags/</loc>
+    <lastmod>2024-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.pages.dev/tags/tools/</loc>
+    <lastmod>2024-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.pages.dev/tools/</loc>
+    <lastmod>2024-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.pages.dev/nezha/</loc>
+    <lastmod>2024-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.pages.dev/categories/%E5%A4%87%E5%BF%98/</loc>
+    <lastmod>2024-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.pages.dev/tags/%E6%8E%A2%E9%92%88/</loc>
+    <lastmod>2024-12-20T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.pages.dev/tags/autobangumi/</loc>
     <lastmod>2024-08-23T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/autobangumi/</loc>
+    <loc>https://yukari.pages.dev/tags/jellyfin/</loc>
     <lastmod>2024-08-23T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://yukari.pages.dev/tags/mikan/</loc>
     <lastmod>2024-08-23T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/jellyfin/</loc>
+    <loc>https://yukari.pages.dev/tags/mpv/</loc>
     <lastmod>2024-08-23T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mikan/</loc>
+    <loc>https://yukari.pages.dev/tags/qbittorrent/</loc>
     <lastmod>2024-08-23T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mpv/</loc>
+    <loc>https://yukari.pages.dev/categories/%E5%8A%A8%E7%94%BB%E7%89%87/</loc>
     <lastmod>2024-08-23T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/</loc>
     <lastmod>2024-08-23T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/qbittorrent/</loc>
-    <lastmod>2024-08-23T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-08-23T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/%E5%8A%A8%E7%94%BB%E7%89%87/</loc>
-    <lastmod>2024-08-23T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/%E5%A4%87%E5%BF%98/</loc>
-    <lastmod>2024-08-23T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/autobangumi-qbittorrent-jellyfin/</loc>
-    <lastmod>2024-08-23T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/owncast/</loc>
+    <loc>https://yukari.pages.dev/tags/owncast/</loc>
     <lastmod>2024-08-20T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/owncast/</loc>
+    <loc>https://yukari.pages.dev/owncast/</loc>
     <lastmod>2024-08-20T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/%E4%B8%80%E8%B5%B7%E7%9C%8B/</loc>
+    <loc>https://yukari.pages.dev/tags/%E4%B8%80%E8%B5%B7%E7%9C%8B/</loc>
     <lastmod>2024-08-20T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hoshinobot/</loc>
+    <loc>https://yukari.pages.dev/tags/hoshinobot/</loc>
     <lastmod>2024-08-17T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hoshinobot-llonebot/</loc>
+    <loc>https://yukari.pages.dev/hoshinobot-llonebot/</loc>
     <lastmod>2024-08-17T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/qqbot/</loc>
+    <loc>https://yukari.pages.dev/tags/qqbot/</loc>
     <lastmod>2024-08-17T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/blog/</loc>
+    <loc>https://yukari.pages.dev/tags/blog/</loc>
     <lastmod>2024-08-16T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
+    <loc>https://yukari.pages.dev/tags/hugo/</loc>
     <lastmod>2024-08-16T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://yukari.pages.dev/blog/</loc>
     <lastmod>2024-08-16T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/archives/</loc>
+    <loc>https://yukari.pages.dev/p/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/page/</loc>
+    <loc>https://yukari.pages.dev/page/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/search/</loc>
+    <loc>https://yukari.pages.dev/p/search/</loc>
   </url>
 </urlset>
