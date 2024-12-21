@@ -343,7 +343,7 @@
 	srcset="/nezha/nezha%20127-1_hu9031524829409035683.webp 1024w, /nezha/nezha%20127-1_hu4141430523072576425.webp 2048w"
 	loading="lazy"
 	
-		alt="nezha 1.2.7"
+		alt="nezha 1.3.0"
 	
 	
 		class="gallery-image" 
@@ -352,10 +352,11 @@
 	
 ></p>
 <h2 id="前置条件">前置条件
-</h2><p>选择一台机作为面板机，然后域名指向这台机，开启小黄云，记得cloudflare中把<code>网络-gRPC</code>打开，这样就不需要如<a class="link" href="https://nezha.wiki/guide/dashboard.html"  target="_blank" rel="noopener"
-    >Wiki
-</a>所说需要两个域名分别作为通讯和访问域名了。</p>
-<p>面板机我用nginx开了ssl，感觉不配置nginx、cf ssl开灵活模式应该也能通讯到agent（</p>
+</h2><p>选择一台机作为面板机，然后域名指向这台机ip，开启小黄云，记得cloudflare中把<code>网络-gRPC</code>打开，这样就不需要如<a class="link" href="https://nezha.wiki/guide/dashboard.html"  target="_blank" rel="noopener"
+    >Wiki</a>所说需要两个域名分别作为通讯和访问域名了。</p>
+<p>面板机我用nginx开了TLS，cf设置完全（严格）TLS；如果不配置nginx、cf TLS开灵活模式应该也能通讯到agent，建议还是全程TLS也更加安全（</p>
+<p>nginx反代设置可以参考<a class="link" href="https://nezha.wiki/guide/q3.html"  target="_blank" rel="noopener"
+    >Wiki</a></p>
 <h2 id="dashboard安装">Dashboard安装
 </h2><p>官方一键脚本</p>
 <div class="highlight"><div class="chroma">
@@ -367,11 +368,12 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>如果本机不配nginx，最好把端口设为80，方便cf代理成443。</p>
-<p>然后登录<code>https://域名/dashboard</code>默认账密都是admin</p>
+<p>然后登录<code>https://你的域名/dashboard</code>默认账密都是admin</p>
 <p>右上角系统设置 <code>Agent对接地址【域名/IP:端口】</code>填入你的域名:443并开启使用TLS连接。</p>
 <h2 id="agent安装">Agent安装
-</h2><p><code>https://域名/dashboard</code> 可以快捷复制agent安装命令</p>
+</h2><p><code>https://你的域名/dashboard</code> 可以快捷复制agent安装命令</p>
 <p>安装完成后可以在<code>/opt/nezha/agent/config.yml</code>修改一些设置</p>
+<p>禁用更新可以在稳定后酌情考虑</p>
 <p>禁用自动更新 <br>
 禁用webssh <br>
 禁用强制更新</p>
@@ -391,23 +393,38 @@
 </div>
 </div><h2 id="美化">美化
 </h2><p>后台自定义代码（样式和脚本）中填入</p>
+<p>我自己的</p>
+<p>有前端基础的话其实可以随意改了，<a class="link" href="https://nezhadash-docs.buycoffee.top/custom-code"  target="_blank" rel="noopener"
+    >几个官方参数</a></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nt">script</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">window</span><span class="p">.</span><span class="nc">CustomBackgroundImage</span> <span class="o">=</span> <span class="s1">&#39;背景图&#39;</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">window</span><span class="p">.</span><span class="nc">CustomLogo</span> <span class="o">=</span> <span class="s1">&#39;网页logo&#39;</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">window</span><span class="p">.</span><span class="nc">CustomDesc</span> <span class="o">=</span> <span class="s1">&#39;简介&#39;</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">window</span><span class="p">.</span><span class="nc">ShowNetTransfer</span> <span class="o">=</span> <span class="s1">&#39;true&#39;</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">window</span><span class="p">.</span><span class="nc">DisableAnimatedMan</span> <span class="o">=</span> <span class="s1">&#39;true&#39;</span>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nt">style</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">text-card-foreground</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">text-shadow</span><span class="p">:</span> 
+</span></span><span class="line"><span class="cl">        <span class="mi">0</span> <span class="mi">0</span> <span class="mi">1</span><span class="kt">px</span> <span class="mh">#fbc9e3</span><span class="p">;</span>  <span class="c">/*字体粉粉光*/</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nt">script</span><span class="o">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">window</span><span class="p">.</span><span class="nc">CustomBackgroundImage</span> <span class="o">=</span> <span class="s1">&#39;.jpg&#39;</span>  <span class="c">/*网页背景*/</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">window</span><span class="p">.</span><span class="nc">CustomLogo</span> <span class="o">=</span> <span class="p">.</span><span class="nc">png</span><span class="s1">&#39;   /*logo*/
+</span></span></span><span class="line"><span class="cl"><span class="s1">  window.CustomDesc = &#39;</span><span class="nt">Kira</span><span class="err">✨</span><span class="s1">&#39;   /*简介*/
+</span></span></span><span class="line"><span class="cl"><span class="s1">  window.ShowNetTransfer = &#39;</span><span class="nt">true</span><span class="s1">&#39;   /*显示流量*/
+</span></span></span><span class="line"><span class="cl"><span class="s1">  window.DisableAnimatedMan = &#39;</span><span class="nt">true</span><span class="err">&#39;</span>   <span class="c">/*关闭小人*/</span>
 </span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="nt">script</span><span class="o">&gt;</span>
 </span></span></code></pre></td></tr></table>
 </div>
