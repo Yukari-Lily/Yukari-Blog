@@ -14,7 +14,7 @@
         <guid>https://yukari.pages.dev/tools/</guid>
         <description>&lt;img src="https://yukari.pages.dev/tools/cover.webp" alt="Featured image of post 个人自用小工具" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;想到什么写什么ing&lt;/p&gt;
+&lt;p&gt;主要是给自用的小工具整个list，有必要的会单开一篇细说。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;powertoys&#34;&gt;PowerToys
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/microsoft/PowerToys&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -49,9 +49,9 @@
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;网页多平台轻量qq&#34;&gt;网页&amp;amp;多平台轻量QQ
-&lt;/h2&gt;&lt;p&gt;基于QQbot重构的，建议配合LLonebot或者Napcat食用。&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Stapxs/Stapxs-QQ-Lite-2.0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Stapxs/Stapxs-QQ-Lite-2.0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;项目地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;基于QQbot重构客户端，建议配合LLonebot或者Napcat食用。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/tools/qq.webp&#34;
 	width=&#34;2393&#34;
 	height=&#34;1501&#34;
@@ -67,12 +67,22 @@
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;substore&#34;&gt;Substore
-&lt;/h2&gt;&lt;p&gt;多订阅管理&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/sub-store-org/Sub-Store&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;项目地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;多订阅管理，可以提取并整合多个订阅中节点信息，并套以自己的规则配置，并且自带的各种节点处理非常强大。&lt;/p&gt;
+&lt;p&gt;可以轻松实现修改节点名、修改入口、同步到Gist等等。&lt;/p&gt;
 &lt;h2 id=&#34;peerbanhelper&#34;&gt;PeerbanHelper
-&lt;/h2&gt;&lt;h2 id=&#34;mkvtoolnix&#34;&gt;mkvtoolnix
-&lt;/h2&gt;&lt;h2 id=&#34;mpv-lazy&#34;&gt;mpv-lazy
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/PBH-BTN/PeerBanHelper&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;项目地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;BT 反吸血工具，几乎是现在使用bt工具尤其想要做种时的必备工具了。&lt;/p&gt;
+&lt;h2 id=&#34;mkvtoolnix&#34;&gt;mkvtoolnix
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mkvtoolnix.download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;用于提取或添加mkv轨道。&lt;/p&gt;
+&lt;h2 id=&#34;mpv-lazy&#34;&gt;mpv-lazy
 &lt;/h2&gt;&lt;h2 id=&#34;spacesniffer&#34;&gt;spacesniffer
 &lt;/h2&gt;&lt;h2 id=&#34;yt-dlp&#34;&gt;yt-dlp
+&lt;/h2&gt;&lt;h2 id=&#34;autobangumi&#34;&gt;AutoBangumi
 &lt;/h2&gt;</description>
         </item>
         
