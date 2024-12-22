@@ -14,7 +14,7 @@
         <guid>https://yukari.pages.dev/tools/</guid>
         <description>&lt;img src="https://yukari.pages.dev/tools/cover.webp" alt="Featured image of post 个人自用小工具" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;主要是给自用的小工具整个list，有必要的会单开一篇细说。&lt;/p&gt;
+&lt;p&gt;主要是给自用的小工具整个list，优先放项目地址，有必要的会单开一篇细说。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;powertoys&#34;&gt;PowerToys
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/microsoft/PowerToys&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -80,10 +80,40 @@
     &gt;官网&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;用于提取或添加mkv轨道。&lt;/p&gt;
 &lt;h2 id=&#34;mpv-lazy&#34;&gt;mpv-lazy
-&lt;/h2&gt;&lt;h2 id=&#34;spacesniffer&#34;&gt;spacesniffer
-&lt;/h2&gt;&lt;h2 id=&#34;yt-dlp&#34;&gt;yt-dlp
-&lt;/h2&gt;&lt;h2 id=&#34;autobangumi&#34;&gt;AutoBangumi
-&lt;/h2&gt;</description>
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/hooke007/MPV_lazy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;项目地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;mpv简单gui与懒人包。&lt;/p&gt;
+&lt;h2 id=&#34;embytolocalplayer&#34;&gt;embyToLocalPlayer
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/kjtsune/embyToLocalPlayer&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;项目地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Emby/Jellyfin 调用外部本地播放器，并回传播放记录。适配 Plex。&lt;/p&gt;
+&lt;h2 id=&#34;spacesniffer&#34;&gt;spacesniffer
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.uderzo.it/main_products/space_sniffer/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;没有启用TLS，有点少见，不过确实是官网（&lt;/p&gt;
+&lt;p&gt;硬盘空间利用查看。&lt;/p&gt;
+&lt;h2 id=&#34;yt-dlp&#34;&gt;yt-dlp
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yt-dlp/yt-dlp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;项目地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;提取流媒体，主要是油管，非会员也可以下载部分premium码率视频（视频编号616）。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;yt-dlp -f &amp;quot;bestvideo+bestaudio&amp;quot; --merge-output-format mp4 &amp;lt;视频链接&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;autobangumi&#34;&gt;AutoBangumi
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/EstrellaXD/Auto_Bangumi&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;项目地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;全自动追番工具。&lt;/p&gt;
+&lt;h2 id=&#34;owncast&#34;&gt;owncast
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/owncast/owncast&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;项目地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;自建直播间。&lt;/p&gt;
+&lt;h2 id=&#34;xmedia-recode&#34;&gt;XMedia Recode
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.xmedia-recode.de/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;官网&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;音视频转换工具，只是转换的话比Adobe的简单好用。&lt;/p&gt;
+&lt;h2 id=&#34;koipy&#34;&gt;koipy
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/koipy-org/koipy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;项目地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;koipy是一个Telegram 节点测速、连通性测试机器人，同时提供对接miaospeed后端的开源实现。 koipy是fulltclash的下游分支。&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>前置Cloudflare哪吒探针V1安装</title>
@@ -1079,14 +1109,14 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &lt;p&gt;&lt;strong&gt;字幕组&lt;/strong&gt;比较多挑喜欢就好，建议与lolihouse合作的（部分字幕组压得码率太低了又是硬字幕，说几个不建议的：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;[沸羊羊制作]压制技术不太好还喜欢超分，个人比较抵制动画超分，AI算出来的根本称不上是细节，凭空增加了体积，而且很多番有自己的噪点和画面风格，不针对处理反而会大大降低观感。&lt;/li&gt;
-&lt;li&gt;[贩卖机汉化组]&lt;/li&gt;
+&lt;li&gt;[贩卖机汉化组/TOC]事多，并不是人工翻译，立场先行，.torrent文件本身与视频内容都有过很多错误。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;tips&#34;&gt;Tips
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;蜜柑的RSS由于cdn缓存的关系并不会实时更新，与网页显示相比一般会有10-30分钟的延迟。&lt;/li&gt;
 &lt;li&gt;各平台播放时间可能有几小时的差别，可以查阅新番放送信息： &lt;a class=&#34;link&#34; href=&#34;https://bgm.wiki&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://bgm.wiki&lt;/a&gt;、https://yuc.wiki/&lt;/li&gt;
-&lt;li&gt;一个新番版权字幕自动抓取频道可以配合CR源手动食用： &lt;a class=&#34;link&#34; href=&#34;https://t.me/anime_chinese_subtitles&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;li&gt;一个新番版权字幕自动抓取频道可以配合CR等源手动食用： &lt;a class=&#34;link&#34; href=&#34;https://t.me/anime_chinese_subtitles&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://t.me/anime_chinese_subtitles&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;有时蜜柑没有如期更新可以去别站看看是否更了 &lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://bangumi.moe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

@@ -853,14 +853,14 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &lt;p&gt;&lt;strong&gt;字幕组&lt;/strong&gt;比较多挑喜欢就好，建议与lolihouse合作的（部分字幕组压得码率太低了又是硬字幕，说几个不建议的：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;[沸羊羊制作]压制技术不太好还喜欢超分，个人比较抵制动画超分，AI算出来的根本称不上是细节，凭空增加了体积，而且很多番有自己的噪点和画面风格，不针对处理反而会大大降低观感。&lt;/li&gt;
-&lt;li&gt;[贩卖机汉化组]&lt;/li&gt;
+&lt;li&gt;[贩卖机汉化组/TOC]事多，并不是人工翻译，立场先行，.torrent文件本身与视频内容都有过很多错误。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;tips&#34;&gt;Tips
 &lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;蜜柑的RSS由于cdn缓存的关系并不会实时更新，与网页显示相比一般会有10-30分钟的延迟。&lt;/li&gt;
 &lt;li&gt;各平台播放时间可能有几小时的差别，可以查阅新番放送信息： &lt;a class=&#34;link&#34; href=&#34;https://bgm.wiki&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://bgm.wiki&lt;/a&gt;、https://yuc.wiki/&lt;/li&gt;
-&lt;li&gt;一个新番版权字幕自动抓取频道可以配合CR源手动食用： &lt;a class=&#34;link&#34; href=&#34;https://t.me/anime_chinese_subtitles&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;li&gt;一个新番版权字幕自动抓取频道可以配合CR等源手动食用： &lt;a class=&#34;link&#34; href=&#34;https://t.me/anime_chinese_subtitles&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://t.me/anime_chinese_subtitles&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;有时蜜柑没有如期更新可以去别站看看是否更了 &lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://bangumi.moe&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
