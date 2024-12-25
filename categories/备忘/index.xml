@@ -166,6 +166,7 @@
 &lt;p&gt;面板机我用nginx开了TLS，cf设置完全（严格）TLS；如果不配置nginx、cf TLS开灵活模式应该也能通讯到agent，建议还是全程TLS也更加安全（&lt;/p&gt;
 &lt;p&gt;nginx反代设置可以参考&lt;a class=&#34;link&#34; href=&#34;https://nezha.wiki/guide/q3.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Wiki&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;使用cloudflare cdn的话nginx反代设置建议除了证书地址和域名其他都不要动&lt;/p&gt;
 &lt;h2 id=&#34;dashboard安装&#34;&gt;Dashboard安装
 &lt;/h2&gt;&lt;p&gt;官方一键脚本&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -178,7 +179,9 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;如果本机不配nginx，最好把端口设为80，方便cf代理成443。&lt;/p&gt;
 &lt;p&gt;然后登录&lt;code&gt;https://你的域名/dashboard&lt;/code&gt;默认账密都是admin&lt;/p&gt;
-&lt;p&gt;右上角系统设置 &lt;code&gt;Agent对接地址【域名/IP:端口】&lt;/code&gt;填入你的域名:443并开启使用TLS连接。&lt;/p&gt;
+&lt;p&gt;右上角系统设置&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Agent对接地址【域名/IP:端口】&lt;/code&gt;填入&lt;code&gt;你的域名:443&lt;/code&gt;并开启使用TLS连接。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;真实IP请求头&lt;/code&gt;填入&lt;code&gt;CF-Connecting-IP&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;agent安装&#34;&gt;Agent安装
 &lt;/h2&gt;&lt;p&gt;&lt;code&gt;https://你的域名/dashboard&lt;/code&gt; 可以快捷复制agent安装命令&lt;/p&gt;
 &lt;p&gt;安装完成后可以在&lt;code&gt;/opt/nezha/agent/config.yml&lt;/code&gt;修改一些设置&lt;/p&gt;
