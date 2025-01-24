@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>探针 on Yukari Blog</title>
-        <link>https://yukari.pages.dev/tags/%E6%8E%A2%E9%92%88/</link>
+        <link>https://yukari.cyou/tags/%E6%8E%A2%E9%92%88/</link>
         <description>Recent content in 探针 on Yukari Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 20 Dec 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://yukari.pages.dev/tags/%E6%8E%A2%E9%92%88/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 20 Dec 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://yukari.cyou/tags/%E6%8E%A2%E9%92%88/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>前置Cloudflare哪吒探针V1安装</title>
-        <link>https://yukari.pages.dev/nezha/</link>
+        <link>https://yukari.cyou/nezha/</link>
         <pubDate>Fri, 20 Dec 2024 00:00:00 +0800</pubDate>
         
-        <guid>https://yukari.pages.dev/nezha/</guid>
-        <description>&lt;img src="https://yukari.pages.dev/nezha/cover.webp" alt="Featured image of post 前置Cloudflare哪吒探针V1安装" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+        <guid>https://yukari.cyou/nezha/</guid>
+        <description>&lt;img src="https://yukari.cyou/nezha/cover.webp" alt="Featured image of post 前置Cloudflare哪吒探针V1安装" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;跟风整了个监控玩，虽然根本没有几只小鸡（ &lt;br&gt;
 同时&lt;a class=&#34;link&#34; href=&#34;https://github.com/akile-network/akile_monitor&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -22,10 +22,10 @@
     &gt;项目地址&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://nezha.wiki/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;官方wiki&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/nezha/nezha.webp&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.cyou/nezha/nezha.webp&#34;
 	width=&#34;2400&#34;
 	height=&#34;2800&#34;
-	srcset=&#34;https://yukari.pages.dev/nezha/nezha_hu10289382201525115001.webp 1024w, https://yukari.pages.dev/nezha/nezha_hu13982843780439009151.webp 2048w&#34;
+	srcset=&#34;https://yukari.cyou/nezha/nezha_hu_9dc8922f5580c245.webp 1024w, https://yukari.cyou/nezha/nezha_hu_3779568f1bf043d8.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;nezha 1.3.0&#34;
@@ -36,10 +36,10 @@
 		data-flex-basis=&#34;205px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/nezha/nezha-m.webp&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.cyou/nezha/nezha-m.webp&#34;
 	width=&#34;2580&#34;
 	height=&#34;2796&#34;
-	srcset=&#34;https://yukari.pages.dev/nezha/nezha-m_hu16831260961624114158.webp 1024w, https://yukari.pages.dev/nezha/nezha-m_hu15884565485954509700.webp 2048w&#34;
+	srcset=&#34;https://yukari.cyou/nezha/nezha-m_hu_de91cbd9d9bb1373.webp 1024w, https://yukari.cyou/nezha/nezha-m_hu_27a2f52bba72ff2.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Mobile&#34;

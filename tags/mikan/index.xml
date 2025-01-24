@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Mikan on Yukari Blog</title>
-        <link>https://yukari.pages.dev/tags/mikan/</link>
+        <link>https://yukari.cyou/tags/mikan/</link>
         <description>Recent content in Mikan on Yukari Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 23 Aug 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://yukari.pages.dev/tags/mikan/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 23 Aug 2024 00:00:00 +0800</lastBuildDate><atom:link href="https://yukari.cyou/tags/mikan/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>我的全流程自动追番方案</title>
-        <link>https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/</link>
+        <link>https://yukari.cyou/autobangumi-qbittorrent-jellyfin/</link>
         <pubDate>Fri, 23 Aug 2024 00:00:00 +0800</pubDate>
         
-        <guid>https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/</guid>
-        <description>&lt;img src="https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/cover.webp" alt="Featured image of post 我的全流程自动追番方案" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
+        <guid>https://yukari.cyou/autobangumi-qbittorrent-jellyfin/</guid>
+        <description>&lt;img src="https://yukari.cyou/autobangumi-qbittorrent-jellyfin/cover.webp" alt="Featured image of post 我的全流程自动追番方案" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;p&gt;&lt;del&gt;说是全流程自动，其实每季还是需要一定程度手动改一些配置的（&lt;/del&gt; &lt;br&gt;
 本想每个项目分开写一篇，不过既然叫全流程果然还是集合为一篇比较好。 &lt;br&gt;
 *坏处是比较杂，每个软件可能都会写一些方案相关心得和碎碎念。 &lt;br&gt;
@@ -22,10 +22,10 @@
 &lt;p&gt;以下所有安装环境均是&lt;code&gt;Windows10&lt;/code&gt;，如果是其他平台非常推荐看这篇&lt;a class=&#34;link&#34; href=&#34;https://www.himiku.com/archives/auto-bangumi.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;AutoBangumi：自动追番，解放双手&lt;/a&gt;。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/%E6%B5%81%E7%A8%8B%E5%9B%BE.webp&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/%E6%B5%81%E7%A8%8B%E5%9B%BE.webp&#34;
 	width=&#34;2605&#34;
 	height=&#34;1790&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/%E6%B5%81%E7%A8%8B%E5%9B%BE_hu11192917829988485160.webp 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/%E6%B5%81%E7%A8%8B%E5%9B%BE_hu11223782706523553211.webp 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/%E6%B5%81%E7%A8%8B%E5%9B%BE_hu_f39a2023b95c8a68.webp 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/%E6%B5%81%E7%A8%8B%E5%9B%BE_hu_aa02cd4619ffb443.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;大致流程图&#34;
@@ -54,10 +54,10 @@
 &lt;li&gt;
 &lt;p&gt;启用webui&lt;/p&gt;
 &lt;p&gt;如图勾选即可&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-13.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-13.png&#34;
 	width=&#34;1233&#34;
 	height=&#34;875&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-13_hu6164240292002080929.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-13_hu16439042320054450225.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-13_hu_931fcfc0fe73a7d9.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-13_hu_c990a25667dcf01e.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -73,10 +73,10 @@
 &lt;p&gt;最新版的Autobangumi其实并不需要启用RSS了，不过2.6.10版本需要。 &lt;br&gt;
 如图勾选即可，对于mikan更新间隔可以改为3-5分钟，文章数目最好大点比如5000。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-14.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-14.png&#34;
 	width=&#34;1233&#34;
 	height=&#34;875&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-14_hu3950059600157671929.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-14_hu16132624562117563291.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-14_hu_4d462b5c3f94e4f6.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-14_hu_3928405a46ff053d.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -151,10 +151,10 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;输出以下内容并可以打开输出中的&lt;a class=&#34;link&#34; href=&#34;http://0.0.0.0:7892&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;webui&lt;/a&gt;就说明安装成功啦！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-11.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-11.png&#34;
 	width=&#34;1803&#34;
 	height=&#34;893&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-11_hu6235573066274776807.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-11_hu9659689572406727528.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-11_hu_12cb04a68013dcd.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-11_hu_61470889175590d6.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -187,10 +187,10 @@
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;下载器地址&lt;/strong&gt;改为本地打开qbwebui的地址，如未修改默认是： &lt;code&gt;localhost:8080&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image.png&#34;
 	width=&#34;1176&#34;
 	height=&#34;598&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image_hu6504846004471411547.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image_hu8509937081397640519.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image_hu_8fe88d5a11723b0.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image_hu_af5b5a39009666ed.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -202,10 +202,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;下载地址&lt;/strong&gt;改为你希望存放下载存放新番的绝对地址，如果按我的设置文件目录如下，&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-1.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-1.png&#34;
 	width=&#34;844&#34;
 	height=&#34;553&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-1_hu9427489577339643776.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-1_hu6084952646026707333.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-1_hu_d8675918be457fd5.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-1_hu_61630ae8edc2c2f2.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -263,10 +263,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;来到主页订阅番剧，注意需要点开封面选择需要订阅的字幕组然后点击右边的&lt;code&gt;订&lt;/code&gt;，或选择订阅语言后保存修改&lt;del&gt;有时简/繁过滤是无效的&lt;/del&gt;。
-&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-3.png&#34;
+&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-3.png&#34;
 	width=&#34;1879&#34;
 	height=&#34;1469&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-3_hu7908922765321832779.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-3_hu8872915506818402260.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-3_hu_e7a493e4bf183f1c.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-3_hu_a3f6dbf2ee8a51d8.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -279,10 +279,10 @@
 &lt;li&gt;
 &lt;p&gt;然后来到页面上方找到RSS订阅点开，这就是接下要填的RSS地址，形如 &lt;a class=&#34;link&#34; href=&#34;https://mikanani.me/RSS/MyBangumi?token=xxx&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://mikanani.me/RSS/MyBangumi?token=xxx&lt;/a&gt;
-&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-4.png&#34;
+&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-4.png&#34;
 	width=&#34;2688&#34;
 	height=&#34;1389&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-4_hu9501271117379460634.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-4_hu14079176520487836947.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-4_hu_42d732b8e0c024a3.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-4_hu_1bb519c77d06f7c8.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -294,10 +294,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;来到ab，点开右上角的加号，如图填入上一步的RSS地址，名称任意，勾选聚合RSS，解析器选择tmdb，添加。
-&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-6.png&#34;
+&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-6.png&#34;
 	width=&#34;1806&#34;
 	height=&#34;955&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-6_hu7549536248812177950.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-6_hu10553122342643812450.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-6_hu_87440359f79c1afc.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-6_hu_ec8e922d7c09d02d.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -309,10 +309,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;右上角重启或重启程序。 &lt;br&gt;
-&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-7.png&#34;
+&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-7.png&#34;
 	width=&#34;358&#34;
 	height=&#34;593&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-7_hu15747338399361306986.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-7_hu17496622920444013663.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-7_hu_1a2f12832b1d24c3.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-7_hu_357daddfa8bd4f1a.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -324,10 +324,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;可以看到ab会如图开始收集RSS。
-&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-8.png&#34;
+&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-8.png&#34;
 	width=&#34;1952&#34;
 	height=&#34;1043&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-8_hu5088575586837796119.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-8_hu11050025329206438803.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-8_hu_d2205bd5dd459ed4.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-8_hu_e0d6edefa7994acc.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -339,10 +339,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;收集完成后可以看到ab主页中出现了已收集的番剧封面，qb中也会有相应的下载信息。
-&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-9.png&#34;
+&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-9.png&#34;
 	width=&#34;2088&#34;
 	height=&#34;1202&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-9_hu7697614616134100094.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-9_hu8257552245843386683.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-9_hu_9198810d4c304495.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-9_hu_b45f2e70616e05b3.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -351,10 +351,10 @@
 		data-flex-basis=&#34;416px&#34;
 	
 &gt;
-&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-10.png&#34;
+&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-10.png&#34;
 	width=&#34;1808&#34;
 	height=&#34;1142&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-10_hu16484559751396214002.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-10_hu9974285387453952185.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-10_hu_91a3b0e0bc85a20c.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-10_hu_a9a05235237d901f.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -380,10 +380,10 @@
 &lt;h3 id=&#34;可选安装2610版本ab&#34;&gt;&lt;em&gt;(可选)安装2.6.10版本ab&lt;/em&gt;
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;这个版本的ab会在qb中建立RSS规则，在mikanRSS已订阅某动画给ab后，ab会在RSS规则中自动建立该动画的RSS规则，然后你可以按下图顺序来添加新版ab不支持的RSS，然后来到RSS下载器中，修改正则以命中你额外添加的RSS里的该动画然后保存即可。参考↓ &lt;br&gt;
-&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-33.png&#34;
+&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-33.png&#34;
 	width=&#34;1761&#34;
 	height=&#34;1372&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-33_hu657289692655621030.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-33_hu18115296765519374232.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-33_hu_dc9cb189102b434b.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-33_hu_4668f71e9544874f.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -407,10 +407,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;在 &lt;code&gt;根目录\module&lt;/code&gt; 目录下创建 &lt;code&gt;__version__.py&lt;/code&gt; 文件并写入 &lt;code&gt;VERSION=&#39;local&#39;&lt;/code&gt;, 请注意文件编码格式为 &lt;code&gt;UTF-8&lt;/code&gt;。
-&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-15.png&#34;
+&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-15.png&#34;
 	width=&#34;1222&#34;
 	height=&#34;487&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-15_hu11803137521829144993.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-15_hu6834979888717765723.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-15_hu_d06fb62fb0c46eab.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-15_hu_76ae53fc05c10df3.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -454,10 +454,10 @@ Github Release下载&lt;code&gt;dist.zip(zip)&lt;/code&gt;： &lt;a class=&#34;l
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;输出以下内容并可以打开输出中的&lt;a class=&#34;link&#34; href=&#34;http://0.0.0.0:7892&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;webui&lt;/a&gt;就说明安装成功啦！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-16.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-16.png&#34;
 	width=&#34;1770&#34;
 	height=&#34;800&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-16_hu14381442150176223905.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-16_hu5359274586714522552.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-16_hu_ac2e08a614abedc9.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-16_hu_da9df6e90295ddba.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -469,10 +469,10 @@ Github Release下载&lt;code&gt;dist.zip(zip)&lt;/code&gt;： &lt;a class=&#34;l
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;配置方面和上面最新版大同小异，下面是我的供参考。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-17.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-17.png&#34;
 	width=&#34;2004&#34;
 	height=&#34;1874&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-17_hu16864984395615605402.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-17_hu3947765979974895994.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-17_hu_f85a91d8277d85c1.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-17_hu_600d88bf51c6a86e.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -541,10 +541,10 @@ Github Release下载&lt;code&gt;dist.zip(zip)&lt;/code&gt;： &lt;a class=&#34;l
 &lt;li&gt;
 &lt;p&gt;docker内出现AutoBangumi容器并输出以下内容并可以打开&lt;a class=&#34;link&#34; href=&#34;http://0.0.0.0:7892&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;webui&lt;/a&gt;就说明安装成功啦！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-18.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-18.png&#34;
 	width=&#34;1641&#34;
 	height=&#34;775&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-18_hu17040583987543853820.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-18_hu4730291958896360958.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-18_hu_43105abeb6f825f2.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-18_hu_fa84fc685e12a5cb.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -556,10 +556,10 @@ Github Release下载&lt;code&gt;dist.zip(zip)&lt;/code&gt;： &lt;a class=&#34;l
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;配置方面和上面最新版大同小异，下面是我的供参考。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-17.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-17.png&#34;
 	width=&#34;2004&#34;
 	height=&#34;1874&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-17_hu16864984395615605402.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-17_hu3947765979974895994.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-17_hu_f85a91d8277d85c1.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-17_hu_600d88bf51c6a86e.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -585,10 +585,10 @@ Github Release下载&lt;code&gt;dist.zip(zip)&lt;/code&gt;： &lt;a class=&#34;l
 我选择&lt;a class=&#34;link&#34; href=&#34;https://github.com/jellyfin/jellyfin&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;strong&gt;Jellyfin&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-5.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-5.png&#34;
 	width=&#34;2614&#34;
 	height=&#34;1531&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-5_hu14260635508408826513.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-5_hu17967572376454518403.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-5_hu_368f740d733ec9.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-5_hu_54d44adacefa9432.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Jellyfin&#34;
@@ -615,10 +615,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
     &gt;jellyfin-danmaku&lt;/a&gt;，*仅适用于网页播放。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;付一个我自己的设置，仅作为我自己备份，&lt;strong&gt;谨慎参考&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-19.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-19.png&#34;
 	width=&#34;1728&#34;
 	height=&#34;2802&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-19_hu9291202649176438372.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-19_hu14697781666858973434.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-19_hu_7623f3d6005721eb.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-19_hu_4c43757b261b1a78.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;常规设置&#34;
@@ -629,10 +629,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 		data-flex-basis=&#34;148px&#34;
 	
 &gt;
-&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-20.png&#34;
+&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-20.png&#34;
 	width=&#34;1728&#34;
 	height=&#34;6917&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-20_hu7812394679639212712.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-20_hu2818049958193919514.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-20_hu_fe4e90c68ceecb0.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-20_hu_dfc27f644ed208e0.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;转码设置&#34;
@@ -643,10 +643,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 		data-flex-basis=&#34;59px&#34;
 	
 &gt;
-&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-21.png&#34;
+&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-21.png&#34;
 	width=&#34;1728&#34;
 	height=&#34;5030&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-21_hu11136489049380745434.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-21_hu10890329932633060347.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-21_hu_e08889f3058ca977.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-21_hu_801279b2e9443b6f.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;网络设置&#34;
@@ -657,10 +657,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 		data-flex-basis=&#34;82px&#34;
 	
 &gt;
-&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-22.png&#34;
+&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-22.png&#34;
 	width=&#34;1500&#34;
 	height=&#34;6486&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-22_hu5195503148829333970.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-22_hu1136236624256021757.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-22_hu_689ed58bb162aba6.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-22_hu_a6b26b8625446f18.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;新番刮削设置&#34;
@@ -671,10 +671,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 		data-flex-basis=&#34;55px&#34;
 	
 &gt;
-&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-23.png&#34;
+&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-23.png&#34;
 	width=&#34;1501&#34;
 	height=&#34;2015&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-23_hu7236370465215601665.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-23_hu6894147234289118489.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-23_hu_65052a0f9481db1e.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-23_hu_dac998e49a14a333.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;所有库&#34;
@@ -685,10 +685,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 		data-flex-basis=&#34;178px&#34;
 	
 &gt;
-&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-27.png&#34;
+&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-27.png&#34;
 	width=&#34;1227&#34;
 	height=&#34;3864&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-27_hu11571512384586960485.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-27_hu3041557970037047951.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-27_hu_4020d70e4687f815.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-27_hu_4e7dd97495a32434.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;网页显示&#34;
@@ -699,10 +699,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 		data-flex-basis=&#34;76px&#34;
 	
 &gt;
-&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-25.png&#34;
+&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-25.png&#34;
 	width=&#34;1500&#34;
 	height=&#34;7379&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-25_hu13995207184910871580.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-25_hu189630077041676978.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-25_hu_86ff825e0701286d.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-25_hu_9e611b0895cbb77.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;网页首页&#34;
@@ -738,10 +738,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Jellyfin主页 → 控制台 → 插件 → 目录，找到Webhook安装后重启Jellyfin。
-&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-29.png&#34;
+&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-29.png&#34;
 	width=&#34;1706&#34;
 	height=&#34;1524&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-29_hu7948567586258461761.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-29_hu17563170556831233190.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-29_hu_16b8e95de657aff6.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-29_hu_21f3c95ea6fdbe7b.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -788,10 +788,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &lt;ol&gt;
 &lt;li&gt;receive_url和上面的Webhook Url一致。&lt;/li&gt;
 &lt;li&gt;启用bot的HTTP服务，并填任意端口，如11721，那么forward_url的地址便是&lt;code&gt;http://localhost:11721/send_group_msg&lt;/code&gt;
-&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-31.png&#34;
+&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-31.png&#34;
 	width=&#34;1252&#34;
 	height=&#34;992&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-31_hu1555575704100519824.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-31_hu8682241043634978897.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-31_hu_9efa25915d89a79e.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-31_hu_d81fd264094d0caa.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -804,10 +804,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;最终效果&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-30.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-30.png&#34;
 	width=&#34;1769&#34;
 	height=&#34;764&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-30_hu3341953065073137008.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-30_hu17342514670057629739.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-30_hu_57351389dca2540b.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-30_hu_e5daf1736448d855.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -816,10 +816,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 		data-flex-basis=&#34;555px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-28.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-28.png&#34;
 	width=&#34;618&#34;
 	height=&#34;852&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-28_hu13476222559349835850.png 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/image-28_hu15019823688389110162.png 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-28_hu_4f8998bd4a605217.png 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-28_hu_321ef60a58cee501.png 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -873,10 +873,10 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
     &gt;https://share.acgnx.se&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/end.webp&#34;
+&lt;p&gt;&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/end.webp&#34;
 	width=&#34;1700&#34;
 	height=&#34;1089&#34;
-	srcset=&#34;https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/end_hu9747934829176354920.webp 1024w, https://yukari.pages.dev/autobangumi-qbittorrent-jellyfin/end_hu14456746818283537247.webp 2048w&#34;
+	srcset=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/end_hu_5befc6f1d2cb96f.webp 1024w, https://yukari.cyou/autobangumi-qbittorrent-jellyfin/end_hu_47f60441a8cbc922.webp 2048w&#34;
 	loading=&#34;lazy&#34;
 	
 	
