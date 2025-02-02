@@ -24,19 +24,16 @@ HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔�
     &gt;go-cqhttp&lt;/a&gt;方案因为QQ协议的更新经常会出现冻结和无法登录的情况，无奈替换成了性能开销比较大的&lt;a class=&#34;link&#34; href=&#34;https://github.com/LLOneBot/LLOneBot&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;LiteloaderQQNT框架的LLOneBot&lt;/a&gt;方案，目前非常稳定。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;由于QQ官方针对协议库的围追堵截, 不断更新加密方案, 我们已无力继续维护此项目. 建议Bot开发者尽快迁移至无头NTQQ项目&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;由于QQ官方针对协议库的围追堵截, 不断更新加密方案, 我们已无力继续维护此项目. 建议Bot开发者尽快迁移至无头NTQQ项目&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;备选方案还有基于安卓端的Shamrock和基于无头ntqq的NapCatQQ方案，推荐尝试&lt;a class=&#34;link&#34; href=&#34;https://napneko.icu/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;NapCat&lt;/a&gt;，全平台且更加轻量。&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;NapCat&lt;/a&gt;，全平台且更加轻量。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;hoshinobot-部署&#34;&gt;HoshinoBot 部署
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;直接照搬HoshinoBot文档了，部分修改以适配LLOneBot &lt;br&gt;
-环境 windows10&lt;/p&gt;
-&lt;/blockquote&gt;
+环境 windows10&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;安装下面的软件/工具&lt;/p&gt;
@@ -69,14 +66,12 @@ HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔�
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;若此处有报错信息，请务必解决，将错误信息复制到谷歌搜索一般即可找到解决办法。&lt;/p&gt;
-&lt;p&gt;若安装python依赖库时下载速度缓慢，可以尝试使用&lt;code&gt;py -3.8 -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;若安装python依赖库时下载速度缓慢，可以尝试使用&lt;code&gt;py -3.8 -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;回到资源管理器，进入&lt;code&gt;hoshino&lt;/code&gt;文件夹，将&lt;code&gt;config_example&lt;/code&gt;文件夹复制一份，重命名为&lt;code&gt;config&lt;/code&gt;，然后右键使用VScode打开其中的&lt;code&gt;__bot__.py&lt;/code&gt;，按照其中的注释说明进行编辑。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;如果您不清楚某项设置的作用，请保持默认。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;如果您不清楚某项设置的作用，请保持默认。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;回到powershell，输入以下命令，启动 HoshinoBot&lt;/p&gt;
@@ -89,8 +84,7 @@ HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;若能看到日志&lt;code&gt;INFO: Running on 127.0.0.1:8080&lt;/code&gt;，说明HoshinoBot启动成功。您可以忽略启动时的WARNING信息。如果出现ERROR，说明部分功能可能加载失败。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;若能看到日志&lt;code&gt;INFO: Running on 127.0.0.1:8080&lt;/code&gt;，说明HoshinoBot启动成功。您可以忽略启动时的WARNING信息。如果出现ERROR，说明部分功能可能加载失败。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;至此，HoshinoBot的“大脑”已部署成功。接下来我们需要部署LLOneBot与NTQQ，作为HoshinoBot的“口”和“耳”，收发消息。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -109,8 +103,7 @@ HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔�
 &lt;h2 id=&#34;自用插件&#34;&gt;自用插件
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;大部分已经被我改的面目全非，功能用法可能不同，仅做自我备份用，如有需要可以去&lt;a class=&#34;link&#34; href=&#34;https://github.com/pcrbot/HoshinoBot-plugins-index&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;插件库&lt;/a&gt;选用心仪的插件。&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;插件库&lt;/a&gt;选用心仪的插件。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;bot_manager_web&#34;&gt;bot_manager_web
 &lt;/h3&gt;&lt;p&gt;插件项目地址： &lt;a class=&#34;link&#34; href=&#34;https://github.com/pcrbot/HosBotManagerWeb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/pcrbot/HosBotManagerWeb&lt;/a&gt; &lt;br&gt;

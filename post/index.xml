@@ -14,8 +14,7 @@
         <guid>https://yukari.cyou/tools/</guid>
         <description>&lt;img src="https://yukari.cyou/tools/cover.webp" alt="Featured image of post 个人自用小工具" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;主要是给自用的小工具整个list，优先放项目地址，有必要的会单开一篇细说。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;主要是给自用的小工具整个list，优先放项目地址，有必要的会单开一篇细说。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;powertoys&#34;&gt;PowerToys
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/microsoft/PowerToys&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;项目地址&lt;/a&gt;&lt;/p&gt;
@@ -125,8 +124,7 @@
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;跟风整了个监控玩，虽然根本没有几只小鸡（ &lt;br&gt;
 同时&lt;a class=&#34;link&#34; href=&#34;https://github.com/akile-network/akile_monitor&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Akile家的探针&lt;/a&gt;也开源了，对比了下感觉还是新版哪吒好看&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;Akile家的探针&lt;/a&gt;也开源了，对比了下感觉还是新版哪吒好看&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/nezhahq/nezha&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;项目地址&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://nezha.wiki/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -279,8 +277,7 @@
 *同时也会写一些平替软件或另一种方案，会用&lt;code&gt;(可选)&lt;/code&gt;并斜体标记，如果只想快速搭建，忽略这些即可。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;以下所有安装环境均是&lt;code&gt;Windows10&lt;/code&gt;，如果是其他平台非常推荐看这篇&lt;a class=&#34;link&#34; href=&#34;https://www.himiku.com/archives/auto-bangumi.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;AutoBangumi：自动追番，解放双手&lt;/a&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;AutoBangumi：自动追番，解放双手&lt;/a&gt;。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/%E6%B5%81%E7%A8%8B%E5%9B%BE.webp&#34;
 	width=&#34;2605&#34;
 	height=&#34;1790&#34;
@@ -302,8 +299,7 @@
     &gt;qBittorrent&lt;/a&gt;，可选的&lt;a class=&#34;link&#34; href=&#34;https://github.com/c0re100/qBittorrent-Enhanced-Edition&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;qBittorrent-Enhanced-Edition&lt;/a&gt;主要增强了原版qB的反吸血功能，其他功能基本一致。&lt;br&gt;
 &lt;strong&gt;当前公网做种环境比较恶劣，推荐使用qBEE或qB+&lt;a class=&#34;link&#34; href=&#34;https://github.com/PBH-BTN/PeerBanHelper&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;PBH&lt;/a&gt;食用&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;PBH&lt;/a&gt;食用&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;qbittorrent安装&#34;&gt;&lt;strong&gt;qBittorrent安装&lt;/strong&gt;
 &lt;/h3&gt;&lt;p&gt;官网下载地址： &lt;a class=&#34;link&#34; href=&#34;https://www.fosshub.com/qBittorrent.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.fosshub.com/qBittorrent.html&lt;/a&gt; &lt;br&gt;
@@ -330,8 +326,7 @@
 &lt;p&gt;启用RSS&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;最新版的Autobangumi其实并不需要启用RSS了，不过2.6.10版本需要。 &lt;br&gt;
-如图勾选即可，对于mikan更新间隔可以改为3-5分钟，文章数目最好大点比如5000。&lt;/p&gt;
-&lt;/blockquote&gt;
+如图勾选即可，对于mikan更新间隔可以改为3-5分钟，文章数目最好大点比如5000。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-14.png&#34;
 	width=&#34;1233&#34;
 	height=&#34;875&#34;
@@ -358,8 +353,7 @@
 &lt;p&gt;由于&lt;a class=&#34;link&#34; href=&#34;https://github.com/EstrellaXD/Auto_Bangumi&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Autobangumi&lt;/a&gt;最新版接管了RSS规则处理，导致不会在qBittorrent上生成RSS规则，意味着你只能使用ab支持的RSS如mikan，mikanRSS已经能应付99%的追番需求啦！
 可选的RSS还有nyaa、dmhy等，不过没有mikan方便。
-如果你确需使用其他站的RSS可以考虑跳过最新版，看下面可选的2.6.10版本安装。&lt;/p&gt;
-&lt;/blockquote&gt;
+如果你确需使用其他站的RSS可以考虑跳过最新版，看下面可选的2.6.10版本安装。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;autobangumi安装&#34;&gt;&lt;strong&gt;Autobangumi安装&lt;/strong&gt;
 &lt;/h3&gt;&lt;p&gt;需要python3.10以上环境，一般装最新就行。&lt;/p&gt;
 &lt;ol&gt;
@@ -650,8 +644,7 @@
 		data-flex-grow=&#34;128&#34;
 		data-flex-basis=&#34;308px&#34;
 	
-&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;安装python，同样需要python3.10以上环境，一般装最新就行： &lt;a class=&#34;link&#34; href=&#34;https://www.python.org/downloads/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -763,8 +756,7 @@ Github Release下载&lt;code&gt;dist.zip(zip)&lt;/code&gt;： &lt;a class=&#34;l
 &lt;p&gt;安装Docker Desktop， &lt;a class=&#34;link&#34; href=&#34;https://www.docker.com/products/docker-desktop/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.docker.com/products/docker-desktop/&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;这是我实际环境运行了一年多的方案，也算稳定所以也提一下，适合正好运行着Docker Desktop其他容器的朋友，&lt;strong&gt;没必要单纯为了运行ab装Docker Desktop&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;这是我实际环境运行了一年多的方案，也算稳定所以也提一下，适合正好运行着Docker Desktop其他容器的朋友，&lt;strong&gt;没必要单纯为了运行ab装Docker Desktop&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;选择一个任意文件夹下新建&lt;code&gt;docker-compose.yml&lt;/code&gt;文件,之后称这个任意文件夹下为&lt;code&gt;根目录&lt;/code&gt;。&lt;/p&gt;
@@ -842,8 +834,7 @@ Github Release下载&lt;code&gt;dist.zip(zip)&lt;/code&gt;： &lt;a class=&#34;l
 &lt;p&gt;你可能还需要一个&lt;code&gt;可播放的&lt;/code&gt;、&lt;code&gt;美观的&lt;/code&gt;新番海报墙，也就是媒体库。&lt;br&gt;
 一般可选项有三个Plex、Emby、Jellyfin&lt;br&gt;
 我选择&lt;a class=&#34;link&#34; href=&#34;https://github.com/jellyfin/jellyfin&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;strong&gt;Jellyfin&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;&lt;strong&gt;Jellyfin&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&#34;https://yukari.cyou/autobangumi-qbittorrent-jellyfin/image-5.png&#34;
 	width=&#34;2614&#34;
 	height=&#34;1531&#34;
@@ -974,8 +965,7 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;网页调起本地播放器播放&#34;&gt;网页调起本地播放器播放
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;网页播放器有很多不便，解码羸弱，字幕支持不好。而客户端也有些小问题，所以十分推荐使用此插件实现调起本地播放器播放，并回传播放记录给Jellyfin，播放完成关闭时还会同步在bangumi上打格子。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;网页播放器有很多不便，解码羸弱，字幕支持不好。而客户端也有些小问题，所以十分推荐使用此插件实现调起本地播放器播放，并回传播放记录给Jellyfin，播放完成关闭时还会同步在bangumi上打格子。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;项目地址：&lt;a class=&#34;link&#34; href=&#34;https://github.com/kjtsune/embyToLocalPlayer&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;embyToLocalPlayer&lt;/a&gt; &lt;br&gt;
 推荐配合MPV懒人版&lt;a class=&#34;link&#34; href=&#34;https://github.com/hooke007/MPV_lazy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -988,8 +978,7 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &lt;h2 id=&#34;更新通知发送至qqbot&#34;&gt;更新通知发送至QQbot
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;由于jellyfin自带的webhook没办法以库/文件路径过滤新入库推送。 &lt;br&gt;
-用python写了一个简陋的中间件来过滤，白名单形式。&lt;/p&gt;
-&lt;/blockquote&gt;
+用python写了一个简陋的中间件来过滤，白名单形式。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;项目地址：&lt;a class=&#34;link&#34; href=&#34;https://github.com/Yukari-Lily/Post-Filter-Forward&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Post-Filter-Forward&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;bot使用的是&lt;a class=&#34;link&#34; href=&#34;https://yukari.pages.dev/hoshinobot-llonebot%E9%83%A8%E7%BD%B2qq%E6%9C%BA%E5%99%A8%E4%BA%BA/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1091,8 +1080,7 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &lt;/ol&gt;
 &lt;h2 id=&#34;字幕组选择问题&#34;&gt;字幕组选择问题
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;由于要兼顾新番更新速度和画面/字幕质量，你可能&lt;strong&gt;首先&lt;/strong&gt;需要订阅一个第一时间抓取并发布的&lt;strong&gt;搬运组&lt;/strong&gt;，然后订阅一个需要时间译出字幕的&lt;strong&gt;字幕组&lt;/strong&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;由于要兼顾新番更新速度和画面/字幕质量，你可能&lt;strong&gt;首先&lt;/strong&gt;需要订阅一个第一时间抓取并发布的&lt;strong&gt;搬运组&lt;/strong&gt;，然后订阅一个需要时间译出字幕的&lt;strong&gt;字幕组&lt;/strong&gt;。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;其中mikan有发布的&lt;strong&gt;搬运组&lt;/strong&gt;有：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;[&lt;strong&gt;ANi&lt;/strong&gt;] 一般是首选，主抓&lt;a class=&#34;link&#34; href=&#34;https://ani.gamer.com.tw/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1154,8 +1142,7 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
         <guid>https://yukari.cyou/owncast/</guid>
         <description>&lt;img src="https://yukari.cyou/owncast/cover.webp" alt="Featured image of post Owncast简易教程&amp;使用心得" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;特别感谢22喵，给我提供了用owncast一起看的思路!&lt;/strong&gt; &lt;img src=22.jpg style=&#34;width: 80px;height: 80px; vertical-align: middle;&#34;&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;特别感谢22喵，给我提供了用owncast一起看的思路!&lt;/strong&gt; &lt;img src=22.jpg style=&#34;width: 80px;height: 80px; vertical-align: middle;&#34;&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;去年在啊b直播一起看番被叔叔反复制裁，搭建了owncast发现完美符合自己的需求&lt;/p&gt;
 &lt;h2 id=&#34;owncast介绍&#34;&gt;owncast介绍
 &lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/owncast/owncast&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -1179,8 +1166,7 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &lt;li&gt;配置方面如果是转码模式，普通的小鸡的cpu肯定是吃不消的，所以这里非常推荐使用直通模式，即不转码直接转发到页面上。&lt;br&gt;
 &lt;code&gt;Owncast 有一个可选设置，可以关闭对传入流的重新编码，从而可能节省大量硬件使用率，并以更少的资源支持更高质量的流。但是，由于您的视频不会被重新编码，因此某些来源的某些视频可能最终根本无法播放。这就是启用此功能的风险。&lt;/code&gt;
 &lt;blockquote&gt;
-&lt;p&gt;实测下来&lt;strong&gt;可以非常稳定&lt;/strong&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;实测下来&lt;strong&gt;可以非常稳定&lt;/strong&gt;。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;开始安装&#34;&gt;开始安装
@@ -1344,8 +1330,7 @@ Jellyfin的安装教程搜一下遍地都是就不赘述了。
 &lt;h3 id=&#34;obs设置&#34;&gt;OBS设置
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;如果熟悉FFmpeg可以直接用命令推流，不需要OBS。 &lt;br&gt;
-obs 31.0.0似乎移除了ffmpeg推流实现，不建议升。&lt;/p&gt;
-&lt;/blockquote&gt;
+obs 31.0.0似乎移除了ffmpeg推流实现，不建议升。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;如果使用OBS，推荐使用多路推流插件&lt;a class=&#34;link&#34; href=&#34;https://github.com/sorayuki/obs-multi-rtmp&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;obs-multi-rtmp&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;然后如图新建一个FFmpeg编码器设置来推流直通模式的owncast，这样可以保证最大的兼容性。&lt;/p&gt;
@@ -1394,19 +1379,16 @@ HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔�
     &gt;go-cqhttp&lt;/a&gt;方案因为QQ协议的更新经常会出现冻结和无法登录的情况，无奈替换成了性能开销比较大的&lt;a class=&#34;link&#34; href=&#34;https://github.com/LLOneBot/LLOneBot&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;LiteloaderQQNT框架的LLOneBot&lt;/a&gt;方案，目前非常稳定。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;由于QQ官方针对协议库的围追堵截, 不断更新加密方案, 我们已无力继续维护此项目. 建议Bot开发者尽快迁移至无头NTQQ项目&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;由于QQ官方针对协议库的围追堵截, 不断更新加密方案, 我们已无力继续维护此项目. 建议Bot开发者尽快迁移至无头NTQQ项目&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;备选方案还有基于安卓端的Shamrock和基于无头ntqq的NapCatQQ方案，推荐尝试&lt;a class=&#34;link&#34; href=&#34;https://napneko.icu/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;NapCat&lt;/a&gt;，全平台且更加轻量。&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;NapCat&lt;/a&gt;，全平台且更加轻量。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;hoshinobot-部署&#34;&gt;HoshinoBot 部署
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;直接照搬HoshinoBot文档了，部分修改以适配LLOneBot &lt;br&gt;
-环境 windows10&lt;/p&gt;
-&lt;/blockquote&gt;
+环境 windows10&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;安装下面的软件/工具&lt;/p&gt;
@@ -1439,14 +1421,12 @@ HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔�
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;若此处有报错信息，请务必解决，将错误信息复制到谷歌搜索一般即可找到解决办法。&lt;/p&gt;
-&lt;p&gt;若安装python依赖库时下载速度缓慢，可以尝试使用&lt;code&gt;py -3.8 -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;若安装python依赖库时下载速度缓慢，可以尝试使用&lt;code&gt;py -3.8 -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt&lt;/code&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;回到资源管理器，进入&lt;code&gt;hoshino&lt;/code&gt;文件夹，将&lt;code&gt;config_example&lt;/code&gt;文件夹复制一份，重命名为&lt;code&gt;config&lt;/code&gt;，然后右键使用VScode打开其中的&lt;code&gt;__bot__.py&lt;/code&gt;，按照其中的注释说明进行编辑。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;如果您不清楚某项设置的作用，请保持默认。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;如果您不清楚某项设置的作用，请保持默认。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;回到powershell，输入以下命令，启动 HoshinoBot&lt;/p&gt;
@@ -1459,8 +1439,7 @@ HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔�
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;若能看到日志&lt;code&gt;INFO: Running on 127.0.0.1:8080&lt;/code&gt;，说明HoshinoBot启动成功。您可以忽略启动时的WARNING信息。如果出现ERROR，说明部分功能可能加载失败。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;若能看到日志&lt;code&gt;INFO: Running on 127.0.0.1:8080&lt;/code&gt;，说明HoshinoBot启动成功。您可以忽略启动时的WARNING信息。如果出现ERROR，说明部分功能可能加载失败。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;至此，HoshinoBot的“大脑”已部署成功。接下来我们需要部署LLOneBot与NTQQ，作为HoshinoBot的“口”和“耳”，收发消息。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
@@ -1479,8 +1458,7 @@ HoshinoBot是基于Python的开源通用QQ机器人框架，插件很多，魔�
 &lt;h2 id=&#34;自用插件&#34;&gt;自用插件
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;大部分已经被我改的面目全非，功能用法可能不同，仅做自我备份用，如有需要可以去&lt;a class=&#34;link&#34; href=&#34;https://github.com/pcrbot/HoshinoBot-plugins-index&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;插件库&lt;/a&gt;选用心仪的插件。&lt;/p&gt;
-&lt;/blockquote&gt;
+    &gt;插件库&lt;/a&gt;选用心仪的插件。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;bot_manager_web&#34;&gt;bot_manager_web
 &lt;/h3&gt;&lt;p&gt;插件项目地址： &lt;a class=&#34;link&#34; href=&#34;https://github.com/pcrbot/HosBotManagerWeb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/pcrbot/HosBotManagerWeb&lt;/a&gt; &lt;br&gt;
@@ -1548,8 +1526,7 @@ LLOneBot方案有些问题，解决方法：&lt;/p&gt;
     &gt;GitHub&lt;/a&gt;/&lt;a class=&#34;link&#34; href=&#34;https://dash.cloudflare.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Cloudflare&lt;/a&gt;的静态页面托管服务。遂有了这第一篇文章。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;好处是成本很低，不需要服务器甚至域名也可以不需要，维护全部交给大厂，搭建完之后每次新文章只需提交到Github便会刷新构建。不过不管是Github还是Cloudflare国内总会抽风，会不定时分地区的可用性下降。如果只是个人用，代理常开的情况下是无感的。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;好处是成本很低，不需要服务器甚至域名也可以不需要，维护全部交给大厂，搭建完之后每次新文章只需提交到Github便会刷新构建。不过不管是Github还是Cloudflare国内总会抽风，会不定时分地区的可用性下降。如果只是个人用，代理常开的情况下是无感的。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;final&#34;&gt;Final
 &lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://yukari.cyou/blog/final.webp&#34;
 	width=&#34;2496&#34;
@@ -1932,8 +1909,7 @@ cmd中输入&lt;code&gt;hugo version&lt;/code&gt;,输出以下即为成功
 &lt;/ol&gt;
 &lt;h2 id=&#34;上传至github&#34;&gt;上传至Github
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;在进行过一次&lt;code&gt;hugo&lt;/code&gt;命令之后会在&lt;code&gt;根目录\public&lt;/code&gt;下构建静态网站，需要上传至Github的就是这一部分&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;在进行过一次&lt;code&gt;hugo&lt;/code&gt;命令之后会在&lt;code&gt;根目录\public&lt;/code&gt;下构建静态网站，需要上传至Github的就是这一部分&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;新建一个GitHub仓库，仓库名是&lt;code&gt;Github用户名.github.io&lt;/code&gt;，如：&lt;code&gt;user.github.io&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;与GitHub仓库关联，在&lt;code&gt;根目录\public&lt;/code&gt;下，依次输入以下cmd命令：
@@ -1965,8 +1941,7 @@ cmd中输入&lt;code&gt;hugo version&lt;/code&gt;,输出以下即为成功
 &lt;/ol&gt;
 &lt;h2 id=&#34;启用github-pages&#34;&gt;启用Github Pages
 &lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Github Pages需要公开仓库，如不想公开，可以新建私人仓库并跳过这一步&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Github Pages需要公开仓库，如不想公开，可以新建私人仓库并跳过这一步&lt;/p&gt;&lt;/blockquote&gt;
 &lt;ol&gt;
 &lt;li&gt;来到&lt;a class=&#34;link&#34; href=&#34;https://github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub&lt;/a&gt;仓库 → settings Pages → Deploy from a branch → 选择main分支 → Save&lt;/li&gt;
