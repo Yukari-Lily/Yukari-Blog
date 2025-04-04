@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction\r跟风整了个监控玩，虽然根本没有几只小鸡（ 同时Akile家的探针也开源了，对比了下感觉还是新版哪吒好看\n项目地址\n官方wiki\n">
-<title>前置Cloudflare哪吒探针V1安装</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction\r假期没事想升级一下bios玩玩，结果发现bios设置被重置了，遂重新摸索回忆了下这几年对bios做过的设置调整。\n以及试图解决一个困扰很久的问题，偶尔的（可能一天复现多次，也可能一个月也遇不到）低负载时重启问题，事件查看器中重启前可能什么报错都没有，偶尔会有WHEA 18。\n">
+<title>试图解决5800x&#43;ROG STRIX B550-A GAMING重启问题</title>
 
-<link rel='canonical' href='https://yukari.cyou/nezha/'>
+<link rel='canonical' href='https://yukari.cyou/bios/'>
 
-<link rel="stylesheet" href="/scss/style.min.9d23595dfca1ac2d008642dd66890daea167fad12ed70e17ea507218d04fb308.css"><meta property='og:title' content="前置Cloudflare哪吒探针V1安装">
-<meta property='og:description' content="Introduction\r跟风整了个监控玩，虽然根本没有几只小鸡（ 同时Akile家的探针也开源了，对比了下感觉还是新版哪吒好看\n项目地址\n官方wiki\n">
-<meta property='og:url' content='https://yukari.cyou/nezha/'>
+<link rel="stylesheet" href="/scss/style.min.9d23595dfca1ac2d008642dd66890daea167fad12ed70e17ea507218d04fb308.css"><meta property='og:title' content="试图解决5800x+ROG STRIX B550-A GAMING重启问题">
+<meta property='og:description' content="Introduction\r假期没事想升级一下bios玩玩，结果发现bios设置被重置了，遂重新摸索回忆了下这几年对bios做过的设置调整。\n以及试图解决一个困扰很久的问题，偶尔的（可能一天复现多次，也可能一个月也遇不到）低负载时重启问题，事件查看器中重启前可能什么报错都没有，偶尔会有WHEA 18。\n">
+<meta property='og:url' content='https://yukari.cyou/bios/'>
 <meta property='og:site_name' content='Yukari Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='探针' /><meta property='article:published_time' content='2024-12-20T00:00:00&#43;08:00'/><meta property='article:modified_time' content='2024-12-20T00:00:00&#43;08:00'/><meta property='og:image' content='https://yukari.cyou/nezha/cover.webp' />
-<meta name="twitter:title" content="前置Cloudflare哪吒探针V1安装">
-<meta name="twitter:description" content="Introduction\r跟风整了个监控玩，虽然根本没有几只小鸡（ 同时Akile家的探针也开源了，对比了下感觉还是新版哪吒好看\n项目地址\n官方wiki\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://yukari.cyou/nezha/cover.webp' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='bios' /><meta property='article:tag' content='AMD' /><meta property='article:published_time' content='2025-04-04T00:00:00&#43;08:00'/><meta property='article:modified_time' content='2025-04-04T00:00:00&#43;08:00'/><meta property='og:image' content='https://yukari.cyou/bios/cover.webp' />
+<meta name="twitter:title" content="试图解决5800x+ROG STRIX B550-A GAMING重启问题">
+<meta name="twitter:description" content="Introduction\r假期没事想升级一下bios玩玩，结果发现bios设置被重置了，遂重新摸索回忆了下这几年对bios做过的设置调整。\n以及试图解决一个困扰很久的问题，偶尔的（可能一天复现多次，也可能一个月也遇不到）低负载时重启问题，事件查看器中重启前可能什么报错都没有，偶尔会有WHEA 18。\n"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://yukari.cyou/bios/cover.webp' />
     <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont@1.7.0/lxgwwenkaiscreen.css" /> 
 <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css" />
@@ -232,12 +232,14 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#前置条件">前置条件</a></li>
-    <li><a href="#dashboard安装">Dashboard安装</a></li>
-    <li><a href="#agent安装">Agent安装</a></li>
-    <li><a href="#美化">美化</a></li>
-    <li><a href="#agent额外信息">Agent额外信息</a></li>
+    <li><a href="#introduction">Introduction</a>
+      <ol>
+        <li><a href="#配置">配置</a></li>
+        <li><a href="#小惊喜">小惊喜</a></li>
+      </ol>
+    </li>
+    <li><a href="#过程">过程</a></li>
+    <li><a href="#最后">最后</a></li>
   </ol>
 </nav>
         </div>
@@ -252,13 +254,13 @@
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/nezha/">
-                <img src="/nezha/cover_hu_d7d156a1e28787bc.webp"
-                        srcset="/nezha/cover_hu_d7d156a1e28787bc.webp 800w, /nezha/cover_hu_2702d10b1a4fde4d.webp 1600w"
+            <a href="/bios/">
+                <img src="/bios/cover_hu_7e980949c2fca85.webp"
+                        srcset="/bios/cover_hu_7e980949c2fca85.webp 800w, /bios/cover_hu_2613695d30fbf8ae.webp 1600w"
                         width="800" 
-                        height="510" 
+                        height="422" 
                         loading="lazy"
-                        alt="Featured image of post 前置Cloudflare哪吒探针V1安装" />
+                        alt="Featured image of post 试图解决5800x&#43;ROG STRIX B550-A GAMING重启问题" />
                 
             </a>
         </div>
@@ -277,7 +279,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/nezha/">前置Cloudflare哪吒探针V1安装</a>
+            <a href="/bios/">试图解决5800x&#43;ROG STRIX B550-A GAMING重启问题</a>
         </h2>
     
         
@@ -299,7 +301,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Dec 20, 2024</time>
+                <time class="article-time--published">Apr 04, 2025</time>
             </div>
         
 
@@ -330,185 +332,50 @@
     
     
     <h2 id="introduction">Introduction
+</h2><p>假期没事想升级一下bios玩玩，结果发现bios设置被重置了，遂重新摸索回忆了下这几年对bios做过的设置调整。</p>
+<p>以及试图解决一个困扰很久的问题，偶尔的（可能一天复现多次，也可能一个月也遇不到）低负载时重启问题，事件查看器中重启前可能什么报错都没有，偶尔会有WHEA 18。</p>
+<h3 id="配置">配置
+</h3><p>CPU 5800x、主板华硕ROG STRIX B550-A GAMING吹雪、内存是皇家戟3200MHz，记忆里U和内存都是小雷的水平，已经使用5年左右了，bios从21年的1805升到最新的3621。</p>
+<h3 id="小惊喜">小惊喜
+</h3><p>我的显卡使用了PCIE3.0延长线，本来需要直插主板才能进bios的（升完bios重启才想起来），但是新的bios似乎在白故障灯几次后切换到了一个卡卡的兼容模式来让我不需要拆机箱就能进bios改第一条pcie为3.0，好评~</p>
+<h2 id="过程">过程
 </h2><blockquote>
-<p>跟风整了个监控玩，虽然根本没有几只小鸡（ <br>
-同时<a class="link" href="https://github.com/akile-network/akile_monitor"  target="_blank" rel="noopener"
-    >Akile家的探针</a>也开源了，对比了下感觉还是新版哪吒好看</p></blockquote>
-<p><a class="link" href="https://github.com/nezhahq/nezha"  target="_blank" rel="noopener"
-    >项目地址</a></p>
-<p><a class="link" href="https://nezha.wiki/"  target="_blank" rel="noopener"
-    >官方wiki</a></p>
-<p><img src="/nezha/nezha.webp"
-	width="2400"
-	height="2800"
-	srcset="/nezha/nezha_hu_9dc8922f5580c245.webp 1024w, /nezha/nezha_hu_3779568f1bf043d8.webp 2048w"
-	loading="lazy"
-	
-		alt="nezha 1.3.0"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="85"
-		data-flex-basis="205px"
-	
-></p>
-<p><img src="/nezha/nezha-m.webp"
-	width="2580"
-	height="2796"
-	srcset="/nezha/nezha-m_hu_de91cbd9d9bb1373.webp 1024w, /nezha/nezha-m_hu_27a2f52bba72ff2.webp 2048w"
-	loading="lazy"
-	
-		alt="Mobile"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="92"
-		data-flex-basis="221px"
-	
-></p>
+<p>尽量遵循最小改动的原则，并且不追求最好性能</p></blockquote>
+<ol>
+<li>内存开启默认D.O.C.P</li>
+<li>关闭两个节能选项（防止可能的低负载CPU掉压） <br>
+PSS 支持/PSS Support（原冷又静/Cool&rsquo;n&rsquo;Quiet）
+Global C-state Control</li>
+<li>同时关闭PBO和PBO2（控制变量，以前是常开PBO）</li>
+<li>关闭两项CPPC（动态切负载核以控温，但实际调度并不理想）</li>
+<li>关闭fTPM（不需要，并有性能问题）</li>
+</ol>
+<blockquote>
+<p>此时依然会出现低负载重启，并且在一天内就稳定复现多次，到这里其实有点怀疑是内存问题了，搜索一番后继续追加了些设置~</p></blockquote>
+<ol start="6">
+<li>在1. 的D.O.C.P后指定FLCK为1600MHz（内存频率的一半，原为AUTO）</li>
+<li>SOC电压改为1.15（SOC加压，原为1.0）</li>
+<li>自动PBO和PBO2 AUTO</li>
+<li>关闭asus performance enhancement</li>
+</ol>
+<blockquote>
+<p>至此一天下来没有复现，继续观察~</p></blockquote>
+<h2 id="最后">最后
+</h2><p>记得这套配置刚到手的时候还有心折腾，那时降压超频也还算稳定，后来稳定性不佳参数越改越保守，但依然会偶尔出现，估计是几年下来有所缩缸以及主板电源等也有性能下降导致的</p>
 <hr>
-<h2 id="前置条件">前置条件
-</h2><p>选择一台机作为面板机，然后域名指向这台机ip，开启小黄云，记得cloudflare中把<code>网络-gRPC</code>打开，这样就不需要如<a class="link" href="https://nezha.wiki/guide/dashboard.html"  target="_blank" rel="noopener"
-    >Wiki</a>所说需要两个域名分别作为通讯和访问域名了。</p>
-<p>面板机我用nginx开了TLS，cf设置完全（严格）TLS；如果不配置nginx、cf TLS开灵活模式应该也能通讯到agent，建议还是全程TLS也更加安全（</p>
-<p>nginx反代设置可以参考<a class="link" href="https://nezha.wiki/guide/q3.html"  target="_blank" rel="noopener"
-    >Wiki</a></p>
-<p>使用cloudflare cdn的话nginx反代设置建议除了证书地址和域名其他都不要动</p>
-<h2 id="dashboard安装">Dashboard安装
-</h2><p>官方一键脚本</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">curl -L https://raw.githubusercontent.com/nezhahq/scripts/refs/heads/main/install.sh -o nezha.sh &amp;&amp; chmod +x nezha.sh &amp;&amp; sudo ./nezha.sh
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>如果本机不配nginx，最好把端口设为80，方便cf代理成443。</p>
-<p>然后登录<code>https://你的域名/dashboard</code>默认账密都是admin</p>
-<p>右上角系统设置</p>
-<p><code>Agent对接地址【域名/IP:端口】</code>填入<code>你的域名:443</code>并开启使用TLS连接。</p>
-<p><code>真实IP请求头</code>填入<code>CF-Connecting-IP</code></p>
-<h2 id="agent安装">Agent安装
-</h2><p><code>https://你的域名/dashboard</code> 可以快捷复制agent安装命令</p>
-<p>安装完成后可以在<code>/opt/nezha/agent/config.yml</code>修改一些设置</p>
-<p>禁用更新可以在稳定后酌情考虑</p>
-<p>下面依次是： <br>
-禁用自动更新 <br>
-禁用webssh <br>
-禁用强制更新</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sed -i &#39;s/disable_auto_update: false/disable_auto_update: true/&#39; /opt/nezha/agent/config.yml &amp;&amp; \
-</span></span><span class="line"><span class="cl">sed -i &#39;s/disable_command_execute: false/disable_command_execute: true/&#39; /opt/nezha/agent/config.yml &amp;&amp; \
-</span></span><span class="line"><span class="cl">sed -i &#39;s/disable_force_update: false/disable_force_update: true/&#39; /opt/nezha/agent/config.yml &amp;&amp; \
-</span></span><span class="line"><span class="cl">systemctl restart nezha-agent
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="美化">美化
-</h2><p>后台自定义代码（样式和脚本）中填入。</p>
-<p>有前端基础的话其实可以随意改了，<a class="link" href="https://nezhadash-docs.buycoffee.top/custom-code"  target="_blank" rel="noopener"
-    >几个官方参数</a></p>
-<p>我自己的↓</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nt">head</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">link</span> <span class="nt">rel</span><span class="o">=</span><span class="s2">&#34;stylesheet&#34;</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&#34;https://s4.zstatic.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/lxgwwenkaiscreenr.css&#34;</span><span class="o">&gt;</span>  <span class="c">/*引入字体*/</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">style</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="nc">w-20</span><span class="p">{</span>  <span class="c">/*放大Illustration*/</span>
-</span></span><span class="line"><span class="cl">            <span class="k">width</span><span class="p">:</span> <span class="mi">8</span><span class="kt">rem</span>                    
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="nc">right-3</span> <span class="p">{</span>  <span class="c">/*向右移Illustration*/</span>
-</span></span><span class="line"><span class="cl">            <span class="k">right</span><span class="p">:</span> <span class="mi">0</span><span class="kt">rem</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">html</span><span class="o">,</span> <span class="nt">body</span> <span class="p">{</span>  <span class="c">/*全局字体使用*/</span>
-</span></span><span class="line"><span class="cl">            <span class="k">font-family</span><span class="p">:</span> <span class="s1">&#39;LXGW WenKai Screen R&#39;</span><span class="p">,</span> <span class="kc">sans-serif</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="nc">text-card-foreground</span> <span class="p">{</span>  <span class="c">/*字体细粉光*/</span>
-</span></span><span class="line"><span class="cl">            <span class="k">text-shadow</span><span class="p">:</span> 
-</span></span><span class="line"><span class="cl">                <span class="mi">0</span> <span class="mi">0</span> <span class="mi">1</span><span class="kt">px</span> <span class="mh">#fbc9e3</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>  
-</span></span><span class="line"><span class="cl">        <span class="nt">p</span><span class="p">.</span><span class="nc">mt-1</span> <span class="p">{</span>   <span class="c">/*隐藏最下CTRL K*/</span>
-</span></span><span class="line"><span class="cl">            <span class="k">display</span><span class="p">:</span> <span class="kc">none</span> <span class="cp">!important</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;/</span><span class="nt">style</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="nt">head</span><span class="o">&gt;</span>   
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="o">&lt;</span><span class="nt">body</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">    <span class="o">&lt;</span><span class="nt">script</span><span class="o">&gt;</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">window</span><span class="p">.</span><span class="nc">CustomBackgroundImage</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">window</span><span class="p">.</span><span class="nc">CustomLogo</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">window</span><span class="p">.</span><span class="nc">CustomDesc</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">window</span><span class="p">.</span><span class="nc">ShowNetTransfer</span> <span class="o">=</span> <span class="s1">&#39;true&#39;</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">window</span><span class="p">.</span><span class="nc">CustomIllustration</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-</span></span><span class="line"><span class="cl">      <span class="nt">window</span><span class="p">.</span><span class="nc">ForceTheme</span> <span class="o">=</span> <span class="s1">&#39;dark&#39;</span>  <span class="c">/*强制dark*/</span>
-</span></span><span class="line"><span class="cl">      <span class="o">&lt;/</span><span class="nt">script</span><span class="o">&gt;</span> 
-</span></span><span class="line"><span class="cl"><span class="o">&lt;/</span><span class="nt">body</span><span class="o">&gt;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="agent额外信息">Agent额外信息
-</h2><p><a class="link" href="https://nezhainfojson.pages.dev/"  target="_blank" rel="noopener"
-    >快捷json生成</a></p>
-<p>生成如下信息填入后台服务器中的公开备注。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;billingDataMod&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;startDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2024-12-20T04:59:00.599Z&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;endDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2024-12-20T04:59:00.599Z&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;autoRenewal&#34;</span><span class="p">:</span> <span class="s2">&#34;1&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;cycle&#34;</span><span class="p">:</span> <span class="s2">&#34;月&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;amount&#34;</span><span class="p">:</span> <span class="s2">&#34;￥1&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">},</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;planDataMod&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;bandwidth&#34;</span><span class="p">:</span> <span class="s2">&#34;30Mbps&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;trafficVol&#34;</span><span class="p">:</span> <span class="s2">&#34;1TB/月&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;trafficType&#34;</span><span class="p">:</span> <span class="s2">&#34;1&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;IPv4&#34;</span><span class="p">:</span> <span class="s2">&#34;1&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;IPv6&#34;</span><span class="p">:</span> <span class="s2">&#34;1&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;networkRoute&#34;</span><span class="p">:</span> <span class="s2">&#34;4837&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;extra&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div>
+<p><img src="/bios/end.webp"
+	width="1341"
+	height="826"
+	srcset="/bios/end_hu_487a626cea7775e6.webp 1024w, /bios/end_hu_edd0ba208ba63905.webp 2048w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="162"
+		data-flex-basis="389px"
+	
+></p>
+
 </section>
 
 
@@ -516,7 +383,9 @@
     
     <section class="article-tags">
         
-            <a href="/tags/%E6%8E%A2%E9%92%88/">探针</a>
+            <a href="/tags/bios/">Bios</a>
+        
+            <a href="/tags/amd/">AMD</a>
         
     </section>
 
@@ -538,30 +407,6 @@
             
                 
 <article class="has-image">
-    <a href="/bios/">
-        
-        
-            <div class="article-image">
-                <img src="/bios/cover.963db85c59f0518bdb56e19c46c6945c_hu_ff39224564950ebe.webp" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 试图解决5800x&#43;ROG STRIX B550-A GAMING重启问题"
-                        data-key="bios" 
-                        data-hash="md5-lj24XFnwUYvbVuGcRsaUXA==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">试图解决5800x&#43;ROG STRIX B550-A GAMING重启问题</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
     <a href="/tools/">
         
         
@@ -579,6 +424,30 @@
 
         <div class="article-details">
             <h2 class="article-title">个人自用小工具</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/nezha/">
+        
+        
+            <div class="article-image">
+                <img src="/nezha/cover.9437f2c1703351316bfa419903d10a55_hu_1a5490809cbbe33e.webp" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post 前置Cloudflare哪吒探针V1安装"
+                        data-key="nezha" 
+                        data-hash="md5-lDfywXAzUTFr&#43;kGZA9EKVQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">前置Cloudflare哪吒探针V1安装</h2>
         </div>
     </a>
 </article>

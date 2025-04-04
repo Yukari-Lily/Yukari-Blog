@@ -3,16 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://yukari.cyou/</loc>
-    <lastmod>2024-12-20T00:00:00+08:00</lastmod>
+    <lastmod>2025-04-04T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.cyou/tags/amd/</loc>
+    <lastmod>2025-04-04T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.cyou/tags/bios/</loc>
+    <lastmod>2025-04-04T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://yukari.cyou/categories/</loc>
-    <lastmod>2024-12-20T00:00:00+08:00</lastmod>
+    <lastmod>2025-04-04T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://yukari.cyou/post/</loc>
-    <lastmod>2024-12-20T00:00:00+08:00</lastmod>
+    <lastmod>2025-04-04T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://yukari.cyou/tags/</loc>
-    <lastmod>2024-12-20T00:00:00+08:00</lastmod>
+    <lastmod>2025-04-04T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.cyou/categories/%E5%A4%87%E5%BF%98/</loc>
+    <lastmod>2025-04-04T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.cyou/bios/</loc>
+    <lastmod>2025-04-04T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://yukari.cyou/tags/tools/</loc>
     <lastmod>2024-12-20T00:00:00+08:00</lastmod>
@@ -21,9 +33,6 @@
     <lastmod>2024-12-20T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://yukari.cyou/nezha/</loc>
-    <lastmod>2024-12-20T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yukari.cyou/categories/%E5%A4%87%E5%BF%98/</loc>
     <lastmod>2024-12-20T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://yukari.cyou/tags/%E6%8E%A2%E9%92%88/</loc>
