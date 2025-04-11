@@ -314,7 +314,7 @@
 
 
                 <time class="article-time--reading">
-                    2 minute read
+                    3 minute read
                 </time>
             </div>
         
@@ -374,6 +374,8 @@
 <p>nginx反代设置可以参考<a class="link" href="https://nezha.wiki/guide/q3.html"  target="_blank" rel="noopener"
     >Wiki</a></p>
 <p>使用cloudflare cdn的话nginx反代设置建议除了证书地址和域名其他都不要动</p>
+<blockquote>
+<p>25.4月更新，Cloudflare似乎不允许free plan用户使用gRPC通讯了，所以不建议共用通讯和访问域名的同时开启cf了，可以选择俩域名分开，仅面板域名套cf，或者不分开且都不套。</p></blockquote>
 <h2 id="dashboard安装">Dashboard安装
 </h2><p>官方一键脚本</p>
 <div class="highlight"><div class="chroma">

@@ -57,6 +57,8 @@
 &lt;p&gt;nginx反代设置可以参考&lt;a class=&#34;link&#34; href=&#34;https://nezha.wiki/guide/q3.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Wiki&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;使用cloudflare cdn的话nginx反代设置建议除了证书地址和域名其他都不要动&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;25.4月更新，Cloudflare似乎不允许free plan用户使用gRPC通讯了，所以不建议共用通讯和访问域名的同时开启cf了，可以选择俩域名分开，仅面板域名套cf，或者不分开且都不套。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;dashboard安装&#34;&gt;Dashboard安装
 &lt;/h2&gt;&lt;p&gt;官方一键脚本&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

@@ -16,9 +16,9 @@
 &lt;/h2&gt;&lt;p&gt;假期没事想升级一下bios玩玩，结果发现bios设置被重置了，遂重新摸索回忆了下这几年对bios做过的设置调整。&lt;/p&gt;
 &lt;p&gt;以及试图解决一个困扰很久的问题，偶尔的（可能一天复现多次，也可能一个月也遇不到）低负载时重启问题，事件查看器中重启前可能什么报错都没有，偶尔会有WHEA 18。&lt;/p&gt;
 &lt;h3 id=&#34;配置&#34;&gt;配置
-&lt;/h3&gt;&lt;p&gt;CPU 5800x、主板华硕ROG STRIX B550-A GAMING吹雪、内存是皇家戟3200MHz，记忆里U和内存都是小雷的水平，已经使用5年左右了，bios从21年的1805升到最新的3621。&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;CPU 5800x、主板华硕ROG STRIX B550-A GAMING吹雪、内存是皇家戟3200MHz，记忆里U和内存都是小雷不太能超的水平，已经使用5年左右了，这次bios从21年的1805升到最新的3621。&lt;/p&gt;
 &lt;h3 id=&#34;小惊喜&#34;&gt;小惊喜
-&lt;/h3&gt;&lt;p&gt;我的显卡使用了PCIE3.0延长线，本来需要直插主板才能进bios的（升完bios重启才想起来），但是新的bios似乎在白故障灯几次后切换到了一个卡卡的兼容模式来让我不需要拆机箱就能进bios改第一条pcie为3.0，好评~&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;显卡使用了PCIE3.0延长线，本来需要直插主板才能进bios的（升完bios重启才想起来），但是新的bios似乎在白故障灯几次后切换到了一个卡卡的兼容模式来让我不需要拆机箱就能进bios改第一条pcie为3.0，好评~&lt;/p&gt;
 &lt;h2 id=&#34;过程&#34;&gt;过程
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;尽量遵循最小改动的原则，并且不追求最好性能&lt;/p&gt;&lt;/blockquote&gt;
@@ -40,9 +40,21 @@ Global C-state Control&lt;/li&gt;
 &lt;li&gt;关闭asus performance enhancement&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
+&lt;p&gt;依旧复现了，干脆重置bios重来&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;内存开启默认D.O.C.P&lt;/li&gt;
+&lt;li&gt;关闭fTPM&lt;/li&gt;
+&lt;li&gt;同时关闭PBO和PBO2（disable）&lt;/li&gt;
+&lt;li&gt;CPU倍频45&lt;/li&gt;
+&lt;li&gt;CPU电压1.25v （从1.15v开始摸索了多次）&lt;/li&gt;
+&lt;li&gt;SOC电压改为1.15&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
 &lt;p&gt;至此一天下来没有复现，继续观察~&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在电脑不关机、一天16个小时左右都是待机的情况下，一个礼拜都没有复现。基本可以确定是cpu供压问题了。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;最后&#34;&gt;最后
-&lt;/h2&gt;&lt;p&gt;记得这套配置刚到手的时候还有心折腾，那时降压超频也还算稳定，后来稳定性不佳参数越改越保守，但依然会偶尔出现，估计是几年下来有所缩缸以及主板电源等也有性能下降导致的&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;记得这套配置刚到手的时候还有心折腾，那时降压超频也还算稳定，后来稳定性不佳参数越改越保守，但依然会偶尔出现，估计是几年下来有所缩缸以及主板电源等也有性能下降导致的ORZ&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;img src=&#34;https://yukari.cyou/bios/end.webp&#34;
 	width=&#34;1341&#34;
