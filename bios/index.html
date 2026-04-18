@@ -4,18 +4,22 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Introduction\r假期没事想升级一下bios玩玩，结果发现bios设置被重置了，遂重新摸索回忆了下这几年对bios做过的设置调整。\n以及试图解决一个困扰很久的问题，偶尔的（可能一天复现多次，也可能一个月也遇不到）低负载时重启问题，事件查看器中重启前可能什么报错都没有，偶尔会有WHEA 18。\n">
 <title>试图解决5800x&#43;ROG STRIX B550-A GAMING重启问题</title>
 
-<link rel='canonical' href='https://yukari.cyou/bios/'>
 
-<link rel="stylesheet" href="/scss/style.min.9d23595dfca1ac2d008642dd66890daea167fad12ed70e17ea507218d04fb308.css"><meta property='og:title' content="试图解决5800x+ROG STRIX B550-A GAMING重启问题">
+<link rel="canonical" href="https://yukari.cyou/bios/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+
+
+<link rel="stylesheet" href="/scss/style.min.469a24beb247ce9dda49bda6e6072b6da6e415d40decb4229465e7acf4c3e4fe.css"><meta property='og:title' content="试图解决5800x+ROG STRIX B550-A GAMING重启问题">
 <meta property='og:description' content="Introduction\r假期没事想升级一下bios玩玩，结果发现bios设置被重置了，遂重新摸索回忆了下这几年对bios做过的设置调整。\n以及试图解决一个困扰很久的问题，偶尔的（可能一天复现多次，也可能一个月也遇不到）低负载时重启问题，事件查看器中重启前可能什么报错都没有，偶尔会有WHEA 18。\n">
 <meta property='og:url' content='https://yukari.cyou/bios/'>
 <meta property='og:site_name' content='Yukari Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='bios' /><meta property='article:tag' content='AMD' /><meta property='article:published_time' content='2025-04-04T00:00:00&#43;08:00'/><meta property='article:modified_time' content='2025-04-04T00:00:00&#43;08:00'/><meta property='og:image' content='https://yukari.cyou/bios/cover.webp' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='bios' /><meta property='article:tag' content='AMD' /><meta property='article:published_time' content='2025-04-04T00:00:00&#43;08:00'/><meta property='article:modified_time' content='2025-04-04T00:00:00&#43;08:00'/><meta property='og:image' content='https://yukari.cyou/' />
 <meta name="twitter:title" content="试图解决5800x+ROG STRIX B550-A GAMING重启问题">
 <meta name="twitter:description" content="Introduction\r假期没事想升级一下bios玩玩，结果发现bios设置被重置了，遂重新摸索回忆了下这几年对bios做过的设置调整。\n以及试图解决一个困扰很久的问题，偶尔的（可能一天复现多次，也可能一个月也遇不到）低负载时重启问题，事件查看器中重启前可能什么报错都没有，偶尔会有WHEA 18。\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://yukari.cyou/bios/cover.webp' />
-    <link rel="shortcut icon" href="/favicon.ico" />
-<link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont@1.7.0/lxgwwenkaiscreen.css" /> 
+    <meta name="twitter:image" content='https://yukari.cyou/' /><link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont@1.7.0/lxgwwenkaiscreen.css" /> 
 <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css" />
 
     </head>
@@ -52,81 +56,31 @@
     </button>
 
     <header>
-        
-            
-            <figure class="site-avatar">
+        <figure class="site-avatar">
                 <a href="/">
-                
-                    
-                    
-                    
-                        
-                        <img src="/img/avatar_hu_c966a6b121793947.png" width="300"
-                            height="300" class="site-logo" loading="lazy" alt="Avatar">
-                    
-                
+                    <img src="/img/avatar.png" 
+                        width="500"
+                        height="500"
+                        class="site-logo"
+                        loading="lazy"
+                        alt="Avatar">
                 </a>
                 
-                    <span class="emoji">🐾</span>
+                    <span class="emoji">🐱</span>
                 
             </figure>
-            
         
         
         <div class="site-meta">
             <h1 class="site-name"><a href="/">Yukari Blog</a></h1>
             <h2 class="site-description">备忘/归档</h2>
         </div>
-    </header><ol class="menu-social">
-            
-                <li>
-                    <a 
-                        href='https://github.com/Yukari-Lily'
-                        target="_blank"
-                        title="GitHub"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-</svg>
-
-
-
-                        
-                    </a>
-                </li>
-            
-                <li>
-                    <a 
-                        href='https://x.com/Yukari_daze'
-                        target="_blank"
-                        title="Twitter"
-                        rel="me"
-                    >
-                        
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
-</svg>
-
-
-
-                        
-                    </a>
-                </li>
-            
-        </ol><ol class="menu" id="main-menu">
+    </header><ol class="menu" id="main-menu">
         
         
         
         <li >
             <a href='/' >
-                
-                
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -146,8 +100,6 @@
         <li >
             <a href='/p/archives/' >
                 
-                
-                
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <rect x="3" y="4" width="18" height="4" rx="2" />
@@ -165,8 +117,6 @@
         
         <li >
             <a href='/p/search/' >
-                
-                
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -230,7 +180,8 @@
         <h2 class="widget-title section-title">Table of contents</h2>
         
         <div class="widget--toc">
-            <nav id="TableOfContents">
+            <nav class="toc-nav" id="TableOfContents">
+                
   <ol>
     <li><a href="#introduction">Introduction</a>
       <ol>
@@ -241,7 +192,8 @@
     <li><a href="#过程">过程</a></li>
     <li><a href="#最后">最后</a></li>
   </ol>
-</nav>
+
+            </nav>
         </div>
     </section>
 
@@ -253,23 +205,20 @@
             <main class="main full-width">
     <article class="has-image main-article">
     <header class="article-header">
-        <div class="article-image">
-            <a href="/bios/">
-                <img src="/bios/cover_hu_7e980949c2fca85.webp"
-                        srcset="/bios/cover_hu_7e980949c2fca85.webp 800w, /bios/cover_hu_2613695d30fbf8ae.webp 1600w"
-                        width="800" 
-                        height="422" 
-                        loading="lazy"
-                        alt="Featured image of post 试图解决5800x&#43;ROG STRIX B550-A GAMING重启问题" />
-                
-            </a>
-        </div>
+    <div class="article-image">
+        <a href="/bios/">
+            <img alt="Featured image of post 试图解决5800x+ROG STRIX B550-A GAMING重启问题" height="792" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="/bios/cover.webp" srcset="/bios/cover_hu_94a715d14b9e3418.webp 800w, /bios/cover.webp 1500w" width="1500">
+        </a>
+    </div>
     
 
     <div class="article-details">
     
     <header class="article-category">
         
+            
+            
+            
             <a href="/categories/%E5%A4%87%E5%BF%98/" style="background-color: #ec6d2c; color: #fff;">
                 备忘
             </a>
@@ -289,10 +238,14 @@
     
     
     
-    <footer class="article-time">
+    
+    
+    
+    <footer class="article-meta">
         
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <div class="inline-meta">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
   <circle cx="18" cy="18" r="4" />
@@ -301,13 +254,11 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Apr 04, 2025</time>
-            </div>
-        
+                    <time class="article-time--published" datetime='2025-04-04T00:00:00&#43;08:00'>Apr 04, 2025</time>
+                
 
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <circle cx="12" cy="12" r="9" />
   <polyline points="12 7 12 12 15 15" />
@@ -315,18 +266,48 @@
 
 
 
-                <time class="article-time--reading">
-                    2 minute read
-                </time>
+                    <time class="article-time--reading">
+                        2 minutes read
+                    </time>
+                
             </div>
         
-    </footer>
-    
 
+        
+
+        
+    </footer>
     
 </div>
 
 </header>
+
+    
+    <aside class="article-toc">
+        <details>
+            <summary>
+                <div class="article-toc-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+                    <span>Table of contents</span>
+                </div>
+            </summary>
+            <nav class="toc-nav">
+                
+  <ol>
+    <li><a href="#introduction">Introduction</a>
+      <ol>
+        <li><a href="#配置">配置</a></li>
+        <li><a href="#小惊喜">小惊喜</a></li>
+      </ol>
+    </li>
+    <li><a href="#过程">过程</a></li>
+    <li><a href="#最后">最后</a></li>
+  </ol>
+
+            </nav>
+        </details>
+    </aside>
+    
 
     <section class="article-content">
     
@@ -339,8 +320,11 @@
 <h3 id="小惊喜">小惊喜
 </h3><p>显卡使用了PCIE3.0延长线，本来需要直插主板才能进bios的（升完bios重启才想起来），但是新的bios似乎在白故障灯几次后切换到了一个卡卡的兼容模式来让我不需要拆机箱就能进bios改第一条pcie为3.0，好评~</p>
 <h2 id="过程">过程
-</h2><blockquote>
-<p>尽量遵循最小改动的原则，并且不追求最好性能</p></blockquote>
+</h2>
+    <blockquote>
+        <p>尽量遵循最小改动的原则，并且不追求最好性能</p>
+
+    </blockquote>
 <ol>
 <li>内存开启默认D.O.C.P</li>
 <li>关闭两个节能选项（防止可能的低负载CPU掉压） <br>
@@ -350,16 +334,22 @@ Global C-state Control</li>
 <li>关闭两项CPPC（动态切负载核以控温，但实际调度并不理想）</li>
 <li>关闭fTPM（不需要，并有性能问题）</li>
 </ol>
-<blockquote>
-<p>此时依然会出现低负载重启，并且在一天内就稳定复现多次，到这里其实有点怀疑是内存问题了，搜索一番后继续追加了些设置~</p></blockquote>
+
+    <blockquote>
+        <p>此时依然会出现低负载重启，并且在一天内就稳定复现多次，到这里其实有点怀疑是内存问题了，搜索一番后继续追加了些设置~</p>
+
+    </blockquote>
 <ol start="6">
 <li>在1. 的D.O.C.P后指定FLCK为1600MHz（内存频率的一半，原为AUTO）</li>
 <li>SOC电压改为1.15（SOC加压，原为1.0）</li>
 <li>自动PBO和PBO2 AUTO</li>
 <li>关闭asus performance enhancement</li>
 </ol>
-<blockquote>
-<p>依旧复现了，干脆重置bios重来</p></blockquote>
+
+    <blockquote>
+        <p>依旧复现了，干脆重置bios重来</p>
+
+    </blockquote>
 <ol>
 <li>内存开启默认D.O.C.P</li>
 <li>关闭fTPM</li>
@@ -368,30 +358,25 @@ Global C-state Control</li>
 <li>CPU电压1.25v （从1.15v开始摸索了多次）</li>
 <li>SOC电压改为1.15</li>
 </ol>
-<blockquote>
-<p>至此一天下来没有复现，继续观察~</p></blockquote>
-<blockquote>
-<p>在电脑不关机、一天16个小时左右都是待机的情况下，一个礼拜都没有复现。基本可以确定是cpu供压问题了。</p></blockquote>
+
+    <blockquote>
+        <p>至此一天下来没有复现，继续观察~</p>
+
+    </blockquote>
+
+    <blockquote>
+        <p>在电脑不关机、一天16个小时左右都是待机的情况下，一个礼拜都没有复现。基本可以确定是cpu供压问题了。</p>
+
+    </blockquote>
 <h2 id="最后">最后
 </h2><p>记得这套配置刚到手的时候还有心折腾，那时降压超频也还算稳定，后来稳定性不佳参数越改越保守，但依然会偶尔出现，估计是几年下来有所缩缸以及主板电源等也有性能下降导致的ORZ</p>
 <hr>
-<p><img src="/bios/end.webp"
-	width="1341"
-	height="826"
-	srcset="/bios/end_hu_487a626cea7775e6.webp 1024w, /bios/end_hu_edd0ba208ba63905.webp 2048w"
-	loading="lazy"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="162"
-		data-flex-basis="389px"
-	
-></p>
+<p><img class="gallery-image" data-flex-basis="389px" data-flex-grow="162" height="826" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="/bios/end.webp" srcset="/bios/end_hu_231d19b9404649c.webp 800w, /bios/end.webp 1341w" width="1341"></p>
 
 </section>
 
 
-    <footer class="article-footer">
+    <footer class="article-meta article-footer">
     
     <section class="article-tags">
         
@@ -412,130 +397,90 @@ Global C-state Control</li>
 
     
 
-<aside class="related-content--wrapper">
+<aside>
     <h2 class="section-title">Related content</h2>
-    <div class="related-content">
-        <div class="flex article-list--tile">
+    <div class="subsection-list">
+        <div class="article-list--tile">
             
                 
 <article class="has-image">
     <a href="/tools/">
         
-        
-            <div class="article-image">
-                <img src="/tools/cover.46783a826310d52459892f6bf3d506d2_hu_6bc423de96e7ee2f.webp" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 个人自用小工具"
-                        data-key="tools" 
-                        data-hash="md5-Rng6gmMQ1SRZiS9r89UG0g==">
-                
-            </div>
+        <div class="article-image">
+            <img alt="Featured image of post 个人自用小工具" height="150" loading="lazy" src="/tools/cover_hu_3d1a38a7aa50b1c9.webp" srcset="/tools/cover_hu_3d1a38a7aa50b1c9.webp 1x, /tools/cover_hu_acb65430a1e3bcbb.webp 2x" width="250">
+
+        </div>
         
 
-        <div class="article-details">
+        <div class="article-details"style="background: linear-gradient(0deg, #6858b380 0%, #d7c2cfC0 100%);">
             <h2 class="article-title">个人自用小工具</h2>
         </div>
     </a>
 </article>
-
             
                 
 <article class="has-image">
     <a href="/nezha/">
         
-        
-            <div class="article-image">
-                <img src="/nezha/cover.9437f2c1703351316bfa419903d10a55_hu_1a5490809cbbe33e.webp" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 前置Cloudflare哪吒探针V1安装"
-                        data-key="nezha" 
-                        data-hash="md5-lDfywXAzUTFr&#43;kGZA9EKVQ==">
-                
-            </div>
+        <div class="article-image">
+            <img alt="Featured image of post 前置Cloudflare哪吒探针V1安装" height="150" loading="lazy" src="/nezha/cover_hu_c160c94c4b3f462c.webp" srcset="/nezha/cover_hu_c160c94c4b3f462c.webp 1x, /nezha/cover_hu_29a9b502bb676190.webp 2x" width="250">
+
+        </div>
         
 
-        <div class="article-details">
+        <div class="article-details"style="background: linear-gradient(0deg, #c25a5680 0%, #efe5ddC0 100%);">
             <h2 class="article-title">前置Cloudflare哪吒探针V1安装</h2>
         </div>
     </a>
 </article>
-
             
                 
 <article class="has-image">
-    <a href="/autobangumi-qbittorrent-jellyfin/">
+    <a href="/autobangumi/">
         
-        
-            <div class="article-image">
-                <img src="/autobangumi-qbittorrent-jellyfin/cover.066d80615ea3d4aa45065d051ab658dc_hu_b0a08908c0d92ca0.webp" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 我的全流程自动追番方案"
-                        data-key="AutoBangumi-qBittorrent-Jellyfin" 
-                        data-hash="md5-Bm2AYV6j1KpFBl0FGrZY3A==">
-                
-            </div>
+        <div class="article-image">
+            <img alt="Featured image of post 我的全流程自动追番方案" height="150" loading="lazy" src="/autobangumi/cover_hu_ce5458bc43617295.webp" srcset="/autobangumi/cover_hu_ce5458bc43617295.webp 1x, /autobangumi/cover_hu_c6cc93cf328a0079.webp 2x" width="250">
+
+        </div>
         
 
-        <div class="article-details">
+        <div class="article-details"style="background: linear-gradient(0deg, #e1b9ce80 0%, #251a34C0 100%);">
             <h2 class="article-title">我的全流程自动追番方案</h2>
         </div>
     </a>
 </article>
-
             
                 
 <article class="has-image">
     <a href="/owncast/">
         
-        
-            <div class="article-image">
-                <img src="/owncast/cover.4d2b72fbb421dc5153a8ad5cb52821d6_hu_5e2d4ac378f73af9.webp" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post Owncast简易教程&amp;使用心得"
-                        data-key="Owncast" 
-                        data-hash="md5-TSty&#43;7Qh3FFTqK1ctSgh1g==">
-                
-            </div>
+        <div class="article-image">
+            <img alt="Featured image of post Owncast简易教程&使用心得" height="150" loading="lazy" src="/owncast/cover_hu_8e6dc80cd0e70a94.webp" srcset="/owncast/cover_hu_8e6dc80cd0e70a94.webp 1x, /owncast/cover_hu_4f4d4c0c5293e091.webp 2x" width="250">
+
+        </div>
         
 
-        <div class="article-details">
+        <div class="article-details"style="background: linear-gradient(0deg, #5e535c80 0%, #ddd3deC0 100%);">
             <h2 class="article-title">Owncast简易教程&amp;使用心得</h2>
         </div>
     </a>
 </article>
-
             
                 
 <article class="has-image">
     <a href="/hoshinobot-llonebot/">
         
-        
-            <div class="article-image">
-                <img src="/hoshinobot-llonebot/cover.8b13cd19b65d0064b8999ef56643ad38_hu_78248117d0f36f63.webp" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post HoshinoBot&#43;LLOneBot部署QQ机器人"
-                        data-key="HoshinoBot-LLOneBot" 
-                        data-hash="md5-ixPNGbZdAGS4mZ71ZkOtOA==">
-                
-            </div>
+        <div class="article-image">
+            <img alt="Featured image of post HoshinoBot+LLOneBot部署QQ机器人" height="150" loading="lazy" src="/hoshinobot-llonebot/cover_hu_a5a338b2b9798d2.webp" srcset="/hoshinobot-llonebot/cover_hu_a5a338b2b9798d2.webp 1x, /hoshinobot-llonebot/cover_hu_9bd30f0b70a87838.webp 2x" width="250">
+
+        </div>
         
 
-        <div class="article-details">
+        <div class="article-details"style="background: linear-gradient(0deg, #bac9d080 0%, #4d4948C0 100%);">
             <h2 class="article-title">HoshinoBot&#43;LLOneBot部署QQ机器人</h2>
         </div>
     </a>
 </article>
-
             
         </div>
     </div>
@@ -552,114 +497,54 @@ Global C-state Control</li>
         
             2024 - 
         
-        2025 Yukari Blog
+        2026 Yukari Blog
     </section>
     
     <section class="powerby">
         
             最爱<a href="https://www.tsdm39.com/home.php?mod=space&uid=2022817" target="_blank">22</a>💖 <br/>
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="4.0.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
 
     
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
+
+
+<script type="module">
+    import gallery from '\/ts\/gallery.js';
+
+    const articleContent = document.querySelector('.article-content');
+    const shouldLoad = articleContent && (articleContent.querySelectorAll('figure').length > 0 || articleContent.querySelectorAll('img.gallery-image').length > 0);
     
-    <div class="pswp__bg"></div>
+    if (shouldLoad) {
+        gallery(articleContent);
 
+        const PhotoSwipeLightbox = (await import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js")).default;
+        const styleHref = "https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.css";
+
+        const styleTag = document.createElement('link');
+        styleTag.rel = 'stylesheet';
+        styleTag.href = styleHref;
+        document.head.appendChild(styleTag);
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallerySelector: '.article-content',
+            childSelector: 'figure a.image-link',
+            pswpModule: () => import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js")
+        });
+        lightbox.init();
+    }
+</script>
     
-    <div class="pswp__scroll-wrap">
-
-        
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                
-                
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer
-                >
-            </script><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
-            ><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
-            >
 
             </main>
         </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
-                
-                >
-            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
-<script>
-    (function () {
-        const customFont = document.createElement('link');
-        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+        
+<script type="text/javascript" src="/ts/main.acaf849f2b273f6a8368a58b001f336738d0c948d92e79b116467d0c7515f932.js" defer></script>
 
-        customFont.type = "text/css";
-        customFont.rel = "stylesheet";
-
-        document.head.appendChild(customFont);
-    }());
-</script>
 
     </body>
 </html>
