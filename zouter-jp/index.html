@@ -422,57 +422,45 @@
 <hr>
 <h2 id="五测试数据">五、测试数据
 </h2><h3 id="大盘性能">大盘性能
-</h3><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># YABS 测试结果</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">CPU cores: <span class="m">1</span> @ 2593.906 MHz
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">RAM: 967.9 MiB
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Disk: 1002.8 GiB
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">fio Disk Speed <span class="o">(</span>Mixed R/W 50/50<span class="o">)</span>:
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Block Size <span class="p">|</span> 4k <span class="o">(</span>IOPS<span class="o">)</span>       <span class="p">|</span> 64k <span class="o">(</span>IOPS<span class="o">)</span>      <span class="p">|</span> 512k <span class="o">(</span>IOPS<span class="o">)</span>     <span class="p">|</span> 1m <span class="o">(</span>IOPS<span class="o">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">-----------<span class="p">|</span>-----------------<span class="p">|</span>-----------------<span class="p">|</span>-----------------<span class="p">|</span>----------------
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Read       <span class="p">|</span> 5.64 MB/s <span class="o">(</span>1.4k<span class="o">)</span> <span class="p">|</span> 95.74 MB/s <span class="o">(</span>1.4k<span class="o">)</span> <span class="p">|</span> 258.26 MB/s <span class="o">(</span>504<span class="o">)</span> <span class="p">|</span> 487.75 MB/s <span class="o">(</span>476<span class="o">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Write      <span class="p">|</span> 5.65 MB/s <span class="o">(</span>1.4k<span class="o">)</span> <span class="p">|</span> 96.25 MB/s <span class="o">(</span>1.5k<span class="o">)</span> <span class="p">|</span> 271.98 MB/s <span class="o">(</span>531<span class="o">)</span> <span class="p">|</span> 520.24 MB/s <span class="o">(</span>508<span class="o">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Total      <span class="p">|</span> 11.29 MB/s <span class="o">(</span>2.8k<span class="o">)</span> <span class="p">|</span> 192.00 MB/s <span class="o">(</span>2.9k<span class="o">)</span> <span class="p">|</span> 530.25 MB/s <span class="o">(</span>1.0k<span class="o">)</span> <span class="p">|</span> 1.00 GB/s <span class="o">(</span>984<span class="o">)</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="刷流测试">刷流测试
+</h3><p>CPU cores: 1 @ 2593.906 MHz</p>
+<p>RAM: 967.9 MiB</p>
+<p>Disk: 1002.8 GiB</p>
+<p>fio Disk Speed (Mixed R/W 50/50):</p>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th>Block Size</th>
+					<th>4k (IOPS)</th>
+					<th>64k (IOPS)</th>
+					<th>512k (IOPS)    </th>
+					<th>1m (IOPS)</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Read</td>
+					<td>5.64 MB/s (1.4k)</td>
+					<td>95.74 MB/s (1.4k)</td>
+					<td>258.26 MB/s (504)</td>
+					<td>487.75 MB/s (476)</td>
+			</tr>
+			<tr>
+					<td>Write</td>
+					<td>5.65 MB/s (1.4k)</td>
+					<td>96.25 MB/s (1.5k)</td>
+					<td>271.98 MB/s (531)</td>
+					<td>520.24 MB/s (508)</td>
+			</tr>
+			<tr>
+					<td>Total      </td>
+					<td>11.29 MB/s (2.8k)</td>
+					<td>192.00 MB/s (2.9k)</td>
+					<td>530.25 MB/s (1.0k)</td>
+					<td>1.00 GB/s (984)</td>
+			</tr>
+	</tbody>
+</table></div>
+<h3 id="刷流测试">刷流测试
 </h3><p><img alt="刷流测试" class="gallery-image" data-flex-basis="510px" data-flex-grow="212" height="903" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="/zouter-jp/PT.webp" srcset="/zouter-jp/PT_hu_c2600ad41472a7e3.webp 800w, /zouter-jp/PT_hu_f9f471357e707e94.webp 1600w, /zouter-jp/PT.webp 1920w" width="1920"></p>
 <h3 id="基本信息">基本信息
 </h3><p><strong>系统信息</strong></p>
