@@ -5,7 +5,13 @@
         <description>Recent content in Tags on Yukari Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
-        <lastBuildDate>Fri, 04 Apr 2025 00:00:00 +0800</lastBuildDate><atom:link href="https://yukari.cyou/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 23 Jun 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://yukari.cyou/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>VPS</title>
+            <link>https://yukari.cyou/tags/vps/</link>
+            <pubDate>Tue, 23 Jun 2026 00:00:00 +0800</pubDate>
+            <guid>https://yukari.cyou/tags/vps/</guid>
+            <description></description>
+        </item><item>
             <title>AMD</title>
             <link>https://yukari.cyou/tags/amd/</link>
             <pubDate>Fri, 04 Apr 2025 00:00:00 +0800</pubDate>

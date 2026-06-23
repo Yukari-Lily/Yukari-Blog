@@ -1,27 +1,32 @@
-
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://yukari.cyou/</loc>
-    <lastmod>2025-04-04T00:00:00+08:00</lastmod>
+    <lastmod>2026-06-23T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.cyou/categories/</loc>
+    <lastmod>2026-06-23T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.cyou/post/</loc>
+    <lastmod>2026-06-23T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.cyou/tags/</loc>
+    <lastmod>2026-06-23T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.cyou/tags/vps/</loc>
+    <lastmod>2026-06-23T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.cyou/zouter-jp/</loc>
+    <lastmod>2026-06-23T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yukari.cyou/categories/%E5%A4%87%E5%BF%98/</loc>
+    <lastmod>2026-06-23T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://yukari.cyou/tags/amd/</loc>
     <lastmod>2025-04-04T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://yukari.cyou/tags/bios/</loc>
-    <lastmod>2025-04-04T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yukari.cyou/categories/</loc>
-    <lastmod>2025-04-04T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yukari.cyou/post/</loc>
-    <lastmod>2025-04-04T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yukari.cyou/tags/</loc>
-    <lastmod>2025-04-04T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://yukari.cyou/categories/%E5%A4%87%E5%BF%98/</loc>
     <lastmod>2025-04-04T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://yukari.cyou/bios/</loc>
